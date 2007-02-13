@@ -20,9 +20,9 @@
   <email>mj@php.net</email>
   <active>yes</active>
  </lead>
- <date>2007-02-12</date>
+ <date>2007-03-12</date>
  <version>
-  <release>1.1.0</release>
+  <release>1.2.0</release>
   <api>1.0.0</api>
  </version>
  <stability>
@@ -31,7 +31,7 @@
  </stability>
  <license uri="http://www.php.net/license">PHP License</license>
  <notes>
- Update installation phars to PEAR 1.5.0, Console_Getopt 1.2.1, Structures_Graph 1.0.2
+ Update installation phars to PEAR 1.5.1
  </notes>
  <contents>
   <dir baseinstalldir="public_html" name="/">
