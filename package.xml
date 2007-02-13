@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.5.0" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0                              http://pear.php.net/dtd/tasks-1.0.xsd                              http://pear.php.net/dtd/package-2.0                              http://pear.php.net/dtd/package-2.0.xsd">
+ <name>pearweb_phars</name>
+ <channel>pear.php.net</channel>
+ <summary>The source code for the PEAR website: go-pear.phar/install-pear-nozlib.phar</summary>
+ <description>
+  Separate sub-package just for the .phars,
+  to cut down significantly on the size of
+  the pearweb package
+ </description>
+ <lead>
+  <name>Greg Beaver</name>
+  <user>cellog</user>
+  <email>cellog@php.net</email>
+  <active>yes</active>
+ </lead>
+ <lead>
+  <name>Martin Jansen</name>
+  <user>mj</user>
+  <email>mj@php.net</email>
+  <active>yes</active>
+ </lead>
+ <date>2007-02-10</date>
+ <version>
+  <release>1.1.0</release>
+  <api>1.0.0</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.php.net/license">PHP License</license>
+ <notes>
+ Update installation phars to PEAR 1.5.0, Console_Getopt 1.2.1, Structures_Graph 1.0.2
+ </notes>
+ <contents>
+  <dir baseinstalldir="public_html" name="/">
+   <file name="go-pear.phar" role="web" />
+   <file name="install-pear-nozlib.phar" role="web" />
+  </dir> <!-- / -->
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>4.3.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.11</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.0</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>stable</api>
+   </stability>
+   <date>2007-02-10</date>
+   <license uri="http://www.php.net/license">PHP License</license>
+   <notes>
+   Test the release
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>1.0.0</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2007-02-10</date>
+   <license uri="http://www.php.net/license">PHP License</license>
+   <notes>
+   Test the release (2)
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>1.1.0</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2007-02-10</date>
+   <license uri="http://www.php.net/license">PHP License</license>
+   <notes>
+   Update installation phars to PEAR 1.5.0, Console_Getopt 1.2.1, Structures_Graph 1.0.2
+   </notes>
+  </release>
+ </changelog>
+</package>
