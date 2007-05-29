@@ -20,9 +20,9 @@
   <email>mj@php.net</email>
   <active>yes</active>
  </lead>
- <date>2007-05-08</date>
+ <date>2007-05-29</date>
  <version>
-  <release>1.3.0</release>
+  <release>1.3.1</release>
   <api>1.0.0</api>
  </version>
  <stability>
@@ -31,7 +31,9 @@
  </stability>
  <license uri="http://www.php.net/license">PHP License</license>
  <notes>
- Update installation phars to PEAR 1.5.4
+ Fix notices in the phar
+ Update go-pear to include Structures_Graph as a core package
+ Update go-pear to include setting temp_dir/download_dir
  </notes>
  <contents>
   <dir baseinstalldir="public_html" name="/">
@@ -124,6 +126,23 @@
    <license uri="http://www.php.net/license">PHP License</license>
    <notes>
    Update installation phars to PEAR 1.5.4
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>1.3.1</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2007-05-29</date>
+   <license uri="http://www.php.net/license">PHP License</license>
+   <notes>
+ Fix notices in the phar
+ Update go-pear to include Structures_Graph as a core package
+ Update go-pear to include setting temp_dir/download_dir
    </notes>
   </release>
  </changelog>
