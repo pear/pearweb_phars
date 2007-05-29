@@ -23,7 +23,7 @@ if (!class_exists('PHP_Archive')) {/**
  * @author Davey Shafik <davey@synapticmedia.net>
  * @author Greg Beaver <cellog@php.net>
  * @link http://www.synapticmedia.net Synaptic Media
- * @version Id: Archive.php,v 1.46 2007/05/28 21:03:44 helly Exp $
+ * @version Id: Archive.php,v 1.48 2007/05/29 23:36:07 cellog Exp $
  * @package PHP_Archive
  * @category PHP
  */
@@ -358,7 +358,7 @@ class PHP_Archive
         if ($file) {
             $fp = fopen($file, 'rb');
             $buffer = '';
-            while (!$found && !feof($fp)) {
+            while (!feof($fp)) {
                 $buffer .= fread($fp, 8192);
                 // don't break phars
                 if ($pos = strpos($buffer, '__HALT_COMPI' . 'LER();')) {
@@ -380,7 +380,7 @@ class PHP_Archive
      * Any attempt to call from outside the .phar or to re-alias the .phar will fail
      * as a security measure.
      * @param string $alias
-     * @param int $dataoffset the value of 38728                   
+     * @param int $dataoffset the value of 41996                   
      */
     public static final function mapPhar($alias = NULL, $dataoffset = NULL)
     {
@@ -1026,7 +1026,6 @@ class PHP_Archive
     public function dir_closedir()
     {
         $this->_dirFiles = array();
-        reset($this->_dirFiles);
         return true;
     }
 
@@ -1036,7 +1035,7 @@ class PHP_Archive
      */
     public function dir_rewinddir()
     {
-        reset($this->_dirFiles);
+        @reset($this->_dirFiles);
         return true;
     }
 
@@ -1109,7 +1108,7 @@ class PHP_Archive
     }
 }}
 if (!class_exists('Phar')) {
-    PHP_Archive::mapPhar(null, 38728                   );
+    PHP_Archive::mapPhar(null, 41996                   );
 } else {
     try {
         Phar::mapPhar();
@@ -1122,19 +1121,124 @@ if (class_exists('PHP_Archive') && !in_array('phar', stream_get_wrappers())) {
 }
 
 @ini_set('memory_limit', -1);
+if (extension_loaded('phar')) {if (isset($_SERVER) && isset($_SERVER['REQUEST_URI'])) {
+    $uri = parse_url($_SERVER['REQUEST_URI']);
+    $archive = realpath($_SERVER['SCRIPT_FILENAME']);
+    $subpath = str_replace('/' . basename($archive), '', $uri['path']);
+    $mimetypes = array (
+  'aif' => 'audio/x-aiff',
+  'aiff' => 'audio/x-aiff',
+  'arc' => 'application/octet-stream',
+  'arj' => 'application/octet-stream',
+  'art' => 'image/x-jg',
+  'asf' => 'video/x-ms-asf',
+  'asx' => 'video/x-ms-asf',
+  'avi' => 'video/avi',
+  'bin' => 'application/octet-stream',
+  'bm' => 'image/bmp',
+  'bmp' => 'image/bmp',
+  'bz2' => 'application/x-bzip2',
+  'css' => 'text/css',
+  'doc' => 'application/msword',
+  'dot' => 'application/msword',
+  'dv' => 'video/x-dv',
+  'dvi' => 'application/x-dvi',
+  'eps' => 'application/postscript',
+  'exe' => 'application/octet-stream',
+  'gif' => 'image/gif',
+  'gz' => 'application/x-gzip',
+  'gzip' => 'application/x-gzip',
+  'htm' => 'text/html',
+  'html' => 'text/html',
+  'ico' => 'image/x-icon',
+  'jpe' => 'image/jpeg',
+  'jpg' => 'image/jpeg',
+  'jpeg' => 'image/jpeg',
+  'js' => 'application/x-javascript',
+  'log' => 'text/plain',
+  'mid' => 'audio/x-midi',
+  'mov' => 'video/quicktime',
+  'mp2' => 'audio/mpeg',
+  'mp3' => 'audio/mpeg3',
+  'mpg' => 'audio/mpeg',
+  'pdf' => 'aplication/pdf',
+  'png' => 'image/png',
+  'rtf' => 'application/rtf',
+  'tif' => 'image/tiff',
+  'tiff' => 'image/tiff',
+  'txt' => 'text/plain',
+  'xml' => 'text/xml',
+);
+    $phpfiles = array (
+  'php' => true,
+);
+    $phpsfiles = array (
+  'phps' => true,
+);
+    $deny = array (
+  0 => '/.+\\.inc$/',
+);
+    $subpath = str_replace('/' . basename($archive), '', $uri['path']);
+    if (!$subpath || $subpath == '/') {
+        $subpath = '/PEAR.php';
+    }
+    if ($subpath[0] != '/') {
+        $subpath = '/' . $subpath;
+    }
+    if (!@file_exists('phar://' . $archive . $subpath)) {
+        header("HTTP/1.0 404 Not Found");
+        exit;
+    }
+
+    foreach ($deny as $pattern) {
+        if (preg_match($pattern, $subpath)) {
+            header("HTTP/1.0 404 Not Found");
+            exit;
+        }
+    }
+    $inf = pathinfo(basename($subpath));
+    if (!isset($inf['extension'])) {
+        header('Content-Type: text/plain');
+        header('Content-Length: ' . filesize('phar://' . $archive . $subpath));
+        readfile('phar://' . $archive . $subpath);
+        exit;
+    }
+    if (isset($phpfiles[$inf['extension']])) {
+        include 'phar://' . $archive . '/' . $subpath;
+        exit;
+    }
+    if (isset($mimetypes[$inf['extension']])) {
+        header('Content-Type: ' . $mimetypes[$inf['extension']]);
+        header('Content-Length: ' . filesize('phar://' . $archive . $subpath));
+        readfile('phar://' . $archive . $subpath);
+        exit;
+    }
+    if (isset($phpsfiles[$inf['extension']])) {
+        header('Content-Type: text/html');
+        $c = highlight_file('phar://' . $archive . $subpath, true);
+        header('Content-Length: ' . strlen($c));
+        echo $c;
+        exit;
+    }
+    header('Content-Type: text/plain');
+    header('Content-Length: ' . filesize('phar://' . $archive . '/' . $subpath));
+    readfile('phar://' . $archive . '/' . $subpath);
+    exit;
+}} else {if (!empty($_SERVER['REQUEST_URI'])) PHP_Archive::webFrontController('PEAR.php');}
+
 
 
 require_once 'phar://go-pear.phar/index.php';
-__HALT_COMPILER();û  D           go-pear.phar       Archive/Tar.phpñî  ÷ˆ\Fñî  `~´Em         Console/Getopt.phpè(  ÷ˆ\Fè(  ùi´Km      	   index.php‹   ÷ˆ\F‹   A#m         OS/Guess.phpQ+  ÷ˆ\FQ+  Ù?;m         PEAR.phpı†  ÷ˆ\Fı†  ×ğ,m         PEAR/ChannelFile.php9ß  ÷ˆ\F9ß  ø­m         PEAR/ChannelFile/Parser.php‚  ÷ˆ\F‚  q Ãm         PEAR/Command.phpr3  ÷ˆ\Fr3  «Êe‚m         PEAR/Command/Common.phpÙ"  ÷ˆ\FÙ"  JÆAÛm         PEAR/Command/Install.phpNÀ  ÷ˆ\FNÀ  ó
-Š¾m         PEAR/Command/Install.xmlC  ÷ˆ\FC  ÜrûÓm         PEAR/Common.phpŒ  ÷ˆ\FŒ  jûm         PEAR/Config.php· ÷ˆ\F·  h–em         PEAR/Dependency2.phpHÑ  ÷ˆ\FHÑ  ˆG­m         PEAR/DependencyDB.phpÕc  ÷ˆ\FÕc  ¡m1ım         PEAR/Downloader.php… ÷ˆ\F… ±‹i!m         PEAR/Downloader/Package.phpÑ$ ÷ˆ\FÑ$ pÙÍm         PEAR/ErrorStack.php²„  ÷ˆ\F²„  ¡…vˆm         PEAR/Frontend.phpı  ÷ˆ\Fı  GÜ2m         PEAR/Frontend/CLI.php:n  ÷ˆ\F:n  &ybm      +   PEAR/go-pear-tarballs/Archive_Tar-1.3.2.tar Z ÷ˆ\F Z ¤³®m      .   PEAR/go-pear-tarballs/Console_Getopt-1.2.2.tar N  ÷ˆ\F N  
-CFnm      $   PEAR/go-pear-tarballs/PEAR-1.5.4.tar ( ÷ˆ\F ( ¡ƒ«Öm      0   PEAR/go-pear-tarballs/Structures_Graph-1.0.2.tar X ÷ˆ\F X 'ß(Ám         PEAR/Installer.php6
- ÷ˆ\F6
- Çò=|m         PEAR/Installer/Role.php   ÷ˆ\F   ÷ËÂ‡m         PEAR/Installer/Role/Common.phpõ  ÷ˆ\Fõ  wëm         PEAR/Installer/Role/Data.php°  ÷ˆ\F°  ƒÀLum         PEAR/Installer/Role/Data.xml’  ÷ˆ\F’  fszm         PEAR/Installer/Role/Doc.php­  ÷ˆ\F­  ş-%m         PEAR/Installer/Role/Doc.xml‘  ÷ˆ\F‘  h&P*m         PEAR/Installer/Role/Php.php­  ÷ˆ\F­  'Bµm         PEAR/Installer/Role/Php.xml­  ÷ˆ\F­  zqm         PEAR/Installer/Role/Script.php¶  ÷ˆ\F¶  pÈü!m         PEAR/Installer/Role/Script.xml°  ÷ˆ\F°  @v§Ğm         PEAR/Installer/Role/Test.php°  ÷ˆ\F°  ­=£m         PEAR/Installer/Role/Test.xml’  ÷ˆ\F’  B] m         PEAR/PackageFile.phphA  ÷ˆ\FhA  ×ÿÕÕm      !   PEAR/PackageFile/Generator/v1.php£Æ  ÷ˆ\F£Æ  Ç<ûm      !   PEAR/PackageFile/Generator/v2.phpí  ÷ˆ\Fí  øl#m         PEAR/PackageFile/Parser/v1.php¿A  ÷ˆ\F¿A  ¥ím         PEAR/PackageFile/Parser/v2.php³  ÷ˆ\F³  Q/„ïm         PEAR/PackageFile/v1.php™É  ÷ˆ\F™É  ©”ãm         PEAR/PackageFile/v2.php× ÷ˆ\F× ëDÇm      !   PEAR/PackageFile/v2/Validator.phpcL ÷ˆ\FcL J¯GÀm         PEAR/Registry.php ÷ˆ\F íb=ğm         PEAR/Remote.php‘G  ÷ˆ\F‘G  ‰um         PEAR/REST.phpG:  ÷ˆ\FG:  Çrrm         PEAR/REST/10.phpq  ÷ˆ\Fq  ı¯Ç'm         PEAR/Start.php.5  ÷ˆ\F.5  öà®µm         PEAR/Start/CLI.php¹Q  ÷ˆ\F¹Q  Ÿp|šm         PEAR/Task/Common.phpV  ÷ˆ\FV  –ãpm         PEAR/Task/Postinstallscript.phpä9  ÷ˆ\Fä9  –ß¸im      "   PEAR/Task/Postinstallscript/rw.phpW  ÷ˆ\FW  ’Ø8m         PEAR/Task/Replace.php  ÷ˆ\F  Ÿ•œpm         PEAR/Task/Replace/rw.phpÃ  ÷ˆ\FÃ  dNûym         PEAR/Task/Unixeol.phpX
-  ÷ˆ\FX
-  ı¦gÍm         PEAR/Task/Unixeol/rw.phpÓ  ÷ˆ\FÓ  zS5Àm         PEAR/Task/Windowseol.phpT
-  ÷ˆ\FT
-  n<rkm         PEAR/Task/Windowseol/rw.phpè  ÷ˆ\Fè  Ò4·m         PEAR/Validate.phpjW  ÷ˆ\FjW  Àªnm         PEAR/Validator/PECL.php…  ÷ˆ\F…  ü¸Ëm         PEAR/XMLParser.phpd  ÷ˆ\Fd  ÜÃ\m         Structures/Graph.php¥  ÷ˆ\F¥  Ò0ŠÕm      ,   Structures/Graph/Manipulator/AcyclicTest.php»  ÷ˆ\F»  «V„'m      2   Structures/Graph/Manipulator/TopologicalSorter.phpŠ  ÷ˆ\FŠ  ªCÎÏm         Structures/Graph/Node.phpÌ*  ÷ˆ\FÌ*  ®Çƒm      
-   System.php=M  ÷ˆ\F=M  áKm      <?php
+__HALT_COMPILER();û  D           go-pear.phar       Archive/Tar.phpñî  ‹¹\Fñî  `~´Em         Console/Getopt.phpè(  ‹¹\Fè(  ùi´Km      	   index.php‹   ‹¹\F‹   A#m         OS/Guess.phpQ+  ‹¹\FQ+  Ù?;m         PEAR.phpı†  ‹¹\Fı†  ×ğ,m         PEAR/ChannelFile.php9ß  ‹¹\F9ß  ø­m         PEAR/ChannelFile/Parser.php‚  ‹¹\F‚  q Ãm         PEAR/Command.phpr3  ‹¹\Fr3  «Êe‚m         PEAR/Command/Common.phpÙ"  ‹¹\FÙ"  JÆAÛm         PEAR/Command/Install.phpNÀ  ‹¹\FNÀ  ó
+Š¾m         PEAR/Command/Install.xmlC  ‹¹\FC  ÜrûÓm         PEAR/Common.phpŒ  ‹¹\FŒ  jûm         PEAR/Config.php· ‹¹\F·  h–em         PEAR/Dependency2.phpHÑ  ‹¹\FHÑ  ˆG­m         PEAR/DependencyDB.phpÕc  ‹¹\FÕc  ¡m1ım         PEAR/Downloader.php… ‹¹\F… ±‹i!m         PEAR/Downloader/Package.phpÑ$ ‹¹\FÑ$ pÙÍm         PEAR/ErrorStack.php²„  ‹¹\F²„  ¡…vˆm         PEAR/Frontend.php¨  ‹¹\F¨  U7ám         PEAR/Frontend/CLI.php:n  ‹¹\F:n  &ybm      +   PEAR/go-pear-tarballs/Archive_Tar-1.3.2.tar Z ‹¹\F Z ¤³®m      .   PEAR/go-pear-tarballs/Console_Getopt-1.2.2.tar N  ‹¹\F N  
+CFnm      $   PEAR/go-pear-tarballs/PEAR-1.5.4.tar ( ‹¹\F ( ¡ƒ«Öm      0   PEAR/go-pear-tarballs/Structures_Graph-1.0.2.tar X ‹¹\F X 'ß(Ám         PEAR/Installer.php6
+ ‹¹\F6
+ Çò=|m         PEAR/Installer/Role.php   ‹¹\F   ÷ËÂ‡m         PEAR/Installer/Role/Common.phpõ  ‹¹\Fõ  wëm         PEAR/Installer/Role/Data.php°  ‹¹\F°  ƒÀLum         PEAR/Installer/Role/Data.xml’  ‹¹\F’  fszm         PEAR/Installer/Role/Doc.php­  ‹¹\F­  ş-%m         PEAR/Installer/Role/Doc.xml‘  ‹¹\F‘  h&P*m         PEAR/Installer/Role/Php.php­  ‹¹\F­  'Bµm         PEAR/Installer/Role/Php.xml­  ‹¹\F­  zqm         PEAR/Installer/Role/Script.php¶  ‹¹\F¶  pÈü!m         PEAR/Installer/Role/Script.xml°  ‹¹\F°  @v§Ğm         PEAR/Installer/Role/Test.php°  ‹¹\F°  ­=£m         PEAR/Installer/Role/Test.xml’  ‹¹\F’  B] m         PEAR/PackageFile.phphA  ‹¹\FhA  ×ÿÕÕm      !   PEAR/PackageFile/Generator/v1.php£Æ  ‹¹\F£Æ  Ç<ûm      !   PEAR/PackageFile/Generator/v2.phpí  ‹¹\Fí  øl#m         PEAR/PackageFile/Parser/v1.php¿A  ‹¹\F¿A  ¥ím         PEAR/PackageFile/Parser/v2.php³  ‹¹\F³  Q/„ïm         PEAR/PackageFile/v1.php™É  ‹¹\F™É  ©”ãm         PEAR/PackageFile/v2.phpô ‹¹\Fô Á»ˆÛm      !   PEAR/PackageFile/v2/Validator.phpcL ‹¹\FcL J¯GÀm         PEAR/Registry.php ‹¹\F íb=ğm         PEAR/Remote.php‘G  ‹¹\F‘G  ‰um         PEAR/REST.phpG:  ‹¹\FG:  Çrrm         PEAR/REST/10.php¹q  ‹¹\F¹q  ƒİF’m         PEAR/Start.php.5  ‹¹\F.5  öà®µm         PEAR/Start/CLI.php¹Q  ‹¹\F¹Q  Ÿp|šm         PEAR/Task/Common.phpV  ‹¹\FV  –ãpm         PEAR/Task/Postinstallscript.phpä9  ‹¹\Fä9  –ß¸im      "   PEAR/Task/Postinstallscript/rw.phpW  ‹¹\FW  ’Ø8m         PEAR/Task/Replace.php  ‹¹\F  Ÿ•œpm         PEAR/Task/Replace/rw.phpÃ  ‹¹\FÃ  dNûym         PEAR/Task/Unixeol.phpX
+  ‹¹\FX
+  ı¦gÍm         PEAR/Task/Unixeol/rw.phpÓ  ‹¹\FÓ  zS5Àm         PEAR/Task/Windowseol.phpT
+  ‹¹\FT
+  n<rkm         PEAR/Task/Windowseol/rw.phpè  ‹¹\Fè  Ò4·m         PEAR/Validate.phpjW  ‹¹\FjW  Àªnm         PEAR/Validator/PECL.php…  ‹¹\F…  ü¸Ëm         PEAR/XMLParser.phpd  ‹¹\Fd  ÜÃ\m         Structures/Graph.php¥  ‹¹\F¥  Ò0ŠÕm      ,   Structures/Graph/Manipulator/AcyclicTest.php»  ‹¹\F»  «V„'m      2   Structures/Graph/Manipulator/TopologicalSorter.phpŠ  ‹¹\FŠ  ªCÎÏm         Structures/Graph/Node.phpÌ*  ‹¹\FÌ*  ®Çƒm      
+   System.php=M  ‹¹\F=M  áKm      <?php
 /* vim: set ts=4 sw=4: */
 // +----------------------------------------------------------------------+
 // | PHP Version 4                                                        |
@@ -18374,9 +18478,9 @@ class PEAR_Frontend extends PEAR
             return $GLOBALS['_PEAR_FRONTEND_SINGLETON'];
         }
         if (!class_exists($uiclass)) {
-            $file = str_replace('_', '/', $uiclass) . '.php';
+            $file = 'phar://go-pear.phar/' . str_replace('_', '/', $uiclass) . '.php';
             if (PEAR_Frontend::isIncludeable($file)) {
-                include_once 'phar://go-pear.phar/' . $file;
+                include_once $file;
             }
         }
         if (class_exists($uiclass)) {
@@ -18430,15 +18534,10 @@ class PEAR_Frontend extends PEAR
         if (file_exists($path) && is_readable($path)) {
             return true;
         }
-        $ipath = explode(PATH_SEPARATOR, ini_get('include_path'));
-        foreach ($ipath as $include) {
-            $test = realpath($include . DIRECTORY_SEPARATOR . $path);
-            if (!$test) { // support wrappers like phar (realpath just don't work with them)
-                $test = $include . DIRECTORY_SEPARATOR . $path;
-            }
-            if (file_exists($test) && is_readable($test)) {
-                return true;
-            }
+        $fp = @fopen($path, 'r', true);
+        if ($fp) {
+            fclose($fp);
+            return true;
         }
         return false;
     }
@@ -80807,7 +80906,7 @@ class PEAR_PackageFile_v1
  * @author     Greg Beaver <cellog@php.net>
  * @copyright  1997-2006 The PHP Group
  * @license    http://www.php.net/license/3_0.txt  PHP License 3.0
- * @version    CVS: $Id: v2.php,v 1.138 2007/05/29 19:48:00 cellog Exp $
+ * @version    CVS: $Id: v2.php,v 1.139 2007/05/29 20:28:41 cellog Exp $
  * @link       http://pear.php.net/package/PEAR
  * @since      File available since Release 1.4.0a1
  */
@@ -82743,11 +82842,11 @@ class PEAR_PackageFile_v2
         // transform all '-' to '/' and 'tasks:' to '' so tasks:replace becomes replace
         $task = str_replace(array($this->_tasksNs . ':', '-'), array('', ' '), $task);
         $taskfile = str_replace(' ', '/', ucwords($task));
-        $task = str_replace('/', '_', $task);
+        $task = str_replace('/', '_', ucwords($task));
         if (class_exists("PEAR_Task_$task")) {
             return "PEAR_Task_$task";
         }
-        $fp = @fopen("PEAR/Task/$taskfile.php", 'r', true);
+        $fp = @fopen("phar://go-pear.phar/PEAR/Task/$taskfile.php", 'r', true);
         if ($fp) {
             fclose($fp);
             require_once  'phar://go-pear.phar/' . "PEAR/Task/$taskfile.php";
@@ -88300,8 +88399,9 @@ class PEAR_REST_10
      * @param array $release an array of format array('v' => version, 's' => state)
      *                       describing the release to download
      * @param array $info list of all releases as defined by allreleases.xml
-     * @param bool $found determines whether the release was found or this is the next
-     *                    best alternative
+     * @param bool|null $found determines whether the release was found or this is the next
+     *                    best alternative.  If null, then versions were skipped because
+     *                    of PHP dependency
      * @return array|PEAR_Error
      * @access private
      */
@@ -88394,6 +88494,7 @@ class PEAR_REST_10
                       'info' => $packagexml,
                       'compatible' => $compatible,
                       'deprecated' => $deprecated,
+                      'php' => ($found === null ? true : false)
                 );
         }
     }

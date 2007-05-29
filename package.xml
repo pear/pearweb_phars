@@ -21,8 +21,9 @@
   <active>yes</active>
  </lead>
  <date>2007-05-29</date>
+ <time>18:40:00</time>
  <version>
-  <release>1.3.1</release>
+  <release>1.3.2</release>
   <api>1.0.0</api>
  </version>
  <stability>
@@ -31,9 +32,7 @@
  </stability>
  <license uri="http://www.php.net/license">PHP License</license>
  <notes>
- Fix notices in the phar
- Update go-pear to include Structures_Graph as a core package
- Update go-pear to include setting temp_dir/download_dir
+   fix completely broken phars on system with no existing PEAR
  </notes>
  <contents>
   <dir baseinstalldir="public_html" name="/">
@@ -143,6 +142,22 @@
  Fix notices in the phar
  Update go-pear to include Structures_Graph as a core package
  Update go-pear to include setting temp_dir/download_dir
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>1.3.2</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2007-05-29</date>
+   <time>18:40:00</time>
+   <license uri="http://www.php.net/license">PHP License</license>
+   <notes>
+   fix completely broken phars on system with no existing PEAR
    </notes>
   </release>
  </changelog>
