@@ -20,9 +20,9 @@
   <email>mj@php.net</email>
   <active>yes</active>
  </lead>
- <date>2008-01-31</date>
+ <date>2008-02-14</date>
  <version>
-  <release>1.4.0</release>
+  <release>1.4.1</release>
   <api>1.0.0</api>
  </version>
  <stability>
@@ -31,7 +31,7 @@
  </stability>
  <license uri="http://www.php.net/license">PHP License</license>
  <notes>
-   Upgrade phars to PEAR 1.7.0
+   Upgrade phars to PEAR 1.7.1
  </notes>
  <contents>
   <dir baseinstalldir="public_html" name="/">
@@ -201,11 +201,27 @@
     <release>stable</release>
     <api>stable</api>
    </stability>
-   <date>2007-08-18</date>
+   <date>2008-01-31</date>
    <time>18:40:00</time>
    <license uri="http://www.php.net/license">PHP License</license>
    <notes>
    Upgrade phars to PEAR 1.7.0
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>1.4.1</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2008-02-14</date>
+   <time>18:40:00</time>
+   <license uri="http://www.php.net/license">PHP License</license>
+   <notes>
+   Upgrade phars to PEAR 1.7.1
    </notes>
   </release>
  </changelog>
