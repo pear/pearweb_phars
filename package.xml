@@ -35,8 +35,8 @@
  </notes>
  <contents>
   <dir baseinstalldir="public_html" name="/">
-   <file name="go-pear.phar" role="web" />
-   <file name="install-pear-nozlib.phar" role="web" />
+   <file name="go-pear.phar" role="www" />
+   <file name="install-pear-nozlib.phar" role="www" />
   </dir> <!-- / -->
  </contents>
  <dependencies>
