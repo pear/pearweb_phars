@@ -1,5 +1,5 @@
 <?php
-error_reporting(E_ALL);
+error_reporting(1803);
 if (function_exists('mb_internal_encoding')) {
     mb_internal_encoding('ASCII');
 }
@@ -23,7 +23,7 @@ if (!class_exists('PHP_Archive')) {/**
  * @author Davey Shafik <davey@synapticmedia.net>
  * @author Greg Beaver <cellog@php.net>
  * @link http://www.synapticmedia.net Synaptic Media
- * @version Id: Archive.php,v 1.51 2007/08/18 15:30:07 cellog Exp $
+ * @version Id: Archive.php,v 1.52 2007/09/01 20:28:14 cellog Exp $
  * @package PHP_Archive
  * @category PHP
  */
@@ -382,7 +382,7 @@ class PHP_Archive
      * Any attempt to call from outside the .phar or to re-alias the .phar will fail
      * as a security measure.
      * @param string $alias
-     * @param int $dataoffset the value of 42314                   
+     * @param int $dataoffset the value of 42313                   
      */
     public static final function mapPhar($alias = NULL, $dataoffset = NULL)
     {
@@ -1113,7 +1113,7 @@ class PHP_Archive
     }
 }}
 if (!class_exists('Phar')) {
-    PHP_Archive::mapPhar(null, 42314                   );
+    PHP_Archive::mapPhar(null, 42313                   );
 } else {
     try {
         Phar::mapPhar();
@@ -1234,14 +1234,14 @@ if (extension_loaded('phar')) {if (isset($_SERVER) && isset($_SERVER['REQUEST_UR
 
 
 require_once 'phar://go-pear.phar/index.php';
-__HALT_COMPILER();˚  D           go-pear.phar       Archive/Tar.phpÒÓ  æñ1HÒÓ  `~¥Em         Console/Getopt.phpË(  æñ1HË(  ˘i¥Km      	   index.phpã   æñ1Hã   Aè#m         OS/Guess.phpQ+  æñ1HQ+  IO*m         PEAR.phpà  æñ1Hà  ì@ì®m         PEAR/ChannelFile.php9ﬂ  æñ1H9ﬂ  ˙m         PEAR/ChannelFile/Parser.phpÇ  æñ1HÇ  Gjkm         PEAR/Command.phpr3  æñ1Hr3  @/|m         PEAR/Command/Common.phpŸ"  æñ1HŸ"  ™0ˆ≥m         PEAR/Command/Install.php&ƒ  æñ1H&ƒ  á
-vm         PEAR/Command/Install.xmlC  æñ1HC  ‹r˚”m         PEAR/Common.phpå  æñ1Hå  É∏uøm         PEAR/Config.phpß æñ1Hß 4,Vam         PEAR/Dependency2.phpH—  æñ1HH—  &»dm         PEAR/DependencyDB.phpãd  æñ1Hãd  ê«Äm         PEAR/Downloader.phpu æñ1Hu √⁄™Îm         PEAR/Downloader/Package.phpˆ( æñ1Hˆ( ïåªñm         PEAR/ErrorStack.php¥Ñ  æñ1H¥Ñ  Q«ƒm         PEAR/Frontend.php®  æñ1H®  ‹˘‹ m         PEAR/Frontend/CLI.php<n  æñ1H<n  1cÿÎm      +   PEAR/go-pear-tarballs/Archive_Tar-1.3.2.tar Z æñ1H Z §≥Æm      .   PEAR/go-pear-tarballs/Console_Getopt-1.2.3.tar F  æñ1H F  ∆Yx’m      $   PEAR/go-pear-tarballs/PEAR-1.7.2.tar 4 æñ1H 4 »+R™m      0   PEAR/go-pear-tarballs/Structures_Graph-1.0.2.tar X æñ1H X 'ﬂ(¡m         PEAR/Installer.phpù æñ1Hù EÕmLm         PEAR/Installer/Role.php∆   æñ1H∆   Q£†m         PEAR/Installer/Role/Common.phpı  æñ1Hı  é
-)}m         PEAR/Installer/Role/Data.php∞  æñ1H∞  ò°•$m         PEAR/Installer/Role/Data.xmlí  æñ1Hí  fçszm         PEAR/Installer/Role/Doc.php≠  æñ1H≠  A$∫Om         PEAR/Installer/Role/Doc.xmlë  æñ1Hë  h&P*m         PEAR/Installer/Role/Php.php≠  æñ1H≠  Ë˝ÒNm         PEAR/Installer/Role/Php.xml≠  æñ1H≠  zùqçm         PEAR/Installer/Role/Script.php∂  æñ1H∂  Õ«¯.m         PEAR/Installer/Role/Script.xml∞  æñ1H∞  @vß–m         PEAR/Installer/Role/Test.php∞  æñ1H∞  ∂\˝Úm         PEAR/Installer/Role/Test.xmlí  æñ1Hí  B] m         PEAR/PackageFile.phphA  æñ1HhA  ÅF_$m      !   PEAR/PackageFile/Generator/v1.php∏∆  æñ1H∏∆  w)¿Ím      !   PEAR/PackageFile/Generator/v2.phpÁÌ  æñ1HÁÌ  Çæ/m         PEAR/PackageFile/Parser/v1.phpQB  æñ1HQB  ≈êÇ∆m         PEAR/PackageFile/Parser/v2.phpÔ  æñ1HÔ  ŒÇõ≤m         PEAR/PackageFile/v1.phpô…  æñ1Hô…  (	xùm         PEAR/PackageFile/v2.phpú æñ1Hú APÆÂm      !   PEAR/PackageFile/v2/Validator.phpFM æñ1HFM Sn–m         PEAR/Registry.php" æñ1H" D˝˛Ym         PEAR/Remote.phpëG  æñ1HëG  »≠˛Dm         PEAR/REST.php~<  æñ1H~<  [ˇ¥:m         PEAR/REST/10.phpÉ  æñ1HÉ  ïIì∏m         PEAR/Start.php∂6  æñ1H∂6  \IÕÑm         PEAR/Start/CLI.phpπQ  æñ1HπQ  üp|öm         PEAR/Task/Common.phpU  æñ1HU  ﬂÙƒ˚m         PEAR/Task/Postinstallscript.php„9  æñ1H„9  QèL≠m      "   PEAR/Task/Postinstallscript/rw.phpW  æñ1HW  &p∂m         PEAR/Task/Replace.php  æñ1H  ¡&ü2m         PEAR/Task/Replace/rw.php√  æñ1H√  ¸¶kÖm         PEAR/Task/Unixeol.phpX
-  æñ1HX
-  ê|‘m         PEAR/Task/Unixeol/rw.php”  æñ1H”  ™ÄPπm         PEAR/Task/Windowseol.phpS
-  æñ1HS
-  „Lx›m         PEAR/Task/Windowseol/rw.phpË  æñ1HË  ‡8m         PEAR/Validate.phppW  æñ1HpW  ¡ñ4qm         PEAR/Validator/PECL.phpÖ  æñ1HÖ  iÿM>m         PEAR/XMLParser.phpj  æñ1Hj  Æ=‰8m         Structures/Graph.php•  æñ1H•  “0ä’m      ,   Structures/Graph/Manipulator/AcyclicTest.phpª  æñ1Hª  ´VÑ'm      2   Structures/Graph/Manipulator/TopologicalSorter.phpä  æñ1Hä  ™CŒœm         Structures/Graph/Node.phpÃ*  æñ1HÃ*  Æ«Ém      
-   System.phpN  æñ1HN  ¥Ú‹Ûm      <?php
+__HALT_COMPILER();˚  D           go-pear.phar       Archive/Tar.phpÒÓ  °ö1HÒÓ  `~¥Em         Console/Getopt.phpË(  °ö1HË(  ˘i¥Km      	   index.phpã   °ö1Hã   Aè#m         OS/Guess.phpQ+  °ö1HQ+  IO*m         PEAR.phpà  °ö1Hà  ì@ì®m         PEAR/ChannelFile.php9ﬂ  °ö1H9ﬂ  ˙m         PEAR/ChannelFile/Parser.phpÇ  °ö1HÇ  Gjkm         PEAR/Command.phpr3  °ö1Hr3  @/|m         PEAR/Command/Common.phpŸ"  °ö1HŸ"  ™0ˆ≥m         PEAR/Command/Install.php&ƒ  °ö1H&ƒ  á
+vm         PEAR/Command/Install.xmlC  °ö1HC  ‹r˚”m         PEAR/Common.phpå  °ö1Hå  É∏uøm         PEAR/Config.phpß °ö1Hß 4,Vam         PEAR/Dependency2.phpH—  °ö1HH—  &»dm         PEAR/DependencyDB.phpãd  °ö1Hãd  ê«Äm         PEAR/Downloader.phpu °ö1Hu √⁄™Îm         PEAR/Downloader/Package.phpˆ( °ö1Hˆ( ïåªñm         PEAR/ErrorStack.php¥Ñ  °ö1H¥Ñ  Q«ƒm         PEAR/Frontend.php®  °ö1H®  ‹˘‹ m         PEAR/Frontend/CLI.php<n  °ö1H<n  1cÿÎm      +   PEAR/go-pear-tarballs/Archive_Tar-1.3.2.tar Z °ö1H Z §≥Æm      .   PEAR/go-pear-tarballs/Console_Getopt-1.2.3.tar F  °ö1H F  ∆Yx’m      $   PEAR/go-pear-tarballs/PEAR-1.7.2.tar 4 °ö1H 4 »+R™m      0   PEAR/go-pear-tarballs/Structures_Graph-1.0.2.tar X °ö1H X 'ﬂ(¡m         PEAR/Installer.phpù °ö1Hù EÕmLm         PEAR/Installer/Role.php∆   °ö1H∆   Q£†m         PEAR/Installer/Role/Common.phpı  °ö1Hı  é
+)}m         PEAR/Installer/Role/Data.php∞  °ö1H∞  ò°•$m         PEAR/Installer/Role/Data.xmlí  °ö1Hí  fçszm         PEAR/Installer/Role/Doc.php≠  °ö1H≠  A$∫Om         PEAR/Installer/Role/Doc.xmlë  °ö1Hë  h&P*m         PEAR/Installer/Role/Php.php≠  °ö1H≠  Ë˝ÒNm         PEAR/Installer/Role/Php.xml≠  °ö1H≠  zùqçm         PEAR/Installer/Role/Script.php∂  °ö1H∂  Õ«¯.m         PEAR/Installer/Role/Script.xml∞  °ö1H∞  @vß–m         PEAR/Installer/Role/Test.php∞  °ö1H∞  ∂\˝Úm         PEAR/Installer/Role/Test.xmlí  °ö1Hí  B] m         PEAR/PackageFile.phphA  °ö1HhA  ÅF_$m      !   PEAR/PackageFile/Generator/v1.php∏∆  °ö1H∏∆  w)¿Ím      !   PEAR/PackageFile/Generator/v2.phpÁÌ  °ö1HÁÌ  Çæ/m         PEAR/PackageFile/Parser/v1.phpQB  °ö1HQB  ≈êÇ∆m         PEAR/PackageFile/Parser/v2.phpÔ  °ö1HÔ  ŒÇõ≤m         PEAR/PackageFile/v1.phpô…  °ö1Hô…  (	xùm         PEAR/PackageFile/v2.phpú °ö1Hú APÆÂm      !   PEAR/PackageFile/v2/Validator.phpFM °ö1HFM Sn–m         PEAR/Registry.php" °ö1H" D˝˛Ym         PEAR/Remote.phpëG  °ö1HëG  »≠˛Dm         PEAR/REST.php~<  °ö1H~<  [ˇ¥:m         PEAR/REST/10.phpÉ  °ö1HÉ  ïIì∏m         PEAR/Start.php∂6  °ö1H∂6  \IÕÑm         PEAR/Start/CLI.phpπQ  °ö1HπQ  üp|öm         PEAR/Task/Common.phpU  °ö1HU  ﬂÙƒ˚m         PEAR/Task/Postinstallscript.php„9  °ö1H„9  QèL≠m      "   PEAR/Task/Postinstallscript/rw.phpW  °ö1HW  &p∂m         PEAR/Task/Replace.php  °ö1H  ¡&ü2m         PEAR/Task/Replace/rw.php√  °ö1H√  ¸¶kÖm         PEAR/Task/Unixeol.phpX
+  °ö1HX
+  ê|‘m         PEAR/Task/Unixeol/rw.php”  °ö1H”  ™ÄPπm         PEAR/Task/Windowseol.phpS
+  °ö1HS
+  „Lx›m         PEAR/Task/Windowseol/rw.phpË  °ö1HË  ‡8m         PEAR/Validate.phppW  °ö1HpW  ¡ñ4qm         PEAR/Validator/PECL.phpÖ  °ö1HÖ  iÿM>m         PEAR/XMLParser.phpj  °ö1Hj  Æ=‰8m         Structures/Graph.php•  °ö1H•  “0ä’m      ,   Structures/Graph/Manipulator/AcyclicTest.phpª  °ö1Hª  ´VÑ'm      2   Structures/Graph/Manipulator/TopologicalSorter.phpä  °ö1Hä  ™CŒœm         Structures/Graph/Node.phpÃ*  °ö1HÃ*  Æ«Ém      
+   System.phpN  °ö1HN  ¥Ú‹Ûm      <?php
 /* vim: set ts=4 sw=4: */
 // +----------------------------------------------------------------------+
 // | PHP Version 4                                                        |
