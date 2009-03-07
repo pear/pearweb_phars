@@ -34,9 +34,9 @@
    Upgrade phars to PEAR 1.7.2
  </notes>
  <contents>
-  <dir baseinstalldir="public_html" name="/">
-   <file name="go-pear.phar" role="www" />
-   <file name="install-pear-nozlib.phar" role="www" />
+  <dir baseinstalldir="/pear.php.net/" name="/">
+   <file name="public_html/go-pear.phar" role="www" />
+   <file name="public_html/install-pear-nozlib.phar" role="www" />
   </dir> <!-- / -->
  </contents>
  <dependencies>
