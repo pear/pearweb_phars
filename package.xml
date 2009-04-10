@@ -9,20 +9,26 @@
   the pearweb package
  </description>
  <lead>
+  <name>Helgi Thormar Thorbjoernsson</name>
+  <user>dufuz</user>
+  <email>helgi@php.net</email>
+  <active>yes</active>
+ </lead>
+ <lead>
   <name>Greg Beaver</name>
   <user>cellog</user>
   <email>cellog@php.net</email>
-  <active>yes</active>
+  <active>no</active>
  </lead>
  <lead>
   <name>Martin Jansen</name>
   <user>mj</user>
   <email>mj@php.net</email>
-  <active>yes</active>
+  <active>no</active>
  </lead>
- <date>2008-05-19</date>
+ <date>2009-04-10</date>
  <version>
-  <release>1.4.2</release>
+  <release>1.5.0</release>
   <api>1.0.0</api>
  </version>
  <stability>
@@ -31,7 +37,7 @@
  </stability>
  <license uri="http://www.php.net/license">PHP License</license>
  <notes>
-   Upgrade phars to PEAR 1.7.2
+   Upgrade phars to PEAR 1.8.0
  </notes>
  <contents>
   <dir baseinstalldir="pear.php.net/public_html" name="/">
@@ -238,6 +244,21 @@
    <notes>
    Upgrade phars to PEAR 1.7.2
    </notes>
+  </release>
+  <release>
+    <date>2009-04-10</date>
+    <version>
+     <release>1.5.0</release>
+     <api>1.0.0</api>
+    </version>
+    <stability>
+     <release>stable</release>
+     <api>stable</api>
+    </stability>
+    <license uri="http://www.php.net/license">PHP License</license>
+    <notes>
+      Upgrade phars to PEAR 1.8.0
+    </notes>
   </release>
  </changelog>
 </package>
