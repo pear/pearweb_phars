@@ -26,9 +26,9 @@
   <email>mj@php.net</email>
   <active>no</active>
  </lead>
- <date>2009-04-10</date>
+ <date>2009-08-02</date>
  <version>
-  <release>1.5.0</release>
+  <release>1.5.1</release>
   <api>1.0.0</api>
  </version>
  <stability>
@@ -37,7 +37,7 @@
  </stability>
  <license uri="http://www.php.net/license">PHP License</license>
  <notes>
-   Upgrade phars to PEAR 1.8.0
+    fix Bug #48753: go-pear.bat / phar not working
  </notes>
  <contents>
   <dir baseinstalldir="pear.php.net/public_html" name="/">
@@ -48,7 +48,7 @@
  <dependencies>
   <required>
    <php>
-    <min>4.3.0</min>
+    <min>5.2.0</min>
    </php>
    <pearinstaller>
     <min>1.4.11</min>
@@ -258,6 +258,21 @@
     <license uri="http://www.php.net/license">PHP License</license>
     <notes>
       Upgrade phars to PEAR 1.8.0
+    </notes>
+  </release>
+  <release>
+    <date>2009-08-02</date>
+    <version>
+     <release>1.5.1</release>
+     <api>1.0.0</api>
+    </version>
+    <stability>
+     <release>stable</release>
+     <api>stable</api>
+    </stability>
+    <license uri="http://www.php.net/license">PHP License</license>
+    <notes>
+     fix Bug #48753: go-pear.bat / phar not working
     </notes>
   </release>
  </changelog>

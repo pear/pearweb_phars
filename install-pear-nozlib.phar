@@ -23,11 +23,11 @@ if (!class_exists('PHP_Archive')) {/**
  * @author Davey Shafik <davey@synapticmedia.net>
  * @author Greg Beaver <cellog@php.net>
  * @link http://www.synapticmedia.net Synaptic Media
- * @version Id: Archive.php,v 1.52 2007/09/01 20:28:14 cellog Exp $
+ * @version Id: Archive.php,v 1.53 2008/06/09 16:38:05 cellog Exp $
  * @package PHP_Archive
  * @category PHP
  */
- 
+
 class PHP_Archive
 {
     const GZ = 0x00001000;
@@ -35,6 +35,9 @@ class PHP_Archive
     const SIG = 0x00010000;
     const SHA1 = 0x0002;
     const MD5 = 0x0001;
+    const SHA256 = 0x0003;
+    const SHA512 = 0x0004;
+    const OPENSSL = 0x0010;
     /**
      * Whether this archive is compressed with zlib
      *
@@ -55,6 +58,11 @@ class PHP_Archive
      * @var string
      */
     protected $internalFileLength = null;
+    /**
+     * true if the current file is an empty directory
+     * @var string
+     */
+    protected $isDir = false;
     /**
      * Current file statistics (size, creation date, etc.)
      * @var string
@@ -78,7 +86,7 @@ class PHP_Archive
      * require_once 'phar://PEAR.phar/PEAR/Installer.php';
      * </code>
      * then the alias is "PEAR.phar"
-     * 
+     *
      * Information stored is a boolean indicating whether this .phar is compressed
      * with zlib, another for bzip2, phar-specific meta-data, and
      * the precise offset of internal files
@@ -94,9 +102,9 @@ class PHP_Archive
     private static $_pharFiles = array();
     /**
      * File listing for the .phar
-     * 
+     *
      * The manifest is indexed per phar.
-     * 
+     *
      * Files within the .phar are indexed by their relative path within the
      * .phar.  Each file has this information in its internal array
      *
@@ -209,7 +217,7 @@ class PHP_Archive
             header("HTTP/1.0 404 Not Found");
             return false;
         }
-        
+
     }
 
     public static function introspect($archive, $dir)
@@ -382,7 +390,7 @@ class PHP_Archive
      * Any attempt to call from outside the .phar or to re-alias the .phar will fail
      * as a security measure.
      * @param string $alias
-     * @param int $dataoffset the value of 42421                   
+     * @param int $dataoffset the value of 43661                   
      */
     public static final function mapPhar($alias = NULL, $dataoffset = NULL)
     {
@@ -439,7 +447,7 @@ class PHP_Archive
             $manifest .= $last;
         }
         if (strlen($manifest) < $manifest_length['len']) {
-            throw new Exception('ERROR: manifest length read was "' . 
+            throw new Exception('ERROR: manifest length read was "' .
                 strlen($manifest) .'" should be "' .
                 $manifest_length['len'] . '"');
         }
@@ -583,7 +591,15 @@ class PHP_Archive
     {
         $std = self::processFile($path);
         if (isset(self::$_manifest[$this->_archiveName][$path])) {
-            $this->_setCurrentFile($path);
+            if ($path[strlen($path)-1] == '/') {
+                // directory
+                if (!$allowdirs) {
+                    return 'Error: "' . $path . '" is a directory in phar "' . $this->_basename . '"';
+                }
+                $this->_setCurrentFile($path, true);
+            } else {
+                $this->_setCurrentFile($path);
+            }
             return true;
         }
         if (!$allowdirs) {
@@ -600,17 +616,30 @@ class PHP_Archive
         return 'Error: "' . $path . '" not found in phar "' . $this->_basename . '"';
     }
 
-    private function _setCurrentFile($path)
+    private function _setCurrentFile($path, $dir = false)
     {
-        $this->currentStat = array(
-            2 => 0100444, // file mode, readable by all, writeable by none
-            4 => 0, // uid
-            5 => 0, // gid
-            7 => self::$_manifest[$this->_archiveName][$path][0], // size
-            9 => self::$_manifest[$this->_archiveName][$path][1], // creation time
-            );
+        if ($dir) {
+            $this->currentStat = array(
+                2 => 040777, // directory mode, readable by all, writeable by none
+                4 => 0, // uid
+                5 => 0, // gid
+                7 => 0, // size
+                9 => self::$_manifest[$this->_archiveName][$path][1], // creation time
+                );
+            $this->internalFileLength = 0;
+            $this->isDir = true;
+        } else {
+            $this->currentStat = array(
+                2 => 0100444, // file mode, readable by all, writeable by none
+                4 => 0, // uid
+                5 => 0, // gid
+                7 => self::$_manifest[$this->_archiveName][$path][0], // size
+                9 => self::$_manifest[$this->_archiveName][$path][1], // creation time
+                );
+            $this->internalFileLength = self::$_manifest[$this->_archiveName][$path][2];
+            $this->isDir = false;
+        }
         $this->currentFilename = $path;
-        $this->internalFileLength = self::$_manifest[$this->_archiveName][$path][2];
         // seek to offset of file header within the .phar
         if (is_resource(@$this->fp)) {
             fseek($this->fp, self::$_fileStart[$this->_archiveName] + self::$_manifest[$this->_archiveName][$path][7]);
@@ -687,7 +716,7 @@ class PHP_Archive
             return false;
         }
         $file = substr($file, 7);
-    
+
         $ret = array('scheme' => 'phar');
         $pos_p = strpos($file, '.phar.php');
         $pos_z = strpos($file, '.phar.gz');
@@ -715,7 +744,7 @@ class PHP_Archive
         }
         return $ret;
     }
-    
+
     /**
      * Locate the .phar archive in the include_path and detect the file to open within
      * the archive.
@@ -811,7 +840,7 @@ class PHP_Archive
             return false;
         }
     }
-    
+
     /**
      * Read the data - PHP streams API
      *
@@ -824,7 +853,7 @@ class PHP_Archive
         $this->position += strlen($ret);
         return $ret;
     }
-    
+
     /**
      * Whether we've hit the end of the file - PHP streams API
      * @access private
@@ -833,7 +862,7 @@ class PHP_Archive
     {
         return $this->position >= $this->currentStat[7];
     }
-    
+
     /**
      * For seeking the stream - PHP streams API
      * @param int
@@ -866,7 +895,7 @@ class PHP_Archive
         }
         return true;
     }
-    
+
     /**
      * The current position in the stream - PHP streams API
      * @access private
@@ -992,6 +1021,9 @@ class PHP_Archive
                 }
             } elseif (strpos($file, $path) === 0) {
                 $fname = substr($file, strlen($path) + 1);
+                if ($fname == '/' || $fname[strlen($fname)-1] == '/') {
+                    continue; // empty directory
+                }
                 if (strpos($fname, '/')) {
                     // this is a directory
                     $a = explode('/', $fname);
@@ -1102,18 +1134,21 @@ class PHP_Archive
     /**
      * @return list of supported signature algorithmns.
      */
-    public static function getsupportedsignatures()
+    public static function getSupportedSignatures()
     {
         $ret = array('MD5', 'SHA-1');
         if (extension_loaded('hash')) {
             $ret[] = 'SHA-256';
             $ret[] = 'SHA-512';
         }
+        if (extension_loaded('openssl')) {
+            $ret[] = 'OpenSSL';
+        }
         return $ret;
     }
 }}
 if (!class_exists('Phar')) {
-    PHP_Archive::mapPhar(null, 42421                   );
+    PHP_Archive::mapPhar(null, 43661                   );
 } else {
     try {
         Phar::mapPhar();
@@ -1234,13 +1269,83 @@ if (extension_loaded('phar')) {if (isset($_SERVER) && isset($_SERVER['REQUEST_UR
 
 
 require_once 'phar://install-pear-nozlib.phar/index.php';
-__HALT_COMPILER();ÿ  F          install-pear-nozlib.phar       Archive/Tar.phpwó  >ñuJwó  .ó9Jm         Archive_Tar-1.3.3.tar v >ñuJ v `	•m         Console/Getopt.php_2  >ñuJ_2  ó<wÅm         Console_Getopt-1.2.3.tar F  >ñuJ F  ÆYxÕm      	   index.phpP&  >ñuJP&  ¦v/m         OS/Guess.phpÁ)  >ñuJÁ)  ‡×çm         PEAR-1.8.1.tar . >ñuJ . d`6xm         PEAR.php®‡  >ñuJ®‡   ³HÔm         PEAR/ChannelFile.php’Ç  >ñuJ’Ç  Zø˜jm         PEAR/ChannelFile/Parser.php<  >ñuJ<  åG.m         PEAR/Command.php
-2  >ñuJ
-2  Ú{–»m         PEAR/Command/Common.php‰   >ñuJ‰   ûôÙÓm         PEAR/Command/Install.phpæÆ  >ñuJæÆ  ;›tËm         PEAR/Command/Install.xml~!  >ñuJ~!  2¡Vm         PEAR/Common.phpf  >ñuJf  ¼fmm         PEAR/Config.php-
- >ñuJ-
- /ñÌßm         PEAR/Dependency2.phpÆ  >ñuJÆ  ª*ú›m         PEAR/DependencyDB.phpø^  >ñuJø^  ¢æ›m         PEAR/Downloader.phpG >ñuJG |«Em         PEAR/Downloader/Package.php- >ñuJ- NJÜ€m         PEAR/ErrorStack.phpÎ„  >ñuJÎ„  ÙF1m         PEAR/Frontend.phpl  >ñuJl  ¡ºÑÓm         PEAR/Frontend/CLI.phpÇa  >ñuJÇa  ¢mGÍm         PEAR/Installer.php@ >ñuJ@ ~ã6öm         PEAR/Installer/Role.php£  >ñuJ£  +úâm         PEAR/Installer/Role/Common.php›  >ñuJ›  ˆm         PEAR/Installer/Role/Data.phpS  >ñuJS  rÐùm         PEAR/Installer/Role/Data.xml’  >ñuJ’  fszm         PEAR/Installer/Role/Doc.phpP  >ñuJP  „im         PEAR/Installer/Role/Doc.xml‘  >ñuJ‘  h&P*m         PEAR/Installer/Role/Php.phpP  >ñuJP  SªÃm         PEAR/Installer/Role/Php.xml­  >ñuJ­  zqm         PEAR/Installer/Role/Script.phpY  >ñuJY  j³rSm         PEAR/Installer/Role/Script.xml°  >ñuJ°  @v§Ðm         PEAR/Installer/Role/Test.phpS  >ñuJS  BªüNm         PEAR/Installer/Role/Test.xml’  >ñuJ’  B] m         PEAR/PackageFile.phpï?  >ñuJï?  ‡¦âÕm      !   PEAR/PackageFile/Generator/v1.phpvÅ  >ñuJvÅ  T¦`m      !   PEAR/PackageFile/Generator/v2.php_ƒ  >ñuJ_ƒ  DÜDwm         PEAR/PackageFile/Parser/v1.phpì@  >ñuJì@  …âgm         PEAR/PackageFile/Parser/v2.phpÒ  >ñuJÒ  J5m         PEAR/PackageFile/v1.php_È  >ñuJ_È  ÷Ÿ(`m         PEAR/PackageFile/v2.php¢ >ñuJ¢ °ïŠ›m      !   PEAR/PackageFile/v2/Validator.php!P >ñuJ!P 6C›m         PEAR/Registry.phpß* >ñuJß* ¢ø2€m         PEAR/REST.php…<  >ñuJ…<  í:ñ&m         PEAR/REST/10.php  >ñuJ  Pj´m         PEAR/Start.phpÝ6  >ñuJÝ6  ¡=ðm         PEAR/Start/CLI.phpÅQ  >ñuJÅQ  w
-Žm         PEAR/Task/Common.php  >ñuJ  D÷­m         PEAR/Task/Postinstallscript.phpœ8  >ñuJœ8  T®.æm      "   PEAR/Task/Postinstallscript/rw.phpî  >ñuJî  ˆzF­m         PEAR/Task/Replace.php¿  >ñuJ¿  0úGãm         PEAR/Task/Replace/rw.phpr  >ñuJr  gk1Óm         PEAR/Task/Unixeol.php	  >ñuJ	  Wöum         PEAR/Task/Unixeol/rw.php‚  >ñuJ‚  tƒ3<m         PEAR/Task/Windowseol.php	  >ñuJ	  qÀå)m         PEAR/Task/Windowseol/rw.php—  >ñuJ—  Ÿ 2¾m         PEAR/Validate.phpwV  >ñuJwV  qæs{m         PEAR/Validator/PECL.php¢  >ñuJ¢  ]ÇYm         PEAR/XMLParser.phpK  >ñuJK  â­`qm      	   PEAR5.php?  >ñuJ?  ßxÊm         Structures/Graph.php½  >ñuJ½  rÀ*m      ,   Structures/Graph/Manipulator/AcyclicTest.phpß  >ñuJß  1sÏm      2   Structures/Graph/Manipulator/TopologicalSorter.phpº  >ñuJº  ¥Eûm         Structures/Graph/Node.phpé*  >ñuJé*  úT¯æm         Structures_Graph-1.0.2.tar X >ñuJ X 'ß(Ám      
-   System.phpIN  >ñuJIN  ……¬:m         XML/Util.phpÄv  >ñuJÄv  ²s3m         XML_Util-1.2.1.tar â >ñuJ â 7l \m      <?php
+__HALT_COMPILER();ÿ  F          install-pear-nozlib.phar       Archive/Tar.phpwó  —
+vJwó  .ó9Jm         Archive_Tar-1.3.3.tar v —
+vJ v `	•m         Console/Getopt.php_2  —
+vJ_2  ó<wÅm         Console_Getopt-1.2.3.tar F  —
+vJ F  ÆYxÕm      	   index.php(&  —
+vJ(&  ¬ñm         OS/Guess.phpÁ)  —
+vJÁ)  ‡×çm         PEAR-1.8.1.tar . —
+vJ . d`6xm         PEAR.php®‡  —
+vJ®‡   ³HÔm         PEAR/ChannelFile.php’Ç  —
+vJ’Ç  Zø˜jm         PEAR/ChannelFile/Parser.php<  —
+vJ<  åG.m         PEAR/Command.php
+2  —
+vJ
+2  Ú{–»m         PEAR/Command/Common.php‰   —
+vJ‰   ûôÙÓm         PEAR/Command/Install.phpæÆ  —
+vJæÆ  ;›tËm         PEAR/Command/Install.xml~!  —
+vJ~!  2¡Vm         PEAR/Common.phpf  —
+vJf  ¼fmm         PEAR/Config.php-
+ —
+vJ-
+ /ñÌßm         PEAR/Dependency2.phpÆ  —
+vJÆ  ª*ú›m         PEAR/DependencyDB.phpø^  —
+vJø^  ¢æ›m         PEAR/Downloader.phpG —
+vJG |«Em         PEAR/Downloader/Package.php- —
+vJ- NJÜ€m         PEAR/ErrorStack.phpÎ„  —
+vJÎ„  ÙF1m         PEAR/Frontend.phpd  —
+vJd  ónm         PEAR/Frontend/CLI.phpÇa  —
+vJÇa  ¢mGÍm         PEAR/Installer.php@ —
+vJ@ ~ã6öm         PEAR/Installer/Role.php£  —
+vJ£  +úâm         PEAR/Installer/Role/Common.php›  —
+vJ›  ˆm         PEAR/Installer/Role/Data.phpS  —
+vJS  rÐùm         PEAR/Installer/Role/Data.xml’  —
+vJ’  fszm         PEAR/Installer/Role/Doc.phpP  —
+vJP  „im         PEAR/Installer/Role/Doc.xml‘  —
+vJ‘  h&P*m         PEAR/Installer/Role/Php.phpP  —
+vJP  SªÃm         PEAR/Installer/Role/Php.xml­  —
+vJ­  zqm         PEAR/Installer/Role/Script.phpY  —
+vJY  j³rSm         PEAR/Installer/Role/Script.xml°  —
+vJ°  @v§Ðm         PEAR/Installer/Role/Test.phpS  —
+vJS  BªüNm         PEAR/Installer/Role/Test.xml’  —
+vJ’  B] m         PEAR/PackageFile.phpï?  —
+vJï?  ‡¦âÕm      !   PEAR/PackageFile/Generator/v1.phpvÅ  —
+vJvÅ  T¦`m      !   PEAR/PackageFile/Generator/v2.php_ƒ  —
+vJ_ƒ  DÜDwm         PEAR/PackageFile/Parser/v1.phpì@  —
+vJì@  …âgm         PEAR/PackageFile/Parser/v2.phpÒ  —
+vJÒ  J5m         PEAR/PackageFile/v1.php_È  —
+vJ_È  ÷Ÿ(`m         PEAR/PackageFile/v2.php¢ —
+vJ¢ °ïŠ›m      !   PEAR/PackageFile/v2/Validator.php!P —
+vJ!P 6C›m         PEAR/Registry.phpß* —
+vJß* ¢ø2€m         PEAR/REST.php…<  —
+vJ…<  í:ñ&m         PEAR/REST/10.php  —
+vJ  Pj´m         PEAR/Start.phpÝ6  —
+vJÝ6  ¡=ðm         PEAR/Start/CLI.phpÅQ  —
+vJÅQ  w
+Žm         PEAR/Task/Common.php  —
+vJ  D÷­m         PEAR/Task/Postinstallscript.phpœ8  —
+vJœ8  T®.æm      "   PEAR/Task/Postinstallscript/rw.phpî  —
+vJî  ˆzF­m         PEAR/Task/Replace.php¿  —
+vJ¿  0úGãm         PEAR/Task/Replace/rw.phpr  —
+vJr  gk1Óm         PEAR/Task/Unixeol.php	  —
+vJ	  Wöum         PEAR/Task/Unixeol/rw.php‚  —
+vJ‚  tƒ3<m         PEAR/Task/Windowseol.php	  —
+vJ	  qÀå)m         PEAR/Task/Windowseol/rw.php—  —
+vJ—  Ÿ 2¾m         PEAR/Validate.phpwV  —
+vJwV  qæs{m         PEAR/Validator/PECL.php¢  —
+vJ¢  ]ÇYm         PEAR/XMLParser.phpK  —
+vJK  â­`qm      	   PEAR5.php?  —
+vJ?  ßxÊm         Structures/Graph.php½  —
+vJ½  rÀ*m      ,   Structures/Graph/Manipulator/AcyclicTest.phpß  —
+vJß  1sÏm      2   Structures/Graph/Manipulator/TopologicalSorter.phpº  —
+vJº  ¥Eûm         Structures/Graph/Node.phpé*  —
+vJé*  úT¯æm         Structures_Graph-1.0.2.tar X —
+vJ X 'ß(Ám      
+   System.phpIN  —
+vJIN  ……¬:m         XML/Util.phpÄv  —
+vJÄv  ²s3m         XML_Util-1.2.1.tar â —
+vJ â 7l \m      <?php
 /* vim: set expandtab tabstop=4 shiftwidth=4 softtabstop=4: */
 
 /**
@@ -6637,11 +6742,11 @@ if (!$a) {
 }
 
 $force = false;
-$install_files = array('Archive_Tar' => 'phar://' . install-pear-nozlib.phar . '/Archive_Tar-1.3.3.tar',
-'Console_Getopt' => 'phar://' . install-pear-nozlib.phar . '/Console_Getopt-1.2.3.tar',
-'Structures_Graph' => 'phar://' . install-pear-nozlib.phar . '/Structures_Graph-1.0.2.tar',
-'XML_Util' => 'phar://' . install-pear-nozlib.phar . '/XML_Util-1.2.1.tar',
-'PEAR' => 'phar://' . install-pear-nozlib.phar . '/PEAR-1.8.1.tar',
+$install_files = array('Archive_Tar' => 'phar://install-pear-nozlib.phar/Archive_Tar-1.3.3.tar',
+'Console_Getopt' => 'phar://install-pear-nozlib.phar/Console_Getopt-1.2.3.tar',
+'Structures_Graph' => 'phar://install-pear-nozlib.phar/Structures_Graph-1.0.2.tar',
+'XML_Util' => 'phar://install-pear-nozlib.phar/XML_Util-1.2.1.tar',
+'PEAR' => 'phar://install-pear-nozlib.phar/PEAR-1.8.1.tar',
 );
 array_shift($argv);
 $debug = false;
@@ -69195,7 +69300,7 @@ class PEAR_Frontend extends PEAR
         }
 
         if (!class_exists($uiclass)) {
-            $file = 'phar://' . install-pear-nozlib.phar . '/' . str_replace('_', '/', $uiclass) . '.php';
+            $file = 'phar://install-pear-nozlib.phar/' . str_replace('_', '/', $uiclass) . '.php';
             if (PEAR_Frontend::isIncludeable($file)) {
                 include_once $file;
             }
@@ -98202,4 +98307,4 @@ iEYEABECAAYFAkk8e2QACgkQcqMhusJF8XULZgCg0iwVLWueraJzK5s1AesDkVzv
 GucAn22sSv3QiTSUWG9BmakiW9hFsb4V
 =g2mr
 -----END PGP SIGNATURE-----
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           í–„ÍÒ°ŸÌ;ÎÈ6S)ò@÷ë;   GBMB
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           XD,UŸ¿¦~H£êÃiË]YPw   GBMB
