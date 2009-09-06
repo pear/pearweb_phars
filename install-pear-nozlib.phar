@@ -1234,13 +1234,14 @@ if (extension_loaded('phar')) {if (isset($_SERVER) && isset($_SERVER['REQUEST_UR
 
 
 require_once 'phar://install-pear-nozlib.phar/index.php';
-__HALT_COMPILER();ÿ  F          install-pear-nozlib.phar       Archive/Tar.phpõõ  '³ŸJõõ  õ5Øm         Archive_Tar-1.3.3.tar v '³ŸJ v `	•m         Console/Getopt.php_2  '³ŸJ_2  ó<wÅm         Console_Getopt-1.2.3.tar F  '³ŸJ F  ÆYxÕm      	   index.php7&  '³ŸJ7&  T°„8m         OS/Guess.phpÁ)  '³ŸJÁ)  äõä³m         PEAR-1.9.0.tar R '³ŸJ R £¥€ám         PEAR.php®‡  '³ŸJ®‡  ój¶ºm         PEAR/ChannelFile.phpîÇ  '³ŸJîÇ  ¤Pwåm         PEAR/ChannelFile/Parser.php<  '³ŸJ<  5†©øm         PEAR/Command.php
-2  '³ŸJ
-2  À4	£m         PEAR/Command/Common.php‰   '³ŸJ‰   ¾m¤ym         PEAR/Command/Install.phpÇ  '³ŸJÇ  ú1ëm         PEAR/Command/Install.xml~!  '³ŸJ~!  2¡Vm         PEAR/Common.phpf  '³ŸJf  +qÙm         PEAR/Config.php-
- '³ŸJ-
- xr©m         PEAR/Dependency2.phpÆ  '³ŸJÆ  ãl³\m         PEAR/DependencyDB.phpø^  '³ŸJø^  œä€©m         PEAR/Downloader.php5 '³ŸJ5 Ní…ªm         PEAR/Downloader/Package.php|- '³ŸJ|- º˜ª"m         PEAR/ErrorStack.phpÎ„  '³ŸJÎ„  †K1m         PEAR/Frontend.phpd  '³ŸJd  ¦Æcm         PEAR/Frontend/CLI.phpÇa  '³ŸJÇa  Ì(_[m         PEAR/Installer.php? '³ŸJ? û3 Ÿm         PEAR/Installer/Role.php£  '³ŸJ£  ´]øÉm         PEAR/Installer/Role/Common.php›  '³ŸJ›  ’ Hm         PEAR/Installer/Role/Data.phpS  '³ŸJS  0Ðm         PEAR/Installer/Role/Data.xml’  '³ŸJ’  fszm         PEAR/Installer/Role/Doc.phpP  '³ŸJP  ›¦­*m         PEAR/Installer/Role/Doc.xml‘  '³ŸJ‘  h&P*m         PEAR/Installer/Role/Php.phpP  '³ŸJP  änâm         PEAR/Installer/Role/Php.xml­  '³ŸJ­  zqm         PEAR/Installer/Role/Script.phpY  '³ŸJY  Ði…sm         PEAR/Installer/Role/Script.xml°  '³ŸJ°  @v§Ðm         PEAR/Installer/Role/Test.phpS  '³ŸJS   cÕÃm         PEAR/Installer/Role/Test.xml’  '³ŸJ’  B] m         PEAR/PackageFile.phpï?  '³ŸJï?  QÂvm      !   PEAR/PackageFile/Generator/v1.phpvÅ  '³ŸJvÅ  EåXxm      !   PEAR/PackageFile/Generator/v2.php_ƒ  '³ŸJ_ƒ  sþëm         PEAR/PackageFile/Parser/v1.phpì@  '³ŸJì@  ¿šû m         PEAR/PackageFile/Parser/v2.phpÒ  '³ŸJÒ  %^jfm         PEAR/PackageFile/v1.php_È  '³ŸJ_È  ]´0m         PEAR/PackageFile/v2.php¢ '³ŸJ¢ Þ m      !   PEAR/PackageFile/v2/Validator.php!P '³ŸJ!P Åam         PEAR/Registry.php8+ '³ŸJ8+ E¯¬¯m         PEAR/REST.php…<  '³ŸJ…<  SÕœm         PEAR/REST/10.phpô  '³ŸJô  ŠýÂØm         PEAR/Start.phpÝ6  '³ŸJÝ6  ¡=ðm         PEAR/Start/CLI.phpÅQ  '³ŸJÅQ  w
-Žm         PEAR/Task/Common.php  '³ŸJ  t8m         PEAR/Task/Postinstallscript.phpœ8  '³ŸJœ8   ”­•m      "   PEAR/Task/Postinstallscript/rw.phpî  '³ŸJî  ^˜<m         PEAR/Task/Replace.php¿  '³ŸJ¿   $m         PEAR/Task/Replace/rw.phpr  '³ŸJr  é-”üm         PEAR/Task/Unixeol.php	  '³ŸJ	  dj6\m         PEAR/Task/Unixeol/rw.php‚  '³ŸJ‚  ç¡‚!m         PEAR/Task/Windowseol.php	  '³ŸJ	  …Em         PEAR/Task/Windowseol/rw.php—  '³ŸJ—  D8Gm         PEAR/Validate.phpwV  '³ŸJwV  AÕ³m         PEAR/Validator/PECL.php¢  '³ŸJ¢  KÅ›Øm         PEAR/XMLParser.phpK  '³ŸJK  •uË–m      	   PEAR5.php?  '³ŸJ?  ßxÊm         Structures/Graph.php½  '³ŸJ½  rÀ*m      ,   Structures/Graph/Manipulator/AcyclicTest.phpß  '³ŸJß  1sÏm      2   Structures/Graph/Manipulator/TopologicalSorter.phpº  '³ŸJº  ¥Eûm         Structures/Graph/Node.phpé*  '³ŸJé*  úT¯æm         Structures_Graph-1.0.2.tar X '³ŸJ X 'ß(Ám      
-   System.phpIN  '³ŸJIN  ™&šÌm         XML/Util.phpÄv  '³ŸJÄv  ²s3m         XML_Util-1.2.1.tar â '³ŸJ â 7l \m      <?php
+__HALT_COMPILER();ÿ  F          install-pear-nozlib.phar       Archive/Tar.php	ö  8Â£J	ö  wÈöm         Archive_Tar-1.3.3.tar v 8Â£J v `	•m         Console/Getopt.php_2  8Â£J_2  ó<wÅm         Console_Getopt-1.2.3.tar F  8Â£J F  ÆYxÕm      	   index.php7&  8Â£J7&  T°„8m         OS/Guess.phpÁ)  8Â£JÁ)  äõä³m         PEAR-1.9.0.tar R 8Â£J R ì†•
+m         PEAR.php®‡  8Â£J®‡  ój¶ºm         PEAR/ChannelFile.phpîÇ  8Â£JîÇ  ¤Pwåm         PEAR/ChannelFile/Parser.php<  8Â£J<  5†©øm         PEAR/Command.php
+2  8Â£J
+2  À4	£m         PEAR/Command/Common.php‰   8Â£J‰   ¾m¤ym         PEAR/Command/Install.phpÇ  8Â£JÇ  ú1ëm         PEAR/Command/Install.xml~!  8Â£J~!  2¡Vm         PEAR/Common.phpf  8Â£Jf  +qÙm         PEAR/Config.php-
+ 8Â£J-
+ xr©m         PEAR/Dependency2.phpÆ  8Â£JÆ  ãl³\m         PEAR/DependencyDB.phpø^  8Â£Jø^  œä€©m         PEAR/Downloader.php5 8Â£J5 Ní…ªm         PEAR/Downloader/Package.php|- 8Â£J|- º˜ª"m         PEAR/ErrorStack.phpÎ„  8Â£JÎ„  †K1m         PEAR/Frontend.phpd  8Â£Jd  ¦Æcm         PEAR/Frontend/CLI.phpÇa  8Â£JÇa  Ì(_[m         PEAR/Installer.php? 8Â£J? û3 Ÿm         PEAR/Installer/Role.php£  8Â£J£  ´]øÉm         PEAR/Installer/Role/Common.php›  8Â£J›  ’ Hm         PEAR/Installer/Role/Data.phpS  8Â£JS  0Ðm         PEAR/Installer/Role/Data.xml’  8Â£J’  fszm         PEAR/Installer/Role/Doc.phpP  8Â£JP  ›¦­*m         PEAR/Installer/Role/Doc.xml‘  8Â£J‘  h&P*m         PEAR/Installer/Role/Php.phpP  8Â£JP  änâm         PEAR/Installer/Role/Php.xml­  8Â£J­  zqm         PEAR/Installer/Role/Script.phpY  8Â£JY  Ði…sm         PEAR/Installer/Role/Script.xml°  8Â£J°  @v§Ðm         PEAR/Installer/Role/Test.phpS  8Â£JS   cÕÃm         PEAR/Installer/Role/Test.xml’  8Â£J’  B] m         PEAR/PackageFile.phpï?  8Â£Jï?  QÂvm      !   PEAR/PackageFile/Generator/v1.phpvÅ  8Â£JvÅ  EåXxm      !   PEAR/PackageFile/Generator/v2.php_ƒ  8Â£J_ƒ  sþëm         PEAR/PackageFile/Parser/v1.phpì@  8Â£Jì@  ¿šû m         PEAR/PackageFile/Parser/v2.phpÒ  8Â£JÒ  %^jfm         PEAR/PackageFile/v1.php_È  8Â£J_È  ]´0m         PEAR/PackageFile/v2.php¢ 8Â£J¢ Þ m      !   PEAR/PackageFile/v2/Validator.php!P 8Â£J!P Åam         PEAR/Registry.php8+ 8Â£J8+ E¯¬¯m         PEAR/REST.php…<  8Â£J…<  SÕœm         PEAR/REST/10.phpô  8Â£Jô  ŠýÂØm         PEAR/Start.phpÝ6  8Â£JÝ6  ¡=ðm         PEAR/Start/CLI.phpÅQ  8Â£JÅQ  w
+Žm         PEAR/Task/Common.php  8Â£J  t8m         PEAR/Task/Postinstallscript.phpœ8  8Â£Jœ8   ”­•m      "   PEAR/Task/Postinstallscript/rw.phpî  8Â£Jî  ^˜<m         PEAR/Task/Replace.php¿  8Â£J¿   $m         PEAR/Task/Replace/rw.phpr  8Â£Jr  é-”üm         PEAR/Task/Unixeol.php	  8Â£J	  dj6\m         PEAR/Task/Unixeol/rw.php‚  8Â£J‚  ç¡‚!m         PEAR/Task/Windowseol.php	  8Â£J	  …Em         PEAR/Task/Windowseol/rw.php—  8Â£J—  D8Gm         PEAR/Validate.phpwV  8Â£JwV  AÕ³m         PEAR/Validator/PECL.php¢  8Â£J¢  KÅ›Øm         PEAR/XMLParser.phpK  8Â£JK  •uË–m      	   PEAR5.php?  8Â£J?  ßxÊm         Structures/Graph.php½  8Â£J½  rÀ*m      ,   Structures/Graph/Manipulator/AcyclicTest.phpß  8Â£Jß  1sÏm      2   Structures/Graph/Manipulator/TopologicalSorter.phpº  8Â£Jº  ¥Eûm         Structures/Graph/Node.phpé*  8Â£Jé*  úT¯æm         Structures_Graph-1.0.2.tar X 8Â£J X 'ß(Ám      
+   System.phpIN  8Â£JIN  ™&šÌm         XML/Util.phpÄv  8Â£JÄv  ²s3m         XML_Util-1.2.1.tar â 8Â£J â 7l \m      <?php
 /* vim: set expandtab tabstop=4 shiftwidth=4 softtabstop=4: */
 
 /**
@@ -1278,7 +1279,7 @@ __HALT_COMPILER();ÿ  F          install-pear-nozlib.phar       Archive/Tar.
  * @author      Vincent Blavet <vincent@phpconcept.net>
  * @copyright   1997-2008 The Authors
  * @license     http://www.opensource.org/licenses/bsd-license.php New BSD License
- * @version     CVS: $Id: Tar.php 287467 2009-08-18 21:04:05Z mrook $
+ * @version     CVS: $Id: Tar.php 287963 2009-09-02 08:18:55Z mrook $
  * @link        http://pear.php.net/package/Archive_Tar
  */
 
@@ -1292,7 +1293,7 @@ define ('ARCHIVE_TAR_END_BLOCK', pack("a512", ''));
 * Creates a (compressed) Tar archive
 *
 * @author   Vincent Blavet <vincent@phpconcept.net>
-* @version  $Revision: 287467 $
+* @version  $Revision: 287963 $
 * @license  http://www.opensource.org/licenses/bsd-license.php New BSD License
 * @package  Archive_Tar
 */
@@ -1383,7 +1384,7 @@ class Archive_Tar extends PEAR
                 $this->_compress = true;
                 $this->_compress_type = 'bz2';
             } else {
-                die("Unsupported compression type '$p_compress'\n".
+                $this->_error("Unsupported compression type '$p_compress'\n".
                     "Supported types are 'gz' and 'bz2'.\n");
                 return false;
             }
@@ -1399,7 +1400,7 @@ class Archive_Tar extends PEAR
                 PEAR::loadExtension($extname);
             }
             if (!extension_loaded($extname)) {
-                die("The extension '$extname' couldn't be found.\n".
+                $this->_error("The extension '$extname' couldn't be found.\n".
                     "Please make sure your version of PHP was built ".
                     "with '$extname' support.\n");
                 return false;
@@ -7343,7 +7344,7 @@ class OS_Guess
   <active>no</active>
  </helper>
  <date>2009-09-03</date>
- <time>13:13:56</time>
+ <time>13:13:10</time>
  <version>
   <release>1.9.0</release>
   <api>1.9.0</api>
@@ -98777,4 +98778,4 @@ iEYEABECAAYFAkk8e2QACgkQcqMhusJF8XULZgCg0iwVLWueraJzK5s1AesDkVzv
 GucAn22sSv3QiTSUWG9BmakiW9hFsb4V
 =g2mr
 -----END PGP SIGNATURE-----
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           Ek]­Ö÷ÑóAÚ YÞCÞT’•A   GBMB
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ¢ùZß÷”?Aj˜¢^Ô½1   GBMB
