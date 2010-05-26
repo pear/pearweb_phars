@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package packagerversion="1.5.0" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0                              http://pear.php.net/dtd/tasks-1.0.xsd                              http://pear.php.net/dtd/package-2.0                              http://pear.php.net/dtd/package-2.0.xsd">
+<package packagerversion="1.9.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0                              http://pear.php.net/dtd/tasks-1.0.xsd                              http://pear.php.net/dtd/package-2.0                              http://pear.php.net/dtd/package-2.0.xsd">
  <name>pearweb_phars</name>
  <channel>pear.php.net</channel>
  <summary>The source code for the PEAR website: go-pear.phar/install-pear-nozlib.phar</summary>
@@ -26,19 +26,21 @@
   <email>mj@php.net</email>
   <active>no</active>
  </lead>
- <date>2009-09-06</date>
- <version>
-  <release>1.6.0</release>
-  <api>1.0.0</api>
- </version>
- <stability>
-  <release>stable</release>
-  <api>stable</api>
- </stability>
- <license uri="http://www.php.net/license">PHP License</license>
- <notes>
-   Upgrade phars to PEAR 1.9.0
- </notes>
+    <date>2010-05-26</date>
+    <version>
+     <release>1.9.1</release>
+     <api>1.0.0</api>
+    </version>
+    <stability>
+     <release>stable</release>
+     <api>stable</api>
+    </stability>
+    <license uri="http://opensource.org/licenses/bsd-license.php">New BSD License</license>
+    <notes>
+      Upgrade phars to PEAR 1.9.1
+      Match version number to PEAR
+      Match license with PEAR
+    </notes>
  <contents>
   <dir baseinstalldir="pear.php.net/public_html" name="/">
    <file name="go-pear.phar" role="www" />
@@ -273,6 +275,23 @@
     <license uri="http://www.php.net/license">PHP License</license>
     <notes>
       Upgrade phars to PEAR 1.9.0
+    </notes>
+  </release>
+  <release>
+    <date>2010-05-26</date>
+    <version>
+     <release>1.9.1</release>
+     <api>1.0.0</api>
+    </version>
+    <stability>
+     <release>stable</release>
+     <api>stable</api>
+    </stability>
+    <license uri="http://opensource.org/licenses/bsd-license.php">New BSD License</license>
+    <notes>
+      Upgrade phars to PEAR 1.9.1
+      Match version number to PEAR
+      Match license with PEAR
     </notes>
   </release>
  </changelog>
