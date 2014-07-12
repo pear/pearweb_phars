@@ -12,7 +12,7 @@
   <name>Helgi Thormar Thorbjoernsson</name>
   <user>dufuz</user>
   <email>helgi@php.net</email>
-  <active>yes</active>
+  <active>no</active>
  </lead>
  <lead>
   <name>Christian Weiske</name>
@@ -33,9 +33,9 @@
   <active>no</active>
  </lead>
 
- <date>2013-03-25</date>
+ <date>2014-07-12</date>
  <version>
-  <release>1.9.5</release>
+  <release>1.9.6</release>
   <api>1.0.0</api>
  </version>
  <stability>
@@ -44,7 +44,7 @@
  </stability>
  <license uri="http://opensource.org/licenses/bsd-license.php">New BSD License</license>
  <notes>
-  Upgrade phar contents to latest versions and make them compatible with PHP 5.5.0beta1
+  Release PEAR 1.9.5 installation phar files.
  </notes>
 
  <contents>
@@ -379,6 +379,22 @@
     <license uri="http://opensource.org/licenses/bsd-license.php">New BSD License</license>
     <notes>
      Upgrade phar contents to latest versions and make them compatible with PHP 5.5.0beta1
+    </notes>
+  </release>
+
+  <release>
+    <date>2014-07-12</date>
+    <version>
+     <release>1.9.6</release>
+     <api>1.0.0</api>
+    </version>
+    <stability>
+     <release>stable</release>
+     <api>stable</api>
+    </stability>
+    <license uri="http://opensource.org/licenses/bsd-license.php">New BSD License</license>
+    <notes>
+     Release PEAR 1.9.5 installation phar files.
     </notes>
   </release>
  </changelog>
