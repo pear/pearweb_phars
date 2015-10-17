@@ -33,10 +33,10 @@
   <active>no</active>
  </lead>
 
- <date>2015-10-07</date>
+ <date>2015-10-17</date>
  <version>
-  <release>1.10.0</release>
-  <api>1.10.0</api>
+  <release>1.10.1</release>
+  <api>1.10.1</api>
  </version>
  <stability>
   <release>stable</release>
@@ -44,7 +44,7 @@
  </stability>
  <license uri="http://opensource.org/licenses/bsd-license.php">New BSD License</license>
  <notes>
-  PEAR 1.10.0
+  PEAR 1.10.1
  </notes>
 
  <contents>
@@ -427,6 +427,22 @@
     <license uri="http://opensource.org/licenses/bsd-license.php">New BSD License</license>
     <notes>
      PEAR 1.10.0
+    </notes>
+  </release>
+
+  <release>
+    <date>2015-10-17</date>
+    <version>
+     <release>1.10.1</release>
+     <api>1.10.1</api>
+    </version>
+    <stability>
+     <release>stable</release>
+     <api>stable</api>
+    </stability>
+    <license uri="http://opensource.org/licenses/bsd-license.php">New BSD License</license>
+    <notes>
+     PEAR 1.10.1
     </notes>
   </release>
  </changelog>
