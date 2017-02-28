@@ -21,6 +21,12 @@
   <active>yes</active>
  </lead>
  <lead>
+  <name>Chuck Burgess</name>
+  <user>ashnazg</user>
+  <email>ashnazg@php.net</email>
+  <active>yes</active>
+ </lead>
+ <lead>
   <name>Greg Beaver</name>
   <user>cellog</user>
   <email>cellog@php.net</email>
@@ -33,9 +39,9 @@
   <active>no</active>
  </lead>
 
- <date>2015-10-17</date>
+ <date>2017-02-28</date>
  <version>
-  <release>1.10.1</release>
+  <release>1.10.3</release>
   <api>1.10.1</api>
  </version>
  <stability>
@@ -44,7 +50,7 @@
  </stability>
  <license uri="http://opensource.org/licenses/bsd-license.php">New BSD License</license>
  <notes>
-  PEAR 1.10.1
+  PEAR 1.10.3
  </notes>
 
  <contents>
@@ -445,5 +451,22 @@
      PEAR 1.10.1
     </notes>
   </release>
+
+  <release>
+    <date>2017-02-28</date>
+    <version>
+     <release>1.10.3</release>
+     <api>1.10.1</api>
+    </version>
+    <stability>
+     <release>stable</release>
+     <api>stable</api>
+    </stability>
+    <license uri="http://opensource.org/licenses/bsd-license.php">New BSD License</license>
+    <notes>
+     PEAR 1.10.3
+    </notes>
+  </release>
+
  </changelog>
 </package>
