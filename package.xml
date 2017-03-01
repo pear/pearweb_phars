@@ -39,9 +39,9 @@
   <active>no</active>
  </lead>
 
- <date>2017-02-28</date>
+ <date>2017-03-01</date>
  <version>
-  <release>1.10.3</release>
+  <release>1.10.4</release>
   <api>1.10.1</api>
  </version>
  <stability>
@@ -50,7 +50,7 @@
  </stability>
  <license uri="http://opensource.org/licenses/bsd-license.php">New BSD License</license>
  <notes>
-  PEAR 1.10.3
+  * Bug #21190: Proxy file missing from go-pear.phar
  </notes>
 
  <contents>
@@ -66,7 +66,7 @@
     <min>5.4.0</min>
    </php>
    <pearinstaller>
-    <min>1.9.0</min>
+    <min>1.10.1</min>
    </pearinstaller>
   </required>
  </dependencies>
@@ -465,6 +465,22 @@
     <license uri="http://opensource.org/licenses/bsd-license.php">New BSD License</license>
     <notes>
      PEAR 1.10.3
+    </notes>
+  </release>
+
+  <release>
+    <date>2017-03-01</date>
+    <version>
+     <release>1.10.4</release>
+     <api>1.10.1</api>
+    </version>
+    <stability>
+     <release>stable</release>
+     <api>stable</api>
+    </stability>
+    <license uri="http://opensource.org/licenses/bsd-license.php">New BSD License</license>
+    <notes>
+     * Bug #21190: Proxy file missing from go-pear.phar
     </notes>
   </release>
 
