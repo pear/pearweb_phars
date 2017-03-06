@@ -39,9 +39,9 @@
   <active>no</active>
  </lead>
 
- <date>2017-03-01</date>
+ <date>2017-03-06</date>
  <version>
-  <release>1.10.4</release>
+  <release>1.10.5</release>
   <api>1.10.1</api>
  </version>
  <stability>
@@ -50,7 +50,7 @@
  </stability>
  <license uri="http://opensource.org/licenses/bsd-license.php">New BSD License</license>
  <notes>
-  * Bug #21190: Proxy file missing from go-pear.phar
+  * Bug #21190: Proxy file missing from install-pear-nozlib.phar
  </notes>
 
  <contents>
@@ -481,6 +481,22 @@
     <license uri="http://opensource.org/licenses/bsd-license.php">New BSD License</license>
     <notes>
      * Bug #21190: Proxy file missing from go-pear.phar
+    </notes>
+  </release>
+
+  <release>
+    <date>2017-03-06</date>
+    <version>
+     <release>1.10.5</release>
+     <api>1.10.1</api>
+    </version>
+    <stability>
+     <release>stable</release>
+     <api>stable</api>
+    </stability>
+    <license uri="http://opensource.org/licenses/bsd-license.php">New BSD License</license>
+    <notes>
+     * Bug #21190: Proxy file missing from install-pear-nozlib.phar
     </notes>
   </release>
 

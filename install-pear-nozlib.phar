@@ -1269,8 +1269,8 @@ if (extension_loaded('phar')) {if (isset($_SERVER) && isset($_SERVER['REQUEST_UR
 
 
 require_once 'phar://install-pear-nozlib.phar/index.php';
-__HALT_COMPILER();€  E          install-pear-nozlib.phar       Archive/Tar.php3E ‹—∂X3E @Œ∫m         Archive_Tar-1.4.2.tar ÷ ‹—∂X ÷ d€ˇm         Console/Getopt.phpâ4  ‹—∂Xâ4  XÖQ2m         Console_Getopt-1.4.1.tar t  ‹—∂X t  ±Hßªm      	   index.phpL+  ‹—∂XL+  ç√÷#m         OS/Guess.php)  ‹—∂X)  DÇWlm         PEAR-1.10.3.tar   ‹—∂X   ûÓ†m         PEAR.phpîä  ‹—∂Xîä  chüm         PEAR/ChannelFile.phpû«  ‹—∂Xû«  %éç“m         PEAR/ChannelFile/Parser.phpı  ‹—∂Xı  Èıém         PEAR/Command.php˘0  ‹—∂X˘0  ∞‚¥m         PEAR/Command/Common.phpB   ‹—∂XB   êakm         PEAR/Command/Install.php˙∆  ‹—∂X˙∆  ¶'p>m         PEAR/Command/Install.xml~!  ‹—∂X~!  2°Vm         PEAR/Common.phpøh  ‹—∂Xøh  ï8Êm         PEAR/Config.phpd ‹—∂Xd bÈÜˇm         PEAR/Dependency2.php∂≈  ‹—∂X∂≈  M¨,"m         PEAR/DependencyDB.phpB^  ‹—∂XB^  |qKÜm         PEAR/Downloader.php4 ‹—∂X4 >R´∆m         PEAR/Downloader/Package.phpá* ‹—∂Xá* íÛ>m         PEAR/ErrorStack.php)Ñ  ‹—∂X)Ñ  ‹grm         PEAR/Frontend.php  ‹—∂X  Ì7<[m         PEAR/Frontend/CLI.phpqd  ‹—∂Xqd  nœö∞m         PEAR/Installer.php‚ ‹—∂X‚ O^m         PEAR/Installer/Role.php*  ‹—∂X*  Q*çˇm         PEAR/Installer/Role/Common.phpF  ‹—∂XF  x#¶m         PEAR/Installer/Role/Data.php  ‹—∂X  'ª_¨m         PEAR/Installer/Role/Data.xmlí  ‹—∂Xí  fçszm         PEAR/Installer/Role/Doc.php  ‹—∂X  ˘∫Fm         PEAR/Installer/Role/Doc.xmlë  ‹—∂Xë  h&P*m         PEAR/Installer/Role/Php.php  ‹—∂X  ÿ\––m         PEAR/Installer/Role/Php.xml≠  ‹—∂X≠  zùqçm         PEAR/Installer/Role/Script.php  ‹—∂X  5Ç[Úm         PEAR/Installer/Role/Script.xml∞  ‹—∂X∞  @vß–m         PEAR/Installer/Role/Test.php  ‹—∂X  ﬁGçÃm         PEAR/Installer/Role/Test.xmlí  ‹—∂Xí  B] m         PEAR/PackageFile.phpó>  ‹—∂Xó>  $∆ÚFm      !   PEAR/PackageFile/Generator/v1.php˘ƒ  ‹—∂X˘ƒ  ß9sxm      !   PEAR/PackageFile/Generator/v2.php5Ç  ‹—∂X5Ç  „¢É_m         PEAR/PackageFile/Parser/v1.php®@  ‹—∂X®@  Uhˆ:m         PEAR/PackageFile/Parser/v2.phpé  ‹—∂Xé  n‹0Ëm         PEAR/PackageFile/v1.php%∆  ‹—∂X%∆  ¶lÔm         PEAR/PackageFile/v2.php0 ‹—∂X0 Si≠m      !   PEAR/PackageFile/v2/Validator.phpzL ‹—∂XzL ÕÌ˙Ïm         PEAR/Registry.php^* ‹—∂X^* <IÀ”m         PEAR/REST.php>B  ‹—∂X>B  ÷z°Nm         PEAR/REST/10.phpˇ  ‹—∂Xˇ  Ÿ.#åm         PEAR/Start.php:  ‹—∂X:  Æóm         PEAR/Start/CLI.phpTS  ‹—∂XTS  $\ÿdm         PEAR/Task/Common.phpC  ‹—∂XC  ’√m         PEAR/Task/Postinstallscript.php¡9  ‹—∂X¡9  ßÎ•¢m      "   PEAR/Task/Postinstallscript/rw.php@  ‹—∂X@  ›ÙÈm         PEAR/Task/Replace.php  ‹—∂X  ∂‘m         PEAR/Task/Replace/rw.php;  ‹—∂X;  Bó¨|m         PEAR/Task/Unixeol.php#	  ‹—∂X#	  Ω¯IVm         PEAR/Task/Unixeol/rw.php@  ‹—∂X@  /Ü<m         PEAR/Task/Windowseol.php	  ‹—∂X	  ¶ç8Vm         PEAR/Task/Windowseol/rw.phpM  ‹—∂XM  W§œm         PEAR/Validate.php>V  ‹—∂X>V  /∆m         PEAR/Validator/PECL.php]  ‹—∂X]  6∂‰;m         PEAR/XMLParser.phpH  ‹—∂XH  6Á4m         Structures/Graph.phpi  ‹—∂Xi  C}ü„m      ,   Structures/Graph/Manipulator/AcyclicTest.php  ‹—∂X  1Ù»¬m      2   Structures/Graph/Manipulator/TopologicalSorter.php  ‹—∂X  ¨v∞?m         Structures/Graph/Node.phpj+  ‹—∂Xj+  ]#çim         Structures_Graph-1.1.1.tar 6 ‹—∂X 6 Ôéj·m      
-   System.phpäO  ‹—∂XäO  ›4.m         XML/Util.php™}  ‹—∂X™}  ◊⁄,m         XML_Util-1.4.2.tar : ‹—∂X : ˜ÛﬁWm      <?php
+__HALT_COMPILER();  F          install-pear-nozlib.phar       Archive/Tar.php3E ¶ßΩX3E @Œ∫m         Archive_Tar-1.4.2.tar ÷ ¶ßΩX ÷ d€ˇm         Console/Getopt.phpâ4  ¶ßΩXâ4  XÖQ2m         Console_Getopt-1.4.1.tar t  ¶ßΩX t  ±Hßªm      	   index.phpL+  ¶ßΩXL+  ç√÷#m         OS/Guess.php)  ¶ßΩX)  DÇWlm         PEAR-1.10.3.tar   ¶ßΩX   ûÓ†m         PEAR.phpëä  ¶ßΩXëä  •<´m         PEAR/ChannelFile.phpû«  ¶ßΩXû«  %éç“m         PEAR/ChannelFile/Parser.phpı  ¶ßΩXı  Èıém         PEAR/Command.php˘0  ¶ßΩX˘0  ∞‚¥m         PEAR/Command/Common.phpB   ¶ßΩXB   êakm         PEAR/Command/Install.php˙∆  ¶ßΩX˙∆  ¶'p>m         PEAR/Command/Install.xml~!  ¶ßΩX~!  2°Vm         PEAR/Common.phpøh  ¶ßΩXøh  ï8Êm         PEAR/Config.phpd ¶ßΩXd bÈÜˇm         PEAR/Dependency2.php∂≈  ¶ßΩX∂≈  M¨,"m         PEAR/DependencyDB.phpB^  ¶ßΩXB^  |qKÜm         PEAR/Downloader.php4 ¶ßΩX4 >R´∆m         PEAR/Downloader/Package.phpá* ¶ßΩXá* íÛ>m         PEAR/ErrorStack.php)Ñ  ¶ßΩX)Ñ  ‹grm         PEAR/Frontend.php  ¶ßΩX  Ì7<[m         PEAR/Frontend/CLI.phpqd  ¶ßΩXqd  nœö∞m         PEAR/Installer.php‚ ¶ßΩX‚ O^m         PEAR/Installer/Role.php*  ¶ßΩX*  Q*çˇm         PEAR/Installer/Role/Common.phpF  ¶ßΩXF  x#¶m         PEAR/Installer/Role/Data.php  ¶ßΩX  'ª_¨m         PEAR/Installer/Role/Data.xmlí  ¶ßΩXí  fçszm         PEAR/Installer/Role/Doc.php  ¶ßΩX  ˘∫Fm         PEAR/Installer/Role/Doc.xmlë  ¶ßΩXë  h&P*m         PEAR/Installer/Role/Php.php  ¶ßΩX  ÿ\––m         PEAR/Installer/Role/Php.xml≠  ¶ßΩX≠  zùqçm         PEAR/Installer/Role/Script.php  ¶ßΩX  5Ç[Úm         PEAR/Installer/Role/Script.xml∞  ¶ßΩX∞  @vß–m         PEAR/Installer/Role/Test.php  ¶ßΩX  ﬁGçÃm         PEAR/Installer/Role/Test.xmlí  ¶ßΩXí  B] m         PEAR/PackageFile.phpó>  ¶ßΩXó>  $∆ÚFm      !   PEAR/PackageFile/Generator/v1.php˘ƒ  ¶ßΩX˘ƒ  ß9sxm      !   PEAR/PackageFile/Generator/v2.php5Ç  ¶ßΩX5Ç  „¢É_m         PEAR/PackageFile/Parser/v1.php®@  ¶ßΩX®@  Uhˆ:m         PEAR/PackageFile/Parser/v2.phpé  ¶ßΩXé  n‹0Ëm         PEAR/PackageFile/v1.php%∆  ¶ßΩX%∆  ¶lÔm         PEAR/PackageFile/v2.php0 ¶ßΩX0 Si≠m      !   PEAR/PackageFile/v2/Validator.phpzL ¶ßΩXzL ÕÌ˙Ïm         PEAR/Proxy.phpq  ¶ßΩXq  Qj¿}m         PEAR/Registry.php^* ¶ßΩX^* <IÀ”m         PEAR/REST.php>B  ¶ßΩX>B  ÷z°Nm         PEAR/REST/10.phpˇ  ¶ßΩXˇ  Ÿ.#åm         PEAR/Start.php:  ¶ßΩX:  Æóm         PEAR/Start/CLI.phpTS  ¶ßΩXTS  $\ÿdm         PEAR/Task/Common.phpC  ¶ßΩXC  ’√m         PEAR/Task/Postinstallscript.php¡9  ¶ßΩX¡9  ßÎ•¢m      "   PEAR/Task/Postinstallscript/rw.php@  ¶ßΩX@  ›ÙÈm         PEAR/Task/Replace.php  ¶ßΩX  ∂‘m         PEAR/Task/Replace/rw.php;  ¶ßΩX;  Bó¨|m         PEAR/Task/Unixeol.php#	  ¶ßΩX#	  Ω¯IVm         PEAR/Task/Unixeol/rw.php@  ¶ßΩX@  /Ü<m         PEAR/Task/Windowseol.php	  ¶ßΩX	  ¶ç8Vm         PEAR/Task/Windowseol/rw.phpM  ¶ßΩXM  W§œm         PEAR/Validate.php>V  ¶ßΩX>V  /∆m         PEAR/Validator/PECL.php]  ¶ßΩX]  6∂‰;m         PEAR/XMLParser.phpH  ¶ßΩXH  6Á4m         Structures/Graph.phpi  ¶ßΩXi  C}ü„m      ,   Structures/Graph/Manipulator/AcyclicTest.php  ¶ßΩX  1Ù»¬m      2   Structures/Graph/Manipulator/TopologicalSorter.php  ¶ßΩX  ¨v∞?m         Structures/Graph/Node.phpj+  ¶ßΩXj+  ]#çim         Structures_Graph-1.1.1.tar 6 ¶ßΩX 6 Ôéj·m      
+   System.phpäO  ¶ßΩXäO  ›4.m         XML/Util.php™}  ¶ßΩX™}  ◊⁄,m         XML_Util-1.4.2.tar : ¶ßΩX : ˜ÛﬁWm      <?php
 /* vim: set expandtab tabstop=4 shiftwidth=4 softtabstop=4: */
 
 /**
@@ -56698,7 +56698,7 @@ class PEAR
             $destructor = "_$classname";
             if (method_exists($this, $destructor)) {
                 global $_PEAR_destructor_object_list;
-                $_PEAR_destructor_object_list[] = &$this;
+                $_PEAR_destructor_object_list[] = $this;
                 if (!isset($GLOBALS['_PEAR_SHUTDOWN_REGISTERED'])) {
                     register_shutdown_function("_PEAR_call_destructors");
                     $GLOBALS['_PEAR_SHUTDOWN_REGISTERED'] = true;
@@ -57126,11 +57126,11 @@ class PEAR
     protected static function _throwError($object, $message = null, $code = null, $userinfo = null)
     {
         if ($object !== null) {
-            $a = &$object->raiseError($message, $code, null, null, $userinfo);
+            $a = $object->raiseError($message, $code, null, null, $userinfo);
             return $a;
         }
 
-        $a = &PEAR::raiseError($message, $code, null, null, $userinfo);
+        $a = PEAR::raiseError($message, $code, null, null, $userinfo);
         return $a;
     }
 
@@ -83713,6 +83713,193 @@ class PEAR_PackageFile_v2_Validator
 }
 <?php
 /**
+ * PEAR_Proxy
+ *
+ * HTTP Proxy handling 
+ *
+ * @category   pear
+ * @package    PEAR
+ * @author     Nico Boehr 
+ * @copyright  1997-2009 The Authors
+ * @license    http://opensource.org/licenses/bsd-license.php New BSD License
+ * @link       http://pear.php.net/package/PEAR
+ */
+
+class PEAR_Proxy
+{
+    var $config = null;
+
+    /**
+     * @access private
+     */
+    var $proxy_host;
+    /**
+     * @access private
+     */
+    var $proxy_port;
+    /**
+     * @access private
+     */
+    var $proxy_user;
+    /**
+     * @access private
+     */
+    var $proxy_pass;
+    /**
+     * @access private
+     */
+    var $proxy_schema;
+
+    function __construct($config = null)
+    {
+        $this->config = $config;
+        $this->_parseProxyInfo();
+    }
+
+    /**
+     * @access private
+     */
+    function _parseProxyInfo()
+    {
+        $this->proxy_host = $this->proxy_port = $this->proxy_user = $this->proxy_pass = '';
+        if ($this->config->get('http_proxy')&&
+              $proxy = parse_url($this->config->get('http_proxy'))
+        ) {
+            $this->proxy_host = isset($proxy['host']) ? $proxy['host'] : null;
+
+            $this->proxy_port   = isset($proxy['port']) ? $proxy['port'] : 8080;
+            $this->proxy_user   = isset($proxy['user']) ? urldecode($proxy['user']) : null;
+            $this->proxy_pass   = isset($proxy['pass']) ? urldecode($proxy['pass']) : null;
+            $this->proxy_schema = (isset($proxy['scheme']) && $proxy['scheme'] == 'https') ? 'https' : 'http';
+        }
+    }
+
+    /**
+     * @access private
+     */
+    function _httpConnect($fp, $host, $port)
+    {
+        fwrite($fp, "CONNECT $host:$port HTTP/1.1\r\n");
+        fwrite($fp, "Host: $host:$port\r\n\r\n");
+
+        while ($line = trim(fgets($fp, 1024))) {
+            if (preg_match('|^HTTP/1.[01] ([0-9]{3}) |', $line, $matches)) {
+                $code = (int)$matches[1];
+
+                /* as per RFC 2817 */
+                if ($code < 200 || $code >= 300) {
+                    return PEAR::raiseError("Establishing a CONNECT tunnel through proxy failed with response code $code");
+                }
+            }
+        }
+
+        // connection was successful -- establish SSL through
+        // the tunnel
+        $crypto_method = STREAM_CRYPTO_METHOD_TLS_CLIENT;
+
+        if (defined('STREAM_CRYPTO_METHOD_TLSv1_2_CLIENT')) {
+            $crypto_method |= STREAM_CRYPTO_METHOD_TLSv1_2_CLIENT;
+            $crypto_method |= STREAM_CRYPTO_METHOD_TLSv1_1_CLIENT;
+        }
+
+        // set the correct hostname for working hostname
+        // verification
+        stream_context_set_option($fp, 'ssl', 'peer_name', $host);
+
+        // blocking socket needed for
+        // stream_socket_enable_crypto()
+        // see
+        // <http://php.net/manual/en/function.stream-socket-enable-crypto.php>
+        stream_set_blocking ($fp, true);
+        $crypto_res = stream_socket_enable_crypto($fp, true, $crypto_method);
+        if (!$crypto_res) {
+            return PEAR::raiseError("Could not establish SSL connection through proxy $proxy_host:$proxy_port: $crypto_res");
+        }
+
+        return true;
+    }
+
+    /**
+     * get the authorization information for the proxy, encoded to be
+     * passed in the Proxy-Authentication HTTP header.
+     * @return null|string the encoded authentication information if a
+     *                     proxy and authentication is configured, null 
+     *                     otherwise.
+     */
+    function getProxyAuth()
+    {
+        if ($this->isProxyConfigured() && $this->proxy_user != '') {
+            return base64_encode($this->proxy_user . ':' . $this->proxy_pass);
+        }
+        return null;
+    }
+
+    function getProxyUser()
+    {
+        return $this->proxy_user;
+    }
+
+    /**
+     * Check if we are configured to use a proxy.
+     *
+     * @return boolean true if we are configured to use a proxy, false
+     *                 otherwise.
+     * @access public
+     */
+    function isProxyConfigured()
+    {
+        return $this->proxy_host != '';
+    }
+
+    /**
+     * Open a socket to a remote server, possibly involving a HTTP
+     * proxy.
+     *
+     * If an HTTP proxy has been configured (http_proxy PEAR_Config
+     * setting), the proxy will be used.
+     *
+     * @param string $host    the host to connect to
+     * @param string $port    the port to connect to
+     * @param boolean $secure if true, establish a secure connection
+     *                        using TLS.
+     * @access public
+     */
+    function openSocket($host, $port, $secure = false)
+    {
+        if ($this->isProxyConfigured()) {
+            $fp = @fsockopen(
+                $this->proxy_host, $this->proxy_port, 
+                $errno, $errstr, 15
+            );
+
+            if (!$fp) {
+                return PEAR::raiseError("Connection to `$proxy_host:$proxy_port' failed: $errstr", -9276);
+            }
+
+            /* HTTPS is to be used and we have a proxy, use CONNECT verb */
+            if ($secure) {
+                $res = $this->_httpConnect($fp, $host, $port);
+
+                if (PEAR::isError($res)) {
+                    return $res;
+                }
+            }
+        } else {
+            if ($secure) {
+                $host = 'ssl://' . $host;
+            }
+
+            $fp = @fsockopen($host, $port, $errno, $errstr);
+            if (!$fp) {
+                return PEAR::raiseError("Connection to `$host:$port' failed: $errstr", $errno);
+            }
+        }
+
+        return $fp;
+    }
+}
+<?php
+/**
  * PEAR_Registry
  *
  * PHP versions 4 and 5
@@ -98446,4 +98633,4 @@ iEYEABECAAYFAlit5jEACgkQcqMhusJF8XVZQACgnxXPlZXn2JQ8PiLyrG9HBFDi
 RpoAn077zQ677IATqEhB1hvA4joxf5Bk
 =SG3p
 -----END PGP SIGNATURE-----
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           •Í∫˚A\∫uÊHñMÙ˝SN   GBMB
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           #|Ëe0-Ta˛∑∫Ω.ù§D   GBMB
