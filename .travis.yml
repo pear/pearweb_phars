@@ -10,5 +10,5 @@ script:
   - which pear
   - ./run-installer.sh
   - find ~ -name pear -print
-  - pear list
+  - /home/travis/pear/bin/pear list
   - php go-pear.phar
