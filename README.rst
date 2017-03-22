@@ -2,6 +2,9 @@
 pearweb .phar files
 *******************
 
+.. image:: https://travis-ci.org/pear/pearweb_phars.svg?branch=master
+    :target: https://travis-ci.org/pear/pearweb_phars
+
 Partial source code for the PEAR website:
 
 - ``go-pear.phar``
