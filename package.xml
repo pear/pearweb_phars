@@ -39,9 +39,9 @@
   <active>no</active>
  </lead>
 
- <date>2017-04-26</date>
+ <date>2017-06-27</date>
  <version>
-  <release>1.10.6</release>
+  <release>1.10.7</release>
   <api>1.10.1</api>
  </version>
  <stability>
@@ -50,9 +50,7 @@
  </stability>
  <license uri="http://opensource.org/licenses/bsd-license.php">New BSD License</license>
  <notes>
-* Bug #18102:  pear install does not fail on error
-
-* PR #67:  fix warning during pecl list-all
+* Bug #21222:  PHP 7.2 compatibility: Upgrade to Archive_Tar 1.4.3 needed
  </notes>
 
  <contents>
@@ -517,6 +515,22 @@
 * Bug #18102:  pear install does not fail on error
 
 * PR #67:  fix warning during pecl list-all
+    </notes>
+  </release>
+
+  <release>
+    <date>2017-06-27</date>
+    <version>
+     <release>1.10.7</release>
+     <api>1.10.1</api>
+    </version>
+    <stability>
+     <release>stable</release>
+     <api>stable</api>
+    </stability>
+    <license uri="http://opensource.org/licenses/bsd-license.php">New BSD License</license>
+    <notes>
+* Bug #21222:  PHP 7.2 compatibility: Upgrade to Archive_Tar 1.4.3 needed
     </notes>
   </release>
 
