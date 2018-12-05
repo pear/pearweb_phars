@@ -39,9 +39,9 @@
   <active>no</active>
  </lead>
 
- <date>2017-06-27</date>
+ <date>2018-12-05</date>
  <version>
-  <release>1.10.7</release>
+  <release>1.10.8</release>
   <api>1.10.1</api>
  </version>
  <stability>
@@ -50,7 +50,9 @@
  </stability>
  <license uri="http://opensource.org/licenses/bsd-license.php">New BSD License</license>
  <notes>
-* Bug #21222:  PHP 7.2 compatibility: Upgrade to Archive_Tar 1.4.3 needed
+* PR #79:  Prevent Unable to find the wrapper "channel" Warning
+* PR #80:  fix Warning: "continue" targeting switch is equivalent to "break". Did you mean to use "continue 2"
+* PR #81:  Add flags to PECL shell script for shared extensions
  </notes>
 
  <contents>
@@ -532,6 +534,24 @@
     <notes>
 * Bug #21222:  PHP 7.2 compatibility: Upgrade to Archive_Tar 1.4.3 needed
     </notes>
+  </release>
+
+  <release>
+   <date>2018-12-05</date>
+   <version>
+    <release>1.10.8</release>
+    <api>1.10.1</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <license uri="http://opensource.org/licenses/bsd-license.php">New BSD License</license>
+   <notes>
+* PR #79:  Prevent Unable to find the wrapper "channel" Warning
+* PR #80:  fix Warning: "continue" targeting switch is equivalent to "break". Did you mean to use "continue 2"
+* PR #81:  Add flags to PECL shell script for shared extensions
+   </notes>
   </release>
 
  </changelog>
