@@ -1269,12 +1269,12 @@ if (extension_loaded('phar')) {if (isset($_SERVER) && isset($_SERVER['REQUEST_UR
 
 
 require_once 'phar://go-pear.phar/index.php';
-__HALT_COMPILER();g  F          go-pear.phar       Archive/Tar.phpJ ]\J d,¶pm         Console/Getopt.php}4  ]\}4  e ¿om      	   index.phpã   ]\ã   Aè#m         OS/Guess.phps)  ]\s)  ®eöêm         PEAR.phpää  ]\ää  :—÷am         PEAR/ChannelFile.phpJ«  ]\J«  [)[nm         PEAR/ChannelFile/Parser.php›  ]\›  Bü´m         PEAR/Command.php’0  ]\’0  {ˆgm         PEAR/Command/Common.php/   ]\/   û@~ßm         PEAR/Command/Install.php´∆  ]\´∆  ≥˙†!m         PEAR/Command/Install.xml~!  ]\~!  2°Vm         PEAR/Common.phpGh  ]\Gh  ∑¡∂üm         PEAR/Config.php ]\ 7ΩJ“m         PEAR/Dependency2.phpz≈  ]\z≈  GM—dm         PEAR/DependencyDB.php*^  ]\*^  ’~∂Zm         PEAR/Downloader.phpÄ ]\Ä &ÍÙ]m         PEAR/Downloader/Package.php]* ]\]* Q\ıÍm         PEAR/ErrorStack.phpÑ  ]\Ñ  ¶°,m         PEAR/Frontend.php
-  ]\
-  8}õÈm         PEAR/Frontend/CLI.phped  ]\ed  ’2õ`m      +   PEAR/go-pear-tarballs/Archive_Tar-1.4.4.tar ‡ ]\ ‡ {#¯m      .   PEAR/go-pear-tarballs/Console_Getopt-1.4.1.tar t  ]\ t  ±Hßªm      %   PEAR/go-pear-tarballs/PEAR-1.10.7.tar . ]\ . ‹Oı
-m      0   PEAR/go-pear-tarballs/Structures_Graph-1.1.1.tar 6 ]\ 6 Ôéj·m      (   PEAR/go-pear-tarballs/XML_Util-1.4.3.tar 8 ]\ 8 ¸km         PEAR/Installer.phpR ]\R X‘m         PEAR/Installer/Role.php  ]\  Ë¬¯®m         PEAR/Installer/Role/Common.phpF  ]\F  õzµ±m         PEAR/Installer/Role/Data.php  ]\  ùùnm         PEAR/Installer/Role/Data.xmlí  ]\í  fçszm         PEAR/Installer/Role/Doc.php  ]\  ı"∫m         PEAR/Installer/Role/Doc.xmlë  ]\ë  h&P*m         PEAR/Installer/Role/Php.php  ]\  <á–Üm         PEAR/Installer/Role/Php.xml≠  ]\≠  zùqçm         PEAR/Installer/Role/Script.php  ]\  ÀÊ|>m         PEAR/Installer/Role/Script.xml∞  ]\∞  @vß–m         PEAR/Installer/Role/Test.php  ]\  daºkm         PEAR/Installer/Role/Test.xmlí  ]\í  B] m         PEAR/PackageFile.php[>  ]\[>  t<u^m      !   PEAR/PackageFile/Generator/v1.php≈  ]\≈  ∆,‡¿m      !   PEAR/PackageFile/Generator/v2.phpÇ  ]\Ç  
-”©Sm         PEAR/PackageFile/Parser/v1.phpú@  ]\ú@  ñè∏.m         PEAR/PackageFile/Parser/v2.phpv  ]\v  ÈfgUm         PEAR/PackageFile/v1.php∆  ]\∆  ûÙWsm         PEAR/PackageFile/v2.php ]\ oﬂ}Em      !   PEAR/PackageFile/v2/Validator.php|L ]\|L Üa⁄m         PEAR/Proxy.php  ]\  √+ôm         PEAR/Registry.phpn) ]\n) ‰„ım         PEAR/REST.phpB  ]\B  Yπm         PEAR/REST/10.php€  ]\€  …d˙m         PEAR/Start.php–9  ]\–9  3«‹m         PEAR/Start/CLI.phpHS  ]\HS  >iZ m         PEAR/Task/Common.php7  ]\7  ﬂCiBm         PEAR/Task/Postinstallscript.php©9  ]\©9  #±Òm      "   PEAR/Task/Postinstallscript/rw.php4  ]\4  B¨VAm         PEAR/Task/Replace.php  ]\  é?+m         PEAR/Task/Replace/rw.php/  ]\/  |ÅH?m         PEAR/Task/Unixeol.php	  ]\	  ü†“.m         PEAR/Task/Unixeol/rw.php4  ]\4  Ç–å¥m         PEAR/Task/Windowseol.php	  ]\	  êEmm         PEAR/Task/Windowseol/rw.phpA  ]\A  ]T>´m         PEAR/Validate.php&V  ]\&V  w`˘m         PEAR/Validator/PECL.phpQ  ]\Q  –óH◊m         PEAR/XMLParser.php0  ]\0  ã”Iym         Structures/Graph.phpQ  ]\Q  4¥T∑m      ,   Structures/Graph/Manipulator/AcyclicTest.phpÃ  ]\Ã  “;ˇm      2   Structures/Graph/Manipulator/TopologicalSorter.phpÿ  ]\ÿ  3§sm         Structures/Graph/Node.phpR+  ]\R+  5~Èm      
-   System.phpÑP  ]\ÑP  '+om         XML/Util.phpû}  ]\û}  `è‰öm      <?php
+__HALT_COMPILER();g  F          go-pear.phar       Archive/Tar.phpJ 2[\J d,¶pm         Console/Getopt.php\5  2[\\5  Qﬂ©4m      	   index.phpã   2[\ã   Aè#m         OS/Guess.phps)  2[\s)  ®eöêm         PEAR.phpää  2[\ää  :—÷am         PEAR/ChannelFile.phpJ«  2[\J«  [)[nm         PEAR/ChannelFile/Parser.php›  2[\›  Bü´m         PEAR/Command.php’0  2[\’0  {ˆgm         PEAR/Command/Common.php/   2[\/   û@~ßm         PEAR/Command/Install.php´∆  2[\´∆  ≥˙†!m         PEAR/Command/Install.xml~!  2[\~!  2°Vm         PEAR/Common.phpGh  2[\Gh  ∑¡∂üm         PEAR/Config.php 2[\ 7ΩJ“m         PEAR/Dependency2.phpz≈  2[\z≈  GM—dm         PEAR/DependencyDB.php*^  2[\*^  ’~∂Zm         PEAR/Downloader.phpÄ 2[\Ä &ÍÙ]m         PEAR/Downloader/Package.php]* 2[\]* Q\ıÍm         PEAR/ErrorStack.phpÑ  2[\Ñ  ¶°,m         PEAR/Frontend.php
+  2[\
+  8}õÈm         PEAR/Frontend/CLI.phped  2[\ed  ’2õ`m      +   PEAR/go-pear-tarballs/Archive_Tar-1.4.4.tar ‡ 2[\ ‡ {#¯m      .   PEAR/go-pear-tarballs/Console_Getopt-1.4.2.tar x  2[\ x  ó≠Û	m      %   PEAR/go-pear-tarballs/PEAR-1.10.7.tar . 2[\ . ‹Oı
+m      0   PEAR/go-pear-tarballs/Structures_Graph-1.1.1.tar 6 2[\ 6 Ôéj·m      (   PEAR/go-pear-tarballs/XML_Util-1.4.3.tar 8 2[\ 8 ¸km         PEAR/Installer.phpR 2[\R X‘m         PEAR/Installer/Role.php  2[\  Ë¬¯®m         PEAR/Installer/Role/Common.phpF  2[\F  õzµ±m         PEAR/Installer/Role/Data.php  2[\  ùùnm         PEAR/Installer/Role/Data.xmlí  2[\í  fçszm         PEAR/Installer/Role/Doc.php  2[\  ı"∫m         PEAR/Installer/Role/Doc.xmlë  2[\ë  h&P*m         PEAR/Installer/Role/Php.php  2[\  <á–Üm         PEAR/Installer/Role/Php.xml≠  2[\≠  zùqçm         PEAR/Installer/Role/Script.php  2[\  ÀÊ|>m         PEAR/Installer/Role/Script.xml∞  2[\∞  @vß–m         PEAR/Installer/Role/Test.php  2[\  daºkm         PEAR/Installer/Role/Test.xmlí  2[\í  B] m         PEAR/PackageFile.php[>  2[\[>  t<u^m      !   PEAR/PackageFile/Generator/v1.php≈  2[\≈  ∆,‡¿m      !   PEAR/PackageFile/Generator/v2.phpÇ  2[\Ç  
+”©Sm         PEAR/PackageFile/Parser/v1.phpú@  2[\ú@  ñè∏.m         PEAR/PackageFile/Parser/v2.phpv  2[\v  ÈfgUm         PEAR/PackageFile/v1.php∆  2[\∆  ûÙWsm         PEAR/PackageFile/v2.php 2[\ oﬂ}Em      !   PEAR/PackageFile/v2/Validator.php|L 2[\|L Üa⁄m         PEAR/Proxy.php  2[\  √+ôm         PEAR/Registry.phpn) 2[\n) ‰„ım         PEAR/REST.phpB  2[\B  Yπm         PEAR/REST/10.php€  2[\€  …d˙m         PEAR/Start.php–9  2[\–9  3«‹m         PEAR/Start/CLI.phpHS  2[\HS  >iZ m         PEAR/Task/Common.php7  2[\7  ﬂCiBm         PEAR/Task/Postinstallscript.php©9  2[\©9  #±Òm      "   PEAR/Task/Postinstallscript/rw.php4  2[\4  B¨VAm         PEAR/Task/Replace.php  2[\  é?+m         PEAR/Task/Replace/rw.php/  2[\/  |ÅH?m         PEAR/Task/Unixeol.php	  2[\	  ü†“.m         PEAR/Task/Unixeol/rw.php4  2[\4  Ç–å¥m         PEAR/Task/Windowseol.php	  2[\	  êEmm         PEAR/Task/Windowseol/rw.phpA  2[\A  ]T>´m         PEAR/Validate.php&V  2[\&V  w`˘m         PEAR/Validator/PECL.phpQ  2[\Q  –óH◊m         PEAR/XMLParser.php0  2[\0  ã”Iym         Structures/Graph.phpQ  2[\Q  4¥T∑m      ,   Structures/Graph/Manipulator/AcyclicTest.phpÃ  2[\Ã  “;ˇm      2   Structures/Graph/Manipulator/TopologicalSorter.phpÿ  2[\ÿ  3§sm         Structures/Graph/Node.phpR+  2[\R+  5~Èm      
+   System.phpÑP  2[\ÑP  '+om         XML/Util.phpû}  2[\û}  `è‰öm      <?php
 /* vim: set expandtab tabstop=4 shiftwidth=4 softtabstop=4: */
 
 /**
@@ -3723,20 +3723,17 @@ class Archive_Tar extends PEAR
 /**
  * PHP Version 5
  *
- * Copyright (c) 1997-2004 The PHP Group
+ * Copyright (c) 2001-2015, The PEAR developers
  *
- * This source file is subject to version 3.0 of the PHP license,
+ * This source file is subject to the BSD-2-Clause license,
  * that is bundled with this package in the file LICENSE, and is
  * available through the world-wide-web at the following url:
- * http://www.php.net/license/3_0.txt.
- * If you did not receive a copy of the PHP license and are unable to
- * obtain it through the world-wide-web, please send a note to
- * license@php.net so we can mail you a copy immediately.
+ * http://opensource.org/licenses/bsd-license.php.
  *
  * @category Console
  * @package  Console_Getopt
  * @author   Andrei Zmievski <andrei@php.net>
- * @license  http://www.php.net/license/3_0.txt PHP 3.0
+ * @license  http://opensource.org/licenses/bsd-license.php BSD-2-Clause
  * @version  CVS: $Id$
  * @link     http://pear.php.net/package/Console_Getopt
  */
@@ -3749,7 +3746,7 @@ require_once 'phar://go-pear.phar/' . 'PEAR.php';
  * @category Console
  * @package  Console_Getopt
  * @author   Andrei Zmievski <andrei@php.net>
- * @license  http://www.php.net/license/3_0.txt PHP 3.0
+ * @license  http://opensource.org/licenses/bsd-license.php BSD-2-Clause
  * @link     http://pear.php.net/package/Console_Getopt
  */
 class Console_Getopt
@@ -3851,8 +3848,8 @@ class Console_Getopt
             }
         }
 
-        reset($args);
-        while (list($i, $arg) = each($args)) {
+        for ($i = 0; $i < count($args); $i++) {
+            $arg = $args[$i];
             /* The special element '--' means explicit end of
                options. Treat the rest of the arguments as non-options
                and end the loop. */
@@ -3868,6 +3865,7 @@ class Console_Getopt
                 $error = Console_Getopt::_parseLongOption(substr($arg, 2),
                                                           $long_options,
                                                           $opts,
+                                                          $i,
                                                           $args,
                                                           $skip_unknown);
                 if (PEAR::isError($error)) {
@@ -3881,6 +3879,7 @@ class Console_Getopt
                 $error = Console_Getopt::_parseShortOption(substr($arg, 1),
                                                            $short_options,
                                                            $opts,
+                                                           $i,
                                                            $args,
                                                            $skip_unknown);
                 if (PEAR::isError($error)) {
@@ -3898,12 +3897,13 @@ class Console_Getopt
      * @param string     $arg           Argument
      * @param string[]   $short_options Available short options
      * @param string[][] &$opts
-     * @param string[]   &$args
+     * @param int        &$argIdx
+     * @param string[]   $args
      * @param boolean    $skip_unknown suppresses Console_Getopt: unrecognized option
      *
      * @return void
      */
-    protected static function _parseShortOption($arg, $short_options, &$opts, &$args, $skip_unknown)
+    protected static function _parseShortOption($arg, $short_options, &$opts, &$argIdx, $args, $skip_unknown)
     {
         for ($i = 0; $i < strlen($arg); $i++) {
             $opt     = $arg{$i};
@@ -3933,7 +3933,8 @@ class Console_Getopt
                     if ($i + 1 < strlen($arg)) {
                         $opts[] = array($opt,  substr($arg, $i + 1));
                         break;
-                    } else if (list(, $opt_arg) = each($args)) {
+                    } else if (isset($args[++$argIdx])) {
+                        $opt_arg = $args[$argIdx];
                         /* Else use the next argument. */;
                         if (Console_Getopt::_isShortOpt($opt_arg)
                             || Console_Getopt::_isLongOpt($opt_arg)) {
@@ -3983,11 +3984,12 @@ class Console_Getopt
      * @param string     $arg          Argument
      * @param string[]   $long_options Available long options
      * @param string[][] &$opts
-     * @param string[]   &$args
+     * @param int        &$argIdx
+     * @param string[]   $args
      *
      * @return void|PEAR_Error
      */
-    protected static function _parseLongOption($arg, $long_options, &$opts, &$args, $skip_unknown)
+    protected static function _parseLongOption($arg, $long_options, &$opts, &$argIdx, $args, $skip_unknown)
     {
         @list($opt, $opt_arg) = explode('=', $arg, 2);
 
@@ -4028,9 +4030,12 @@ class Console_Getopt
                 if (substr($long_opt, -2) != '==') {
                     /* Long option requires an argument.
                        Take the next argument if one wasn't specified. */;
-                    if (!strlen($opt_arg) && !(list(, $opt_arg) = each($args))) {
-                        $msg = "Console_Getopt: option requires an argument --$opt";
-                        return PEAR::raiseError($msg);
+                    if (!strlen($opt_arg)) {
+                        if (!isset($args[++$argIdx])) {
+                            $msg = "Console_Getopt: option requires an argument --$opt";
+                            return PEAR::raiseError($msg);
+                        }
+                        $opt_arg = $args[$argIdx];
                     }
 
                     if (Console_Getopt::_isShortOpt($opt_arg)
@@ -4077,7 +4082,8 @@ class Console_Getopt
         return $argv;
     }
 
-}<?php
+}
+<?php
 require_once 'phar://go-pear.phar/PEAR/Start/CLI.php';
 PEAR::setErrorHandling(PEAR_ERROR_DIE);
 $a = new PEAR_Start_CLI;
@@ -23622,8 +23628,8 @@ How it works :
   Go through the archive and extract only the files present in the
   list. 
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          package.xml                                                                                         0000644 0001750 0000144 00000015121 12553254770 012556  0                                                                                                    ustar   cweiske                         users                                                                                                                                                                                                                  <?xml version="1.0" encoding="UTF-8"?>
-<package packagerversion="1.9.4" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          package.xml                                                                                         0000644 0001750 0001750 00000015725 13426610173 013060  0                                                                                                    ustar   ashnazg                         ashnazg                                                                                                                                                                                                                <?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.10.7" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
  <name>Console_Getopt</name>
  <channel>pear.php.net</channel>
  <summary>Command-line option parser</summary>
@@ -23645,12 +23651,12 @@ short and long options.</description>
   <name>Greg Beaver</name>
   <user>cellog</user>
   <email>cellog@php.net</email>
-  <active>yes</active>
+  <active>no</active>
  </helper>
- <date>2015-07-20</date>
- <time>20:28:40</time>
+ <date>2019-02-06</date>
+ <time>16:51:07</time>
  <version>
-  <release>1.4.1</release>
+  <release>1.4.2</release>
   <api>1.4.0</api>
  </version>
  <stability>
@@ -23659,11 +23665,11 @@ short and long options.</description>
  </stability>
  <license uri="http://opensource.org/licenses/bsd-license.php">BSD-2-Clause</license>
  <notes>
-* Fix unit test on PHP 7 [cweiske]
+* Remove use of each(), which is removed in PHP 8
  </notes>
  <contents>
   <dir name="/">
-   <file md5sum="013530beb065fb8885f70af40b6c91fa" name="Console/Getopt.php" role="php" />
+   <file md5sum="3b1347ceadc7782b2c5945104b468af3" name="Console/Getopt.php" role="php" />
    <file md5sum="5a6fa63ce6f2370cdad11dc24a5addd0" name="tests/001-getopt.phpt" role="test" />
    <file md5sum="7540b630cb8e7bfd8bb06fb65a010ae9" name="tests/bug10557.phpt" role="test" />
    <file md5sum="e469de3628de85779118103b3248a44f" name="tests/bug11068.phpt" role="test" />
@@ -23688,6 +23694,21 @@ short and long options.</description>
  </dependencies>
  <phprelease />
  <changelog>
+  <release>
+   <date>2019-02-06</date>
+   <version>
+    <release>1.4.2</release>
+    <api>1.4.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <license uri="http://opensource.org/licenses/bsd-license.php">BSD-2-Clause</license>
+   <notes>
+* Remove use of each(), which is removed in PHP 8
+   </notes>
+  </release>
   <release>
    <date>2015-07-20</date>
    <version>
@@ -23875,25 +23896,22 @@ Initial release
   </release>
  </changelog>
 </package>
-                                                                                                                                                                                                                                                                                                                                                                                                                                               Console_Getopt-1.4.1/Console/Getopt.php                                                             0000644 0001750 0000144 00000032144 12553254770 017405  0                                                                                                    ustar   cweiske                         users                                                                                                                                                                                                                  <?php
+                                           Console_Getopt-1.4.2/Console/Getopt.php                                                             0000644 0001750 0001750 00000032503 13426610173 017675  0                                                                                                    ustar   ashnazg                         ashnazg                                                                                                                                                                                                                <?php
 /* vim: set expandtab tabstop=4 shiftwidth=4: */
 /**
  * PHP Version 5
  *
- * Copyright (c) 1997-2004 The PHP Group
+ * Copyright (c) 2001-2015, The PEAR developers
  *
- * This source file is subject to version 3.0 of the PHP license,
+ * This source file is subject to the BSD-2-Clause license,
  * that is bundled with this package in the file LICENSE, and is
  * available through the world-wide-web at the following url:
- * http://www.php.net/license/3_0.txt.
- * If you did not receive a copy of the PHP license and are unable to
- * obtain it through the world-wide-web, please send a note to
- * license@php.net so we can mail you a copy immediately.
+ * http://opensource.org/licenses/bsd-license.php.
  *
  * @category Console
  * @package  Console_Getopt
  * @author   Andrei Zmievski <andrei@php.net>
- * @license  http://www.php.net/license/3_0.txt PHP 3.0
+ * @license  http://opensource.org/licenses/bsd-license.php BSD-2-Clause
  * @version  CVS: $Id$
  * @link     http://pear.php.net/package/Console_Getopt
  */
@@ -23906,7 +23924,7 @@ require_once 'PEAR.php';
  * @category Console
  * @package  Console_Getopt
  * @author   Andrei Zmievski <andrei@php.net>
- * @license  http://www.php.net/license/3_0.txt PHP 3.0
+ * @license  http://opensource.org/licenses/bsd-license.php BSD-2-Clause
  * @link     http://pear.php.net/package/Console_Getopt
  */
 class Console_Getopt
@@ -24008,8 +24026,8 @@ class Console_Getopt
             }
         }
 
-        reset($args);
-        while (list($i, $arg) = each($args)) {
+        for ($i = 0; $i < count($args); $i++) {
+            $arg = $args[$i];
             /* The special element '--' means explicit end of
                options. Treat the rest of the arguments as non-options
                and end the loop. */
@@ -24025,6 +24043,7 @@ class Console_Getopt
                 $error = Console_Getopt::_parseLongOption(substr($arg, 2),
                                                           $long_options,
                                                           $opts,
+                                                          $i,
                                                           $args,
                                                           $skip_unknown);
                 if (PEAR::isError($error)) {
@@ -24038,6 +24057,7 @@ class Console_Getopt
                 $error = Console_Getopt::_parseShortOption(substr($arg, 1),
                                                            $short_options,
                                                            $opts,
+                                                           $i,
                                                            $args,
                                                            $skip_unknown);
                 if (PEAR::isError($error)) {
@@ -24055,12 +24075,13 @@ class Console_Getopt
      * @param string     $arg           Argument
      * @param string[]   $short_options Available short options
      * @param string[][] &$opts
-     * @param string[]   &$args
+     * @param int        &$argIdx
+     * @param string[]   $args
      * @param boolean    $skip_unknown suppresses Console_Getopt: unrecognized option
      *
      * @return void
      */
-    protected static function _parseShortOption($arg, $short_options, &$opts, &$args, $skip_unknown)
+    protected static function _parseShortOption($arg, $short_options, &$opts, &$argIdx, $args, $skip_unknown)
     {
         for ($i = 0; $i < strlen($arg); $i++) {
             $opt     = $arg{$i};
@@ -24090,7 +24111,8 @@ class Console_Getopt
                     if ($i + 1 < strlen($arg)) {
                         $opts[] = array($opt,  substr($arg, $i + 1));
                         break;
-                    } else if (list(, $opt_arg) = each($args)) {
+                    } else if (isset($args[++$argIdx])) {
+                        $opt_arg = $args[$argIdx];
                         /* Else use the next argument. */;
                         if (Console_Getopt::_isShortOpt($opt_arg)
                             || Console_Getopt::_isLongOpt($opt_arg)) {
@@ -24140,11 +24162,12 @@ class Console_Getopt
      * @param string     $arg          Argument
      * @param string[]   $long_options Available long options
      * @param string[][] &$opts
-     * @param string[]   &$args
+     * @param int        &$argIdx
+     * @param string[]   $args
      *
      * @return void|PEAR_Error
      */
-    protected static function _parseLongOption($arg, $long_options, &$opts, &$args, $skip_unknown)
+    protected static function _parseLongOption($arg, $long_options, &$opts, &$argIdx, $args, $skip_unknown)
     {
         @list($opt, $opt_arg) = explode('=', $arg, 2);
 
@@ -24185,9 +24208,12 @@ class Console_Getopt
                 if (substr($long_opt, -2) != '==') {
                     /* Long option requires an argument.
                        Take the next argument if one wasn't specified. */;
-                    if (!strlen($opt_arg) && !(list(, $opt_arg) = each($args))) {
-                        $msg = "Console_Getopt: option requires an argument --$opt";
-                        return PEAR::raiseError($msg);
+                    if (!strlen($opt_arg)) {
+                        if (!isset($args[++$argIdx])) {
+                            $msg = "Console_Getopt: option requires an argument --$opt";
+                            return PEAR::raiseError($msg);
+                        }
+                        $opt_arg = $args[$argIdx];
                     }
 
                     if (Console_Getopt::_isShortOpt($opt_arg)
@@ -24234,7 +24260,8 @@ class Console_Getopt
         return $argv;
     }
 
-}                                                                                                                                                                                                                                                                                                                                                                                                                            Console_Getopt-1.4.1/tests/001-getopt.phpt                                                          0000644 0001750 0000144 00000002316 12553254770 017665  0                                                                                                    ustar   cweiske                         users                                                                                                                                                                                                                  --TEST--
+}
+                                                                                                                                                                                             Console_Getopt-1.4.2/tests/001-getopt.phpt                                                          0000644 0001750 0001750 00000002316 13426610173 020156  0                                                                                                    ustar   ashnazg                         ashnazg                                                                                                                                                                                                                --TEST--
 Console_Getopt
 --FILE--
 <?php
@@ -24297,7 +24324,7 @@ params:
 
 options: a=, b=, c=
 params: foo, -bar, gazonk
-                                                                                                                                                                                                                                                                                                                  Console_Getopt-1.4.1/tests/bug10557.phpt                                                            0000644 0001750 0000144 00000000756 12553254770 017252  0                                                                                                    ustar   cweiske                         users                                                                                                                                                                                                                  --TEST--
+                                                                                                                                                                                                                                                                                                                  Console_Getopt-1.4.2/tests/bug10557.phpt                                                            0000644 0001750 0001750 00000000756 13426610173 017543  0                                                                                                    ustar   ashnazg                         ashnazg                                                                                                                                                                                                                --TEST--
 Console_Getopt [bug 10557]
 --SKIPIF--
 --FILE--
@@ -24318,7 +24345,7 @@ print_r($ret);
 ?>
 --EXPECT--
 Console_Getopt: option requires an argument --to
-FATAL                  Console_Getopt-1.4.1/tests/bug11068.phpt                                                            0000644 0001750 0000144 00000001431 12553254770 017237  0                                                                                                    ustar   cweiske                         users                                                                                                                                                                                                                  --TEST--
+FATAL                  Console_Getopt-1.4.2/tests/bug11068.phpt                                                            0000644 0001750 0001750 00000001431 13426610173 017530  0                                                                                                    ustar   ashnazg                         ashnazg                                                                                                                                                                                                                --TEST--
 Console_Getopt [bug 11068]
 --SKIPIF--
 --FILE--
@@ -24361,7 +24388,7 @@ Array
             [0] => -
         )
 
-)                                                                                                                                                                                                                                       Console_Getopt-1.4.1/tests/bug13140.phpt                                                            0000644 0001750 0000144 00000002505 12553254770 017233  0                                                                                                    ustar   cweiske                         users                                                                                                                                                                                                                  --TEST--
+)                                                                                                                                                                                                                                       Console_Getopt-1.4.2/tests/bug13140.phpt                                                            0000644 0001750 0001750 00000002505 13426610173 017524  0                                                                                                    ustar   ashnazg                         ashnazg                                                                                                                                                                                                                --TEST--
 Console_Getopt [bug 13140]
 --SKIPIF--
 --FILE--
@@ -24436,7 +24463,13 @@ Array
         )
 
 )
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           package.xml                                                                                         0000644 0001750 0001750 00000157260 13407013522 013053  0                                                                                                    ustar   ashnazg                         ashnazg                                                                                                                                                                                                                <?xml version="1.0" encoding="UTF-8"?>
+                                                                                                                                                                                           package.sig                                                                                         0000644 0001750 0001750 00000000243 13426610232 013023  0                                                                                                    ustar   ashnazg                         ashnazg                                                                                                                                                                                                                -----BEGIN PGP SIGNATURE-----
+
+iEYEABECAAYFAlxbEJoACgkQcqMhusJF8XUkmQCfdEgyJw6IhYcqSJLM9gMPr08b
+ekEAoK+p8y/L2oAQ2SlJ5ZuNv/unfw06
+=Y+Er
+-----END PGP SIGNATURE-----
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             package.xml                                                                                         0000644 0001750 0001750 00000157260 13407013522 013053  0                                                                                                    ustar   ashnazg                         ashnazg                                                                                                                                                                                                                <?xml version="1.0" encoding="UTF-8"?>
 <package packagerversion="1.10.7" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
  <name>PEAR</name>
  <channel>pear.php.net</channel>
@@ -98477,4 +98510,4 @@ class XML_Util
     }
 }
 ?>
-ﬂÿO&ﬁIQèv§){bäíÔí*   GBMB
+¯¶+6ZªUi'üQ»í<öv3   GBMB
