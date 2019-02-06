@@ -39,9 +39,9 @@
   <active>no</active>
  </lead>
 
- <date>2019-01-22</date>
+ <date>2019-02-06</date>
  <version>
-  <release>1.10.10</release>
+  <release>1.10.11</release>
   <api>1.10.1</api>
  </version>
  <stability>
@@ -50,7 +50,7 @@
  </stability>
  <license uri="http://opensource.org/licenses/bsd-license.php">New BSD License</license>
  <notes>
-New release to replace previous release that was tainted on the PEAR server.
+Update Console_Getopt to v1.4.2
  </notes>
 
  <contents>
@@ -581,6 +581,22 @@ bump packaged dependencies
    <license uri="http://opensource.org/licenses/bsd-license.php">New BSD License</license>
    <notes>
 New release to replace previous release that was tainted on the PEAR server.
+   </notes>
+  </release>
+
+  <release>
+   <date>2019-02-06</date>
+   <version>
+    <release>1.10.11</release>
+    <api>1.10.1</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <license uri="http://opensource.org/licenses/bsd-license.php">New BSD License</license>
+   <notes>
+Update Console_Getopt to v1.4.2
    </notes>
   </release>
 
