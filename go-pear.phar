@@ -1269,9 +1269,9 @@ if (extension_loaded('phar')) {if (isset($_SERVER) && isset($_SERVER['REQUEST_UR
 
 
 require_once 'phar://go-pear.phar/index.php';
-__HALT_COMPILER();g  F          go-pear.phar       Archive/Tar.php‘L œ#Æ\‘L 2{Ù÷m         Console/Getopt.php\5  œ#Æ\\5  Qﬂ©4m      	   index.phpã   œ#Æ\ã   Aè#m         OS/Guess.phps)  œ#Æ\s)  ‡ '∑m         PEAR.phpãä  œ#Æ\ãä  nuç≈m         PEAR/ChannelFile.phpJ«  œ#Æ\J«  ›eŸm         PEAR/ChannelFile/Parser.php›  œ#Æ\›  kß+ìm         PEAR/Command.php’0  œ#Æ\’0  S¬:Ym         PEAR/Command/Common.php.   œ#Æ\.   Ÿ±Ÿm         PEAR/Command/Install.php´∆  œ#Æ\´∆  €w2œm         PEAR/Command/Install.xml~!  œ#Æ\~!  2°Vm         PEAR/Common.php[h  œ#Æ\[h  Ïªöœm         PEAR/Config.php œ#Æ\ —gI˚m         PEAR/Dependency2.phpâ≈  œ#Æ\â≈  çOzÌm         PEAR/DependencyDB.php*^  œ#Æ\*^  c˚m         PEAR/Downloader.phpÏ œ#Æ\Ï hVı∏m         PEAR/Downloader/Package.php]* œ#Æ\]* œà–m         PEAR/ErrorStack.php$Ñ  œ#Æ\$Ñ  ∂˘9m         PEAR/Frontend.php  œ#Æ\  Ω—Ÿm         PEAR/Frontend/CLI.phped  œ#Æ\ed  £Öëm      +   PEAR/go-pear-tarballs/Archive_Tar-1.4.7.tar Ê œ#Æ\ Ê å\k m      .   PEAR/go-pear-tarballs/Console_Getopt-1.4.2.tar x  œ#Æ\ x  ¿AïÅm      %   PEAR/go-pear-tarballs/PEAR-1.10.9.tar 2 œ#Æ\ 2 ÉÖgm      0   PEAR/go-pear-tarballs/Structures_Graph-1.1.1.tar 6 œ#Æ\ 6 Ôéj·m      (   PEAR/go-pear-tarballs/XML_Util-1.4.3.tar 8 œ#Æ\ 8 ¸km         PEAR/Installer.php œ#Æ\ ‰€	„m         PEAR/Installer/Role.php  œ#Æ\  t¸Q∏m         PEAR/Installer/Role/Common.phpF  œ#Æ\F  .π¿m         PEAR/Installer/Role/Data.php  œ#Æ\  Oc‘jm         PEAR/Installer/Role/Data.xmlí  œ#Æ\í  fçszm         PEAR/Installer/Role/Doc.php  œ#Æ\  +#ª¡m         PEAR/Installer/Role/Doc.xmlë  œ#Æ\ë  h&P*m         PEAR/Installer/Role/Php.php  œ#Æ\  ‚Ü—Wm         PEAR/Installer/Role/Php.xml≠  œ#Æ\≠  zùqçm         PEAR/Installer/Role/Script.php  œ#Æ\  ˜ˇw◊m         PEAR/Installer/Role/Script.xml∞  œ#Æ\∞  @vß–m         PEAR/Installer/Role/Test.php  œ#Æ\  ∂ü
-m         PEAR/Installer/Role/Test.xmlí  œ#Æ\í  B] m         PEAR/PackageFile.phpb>  œ#Æ\b>  ÷Œ≤m      !   PEAR/PackageFile/Generator/v1.php≈  œ#Æ\≈  gÕ+òm      !   PEAR/PackageFile/Generator/v2.phpÇ  œ#Æ\Ç  π÷{Öm         PEAR/PackageFile/Parser/v1.phpú@  œ#Æ\ú@  O“<m         PEAR/PackageFile/Parser/v2.phpv  œ#Æ\v  /Kuâm         PEAR/PackageFile/v1.php˝≈  œ#Æ\˝≈  aµ–m         PEAR/PackageFile/v2.php œ#Æ\ ÿí%Tm      !   PEAR/PackageFile/v2/Validator.php|L œ#Æ\|L Xåpm         PEAR/Proxy.php  œ#Æ\  √+ôm         PEAR/Registry.phpg) œ#Æ\g) √¡û∑m         PEAR/REST.phpB  œ#Æ\B  xp˛m         PEAR/REST/10.php€  œ#Æ\€  Ò1π„m         PEAR/Start.php–9  œ#Æ\–9  3«‹m         PEAR/Start/CLI.phpHS  œ#Æ\HS  >iZ m         PEAR/Task/Common.php7  œ#Æ\7  d}"œm         PEAR/Task/Postinstallscript.php©9  œ#Æ\©9  “poÛm      "   PEAR/Task/Postinstallscript/rw.php4  œ#Æ\4  ´n‡Åm         PEAR/Task/Replace.php  œ#Æ\  ≠ºY%m         PEAR/Task/Replace/rw.php/  œ#Æ\/  ŸŸ&tm         PEAR/Task/Unixeol.php	  œ#Æ\	  5∫ëm         PEAR/Task/Unixeol/rw.php4  œ#Æ\4  z~öfm         PEAR/Task/Windowseol.php	  œ#Æ\	  ö^¸m         PEAR/Task/Windowseol/rw.phpA  œ#Æ\A  MCDºm         PEAR/Validate.php&V  œ#Æ\&V  õQ‹¿m         PEAR/Validator/PECL.phpQ  œ#Æ\Q  Ì%÷m         PEAR/XMLParser.php0  œ#Æ\0  #VÚm         Structures/Graph.phpQ  œ#Æ\Q  4¥T∑m      ,   Structures/Graph/Manipulator/AcyclicTest.phpÃ  œ#Æ\Ã  “;ˇm      2   Structures/Graph/Manipulator/TopologicalSorter.phpÿ  œ#Æ\ÿ  3§sm         Structures/Graph/Node.phpR+  œ#Æ\R+  5~Èm      
-   System.phpÑP  œ#Æ\ÑP  Ë‰d†m         XML/Util.phpû}  œ#Æ\û}  `è‰öm      <?php
+__HALT_COMPILER();g  F          go-pear.phar       Archive/Tar.php‘L ]:‘]‘L 2{Ù÷m         Console/Getopt.php\5  ]:‘]\5  Qﬂ©4m      	   index.phpã   ]:‘]ã   Aè#m         OS/Guess.php°*  ]:‘]°*  ãJñm         PEAR.phpKç  ]:‘]Kç  Ω∂0m         PEAR/ChannelFile.phpK«  ]:‘]K«  „hèm         PEAR/ChannelFile/Parser.phpﬁ  ]:‘]ﬁ  ‚£p0m         PEAR/Command.php÷0  ]:‘]÷0  ¢}m         PEAR/Command/Common.php/   ]:‘]/   ØbúÎm         PEAR/Command/Install.phpü«  ]:‘]ü«  π¸/>m         PEAR/Command/Install.xmlÛ!  ]:‘]Û!  j«¢m         PEAR/Common.php\h  ]:‘]\h  lçPﬂm         PEAR/Config.php ]:‘] Éﬁnm         PEAR/Dependency2.phpã≈  ]:‘]ã≈  –éÕ¯m         PEAR/DependencyDB.phpj^  ]:‘]j^  ±T8xm         PEAR/Downloader.php7 ]:‘]7 ﬁQ„Úm         PEAR/Downloader/Package.php^* ]:‘]^* Zl√m         PEAR/ErrorStack.php%Ñ  ]:‘]%Ñ  ıêﬂám         PEAR/Frontend.php  ]:‘]  2èOsm         PEAR/Frontend/CLI.phpfd  ]:‘]fd  µ	U!m      +   PEAR/go-pear-tarballs/Archive_Tar-1.4.7.tar Ê ]:‘] Ê å\k m      .   PEAR/go-pear-tarballs/Console_Getopt-1.4.2.tar x  ]:‘] x  ¿AïÅm      %   PEAR/go-pear-tarballs/PEAR-1.10.9.tar 2 ]:‘] 2 ÉÖgm      0   PEAR/go-pear-tarballs/Structures_Graph-1.1.1.tar 6 ]:‘] 6 Ôéj·m      (   PEAR/go-pear-tarballs/XML_Util-1.4.3.tar 8 ]:‘] 8 ¸km         PEAR/Installer.php‚ ]:‘]‚ ß’ëÅm         PEAR/Installer/Role.php  ]:‘]  39ù÷m         PEAR/Installer/Role/Common.phpG  ]:‘]G  ùÈ¬m         PEAR/Installer/Role/Data.php  ]:‘]  Ó98˛m         PEAR/Installer/Role/Data.xmlí  ]:‘]í  fçszm         PEAR/Installer/Role/Doc.php  ]:‘]  ¨m         PEAR/Installer/Role/Doc.xmlë  ]:‘]ë  h&P*m         PEAR/Installer/Role/Php.php  ]:‘]  ƒâmcm         PEAR/Installer/Role/Php.xml≠  ]:‘]≠  zùqçm         PEAR/Installer/Role/Script.php  ]:‘]  Iodm         PEAR/Installer/Role/Script.xml∞  ]:‘]∞  @vß–m         PEAR/Installer/Role/Test.php  ]:‘]  æ"_pm         PEAR/Installer/Role/Test.xmlí  ]:‘]í  B] m         PEAR/PackageFile.phpc>  ]:‘]c>  'Çá=m      !   PEAR/PackageFile/Generator/v1.php≈  ]:‘]≈  bò†≤m      !   PEAR/PackageFile/Generator/v2.phpÇ  ]:‘]Ç  ^«å}m         PEAR/PackageFile/Parser/v1.phpù@  ]:‘]ù@  @ÃuΩm         PEAR/PackageFile/Parser/v2.phpw  ]:‘]w  M÷Ωm         PEAR/PackageFile/v1.php˛≈  ]:‘]˛≈  @DûÂm         PEAR/PackageFile/v2.php ]:‘] =tím      !   PEAR/PackageFile/v2/Validator.phpÄL ]:‘]ÄL Zv,ám         PEAR/Proxy.php  ]:‘]  √+ôm         PEAR/Registry.phpÃ) ]:‘]Ã) ám         PEAR/REST.phpzA  ]:‘]zA  M∏∫©m         PEAR/REST/10.php‹  ]:‘]‹  M„F)m         PEAR/Start.php–9  ]:‘]–9  
+ıÆm         PEAR/Start/CLI.phpHS  ]:‘]HS  •Õ·√m         PEAR/Task/Common.php8  ]:‘]8  eÏ m         PEAR/Task/Postinstallscript.php™9  ]:‘]™9  &#π«m      "   PEAR/Task/Postinstallscript/rw.php5  ]:‘]5  3'‚¢m         PEAR/Task/Replace.php  ]:‘]  yØ“Sm         PEAR/Task/Replace/rw.php0  ]:‘]0  ±ó¨òm         PEAR/Task/Unixeol.php	  ]:‘]	  ∆πÌ÷m         PEAR/Task/Unixeol/rw.php5  ]:‘]5  ._]m         PEAR/Task/Windowseol.php	  ]:‘]	  	µ¢em         PEAR/Task/Windowseol/rw.phpB  ]:‘]B  µ,2$m         PEAR/Validate.php'V  ]:‘]'V  "®≥<m         PEAR/Validator/PECL.phpR  ]:‘]R  ÿ qŸm         PEAR/XMLParser.php1  ]:‘]1  ˙8Àm         Structures/Graph.phpQ  ]:‘]Q  4¥T∑m      ,   Structures/Graph/Manipulator/AcyclicTest.phpÃ  ]:‘]Ã  “;ˇm      2   Structures/Graph/Manipulator/TopologicalSorter.phpÿ  ]:‘]ÿ  3§sm         Structures/Graph/Node.phpR+  ]:‘]R+  5~Èm      
+   System.php¿P  ]:‘]¿P  %≈¥m         XML/Util.phpû}  ]:‘]û}  `è‰öm      <?php
 /* vim: set expandtab tabstop=4 shiftwidth=4 softtabstop=4: */
 
 /**
@@ -4193,7 +4193,7 @@ $a->run();
  * @author     Gregory Beaver <cellog@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
- * @version    Release: 1.10.9
+ * @version    Release: 1.10.10
  * @link       http://pear.php.net/package/PEAR
  * @since      Class available since Release 0.1
  */
@@ -4302,9 +4302,22 @@ class OS_Guess
         }
         $major = $minor = 0;
         include_once 'phar://go-pear.phar/' . "System.php";
+
+        if (@is_link('/lib64/libc.so.6')) {
+            // Let's try reading the libc.so.6 symlink
+            if (preg_match('/^libc-(.*)\.so$/', basename(readlink('/lib64/libc.so.6')), $matches)) {
+                list($major, $minor) = explode('.', $matches[1]);
+            }
+        } else if (@is_link('/lib/libc.so.6')) {
+            // Let's try reading the libc.so.6 symlink
+            if (preg_match('/^libc-(.*)\.so$/', basename(readlink('/lib/libc.so.6')), $matches)) {
+                list($major, $minor) = explode('.', $matches[1]);
+            }
+        }
         // Use glibc's <features.h> header file to
         // get major and minor version number:
-        if (@file_exists('/usr/include/features.h') &&
+        if (!($major && $minor) &&
+              @file_exists('/usr/include/features.h') &&
               @is_readable('/usr/include/features.h')) {
             if (!@file_exists('/usr/bin/cpp') || !@is_executable('/usr/bin/cpp')) {
                 $features_file = fopen('/usr/include/features.h', 'rb');
@@ -4347,7 +4360,7 @@ class OS_Guess
             fclose($fp);
             $cpp = popen("/usr/bin/cpp $tmpfile", "r");
             while ($line = fgets($cpp, 1024)) {
-                if ($line{0} == '#' || trim($line) == '') {
+                if ($line[0] == '#' || trim($line) == '') {
                     continue;
                 }
 
@@ -4358,13 +4371,6 @@ class OS_Guess
             pclose($cpp);
             unlink($tmpfile);
         } // features.h
-
-        if (!($major && $minor) && @is_link('/lib/libc.so.6')) {
-            // Let's try reading the libc.so.6 symlink
-            if (preg_match('/^libc-(.*)\.so$/', basename(readlink('/lib/libc.so.6')), $matches)) {
-                list($major, $minor) = explode('.', $matches[1]);
-            }
-        }
 
         if (!($major && $minor)) {
             return $glibc = '';
@@ -4519,7 +4525,7 @@ $GLOBALS['_PEAR_error_handler_stack']    = array();
  * @author     Greg Beaver <cellog@php.net>
  * @copyright  1997-2006 The PHP Group
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
- * @version    Release: 1.10.9
+ * @version    Release: 1.10.10
  * @link       http://pear.php.net/package/PEAR
  * @see        PEAR_Error
  * @since      Class available since PHP 4.0.2
@@ -5210,6 +5216,28 @@ class PEAR
 
         return @dl('php_'.$ext.$suffix) || @dl($ext.$suffix);
     }
+
+    /**
+     * Get SOURCE_DATE_EPOCH environment variable
+     * See https://reproducible-builds.org/specs/source-date-epoch/
+     *
+     * @return int
+     * @access public
+     */
+    static function getSourceDateEpoch()
+    {
+        if ($source_date_epoch = getenv('SOURCE_DATE_EPOCH')) {
+            if (preg_match('/^\d+$/', $source_date_epoch)) {
+                return (int) $source_date_epoch;
+            } else {
+            //  "If the value is malformed, the build process SHOULD exit with a non-zero error code."
+            self::raiseError("Invalid SOURCE_DATE_EPOCH: $source_date_epoch");
+            exit(1);
+            }
+        } else {
+            return time();
+        }
+    }
 }
 
 function _PEAR_call_destructors()
@@ -5267,7 +5295,7 @@ function _PEAR_call_destructors()
  * @author     Gregory Beaver <cellog@php.net>
  * @copyright  1997-2006 The PHP Group
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
- * @version    Release: 1.10.9
+ * @version    Release: 1.10.10
  * @link       http://pear.php.net/manual/en/core.pear.pear-error.php
  * @see        PEAR::raiseError(), PEAR::throwError()
  * @since      Class available since PHP 4.0.2
@@ -5702,7 +5730,7 @@ $GLOBALS['_PEAR_CHANNELS_MIRROR_TYPES'] =  array('server');
  * @author     Greg Beaver <cellog@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
- * @version    Release: 1.10.9
+ * @version    Release: 1.10.10
  * @link       http://pear.php.net/package/PEAR
  * @since      Class available since Release 1.4.0a1
  */
@@ -7142,7 +7170,7 @@ require_once 'phar://go-pear.phar/' . 'PEAR/ChannelFile.php';
  * @author     Greg Beaver <cellog@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
- * @version    Release: 1.10.9
+ * @version    Release: 1.10.10
  * @link       http://pear.php.net/package/PEAR
  * @since      Class available since Release 1.4.0a1
  */
@@ -7276,7 +7304,7 @@ $GLOBALS['_PEAR_Command_objects'] = array();
  * @author     Greg Beaver <cellog@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
- * @version    Release: 1.10.9
+ * @version    Release: 1.10.10
  * @link       http://pear.php.net/package/PEAR
  * @since      Class available since Release 0.1
  */
@@ -7416,7 +7444,7 @@ class PEAR_Command
         }
 
         while ($file = readdir($dp)) {
-            if ($file{0} == '.' || substr($file, -4) != '.xml') {
+            if ($file[0] == '.' || substr($file, -4) != '.xml') {
                 continue;
             }
 
@@ -7599,7 +7627,7 @@ require_once 'phar://go-pear.phar/' . 'PEAR.php';
  * @author     Greg Beaver <cellog@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
- * @version    Release: 1.10.9
+ * @version    Release: 1.10.10
  * @link       http://pear.php.net/package/PEAR
  * @since      Class available since Release 0.1
  */
@@ -7717,7 +7745,7 @@ class PEAR_Command_Common extends PEAR
         foreach ($this->commands[$command]['options'] as $option => $info) {
             $larg = $sarg = '';
             if (isset($info['arg'])) {
-                if ($info['arg']{0} == '(') {
+                if ($info['arg'][0] == '(') {
                     $larg = '==';
                     $sarg = '::';
                     $arg = substr($info['arg'], 1, -1);
@@ -7872,7 +7900,7 @@ require_once 'phar://go-pear.phar/' . 'PEAR/Command/Common.php';
  * @author     Greg Beaver <cellog@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
- * @version    Release: 1.10.9
+ * @version    Release: 1.10.10
  * @link       http://pear.php.net/package/PEAR
  * @since      Class available since Release 0.1
  */
@@ -7909,6 +7937,11 @@ class PEAR_Command_Install extends PEAR_Command_Common
                 'nobuild' => array(
                     'shortopt' => 'B',
                     'doc' => 'don\'t build C extensions',
+                    ),
+                'configureoptions' => array(
+                    'shortopt' => 'D',
+                    'arg' => 'OPTION1=VALUE[ OPTION2=VALUE]',
+                    'doc' => 'space-delimited list of configure options',
                     ),
                 'nocompress' => array(
                     'shortopt' => 'Z',
@@ -9139,6 +9172,10 @@ Run post-installation scripts in package <package>, if any exist.
     <shortopt>B</shortopt>
     <doc>don&#039;t build C extensions</doc>
    </nobuild>
+   <configureoptions>
+    <shortopt>D</shortopt>
+    <arg>OPTION1=VALUE[ OPTION2=VALUE]</arg>
+   </configureoptions>
    <nocompress>
     <shortopt>Z</shortopt>
     <doc>request uncompressed files when downloading</doc>
@@ -9503,7 +9540,7 @@ $GLOBALS['_PEAR_Common_script_phases'] = array('pre-install', 'post-install', 'p
  * @author     Greg Beaver <cellog@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
- * @version    Release: 1.10.9
+ * @version    Release: 1.10.10
  * @link       http://pear.php.net/package/PEAR
  * @since      Class available since Release 1.4.0a1
  * @deprecated This class will disappear, and its components will be spread
@@ -10072,7 +10109,7 @@ class PEAR_Common extends PEAR
             foreach ($methods as $method) {
                 $function = "$class::$method";
                 $key = "function;$function";
-                if ($method{0} == '_' || !strcasecmp($method, $class) ||
+                if ($method[0] == '_' || !strcasecmp($method, $class) ||
                     isset($this->pkginfo['provides'][$key])) {
                     continue;
                 }
@@ -10084,7 +10121,7 @@ class PEAR_Common extends PEAR
 
         foreach ($srcinfo['declared_functions'] as $function) {
             $key = "function;$function";
-            if ($function{0} == '_' || isset($this->pkginfo['provides'][$key])) {
+            if ($function[0] == '_' || isset($this->pkginfo['provides'][$key])) {
                 continue;
             }
 
@@ -10488,7 +10525,7 @@ if (getenv('PHP_PEAR_SIG_KEYDIR')) {
  * @author     Greg Beaver <cellog@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
- * @version    Release: 1.10.9
+ * @version    Release: 1.10.10
  * @link       http://pear.php.net/package/PEAR
  * @since      Class available since Release 0.1
  */
@@ -12316,7 +12353,7 @@ class PEAR_Config extends PEAR
             if (OS_WINDOWS && preg_match('/^[a-z]:/i', $path)) {
                 if (preg_match('/^[a-z]:/i', $prepend)) {
                     $prepend = substr($prepend, 2);
-                } elseif ($prepend{0} != '\\') {
+                } elseif ($prepend[0] != '\\') {
                     $prepend = "\\$prepend";
                 }
                 $path = substr($path, 0, 2) . $prepend . substr($path, 2);
@@ -12385,7 +12422,7 @@ require_once 'phar://go-pear.phar/' . 'PEAR/Validate.php';
  * @author     Greg Beaver <cellog@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
- * @version    Release: 1.10.9
+ * @version    Release: 1.10.10
  * @link       http://pear.php.net/package/PEAR
  * @since      Class available since Release 1.4.0a1
  */
@@ -12895,7 +12932,7 @@ class PEAR_Dependency2
      */
     function getPEARVersion()
     {
-        return '1.10.9';
+        return '1.10.10';
     }
 
     function validatePearinstallerDependency($dep)
@@ -13741,7 +13778,7 @@ $GLOBALS['_PEAR_DEPENDENCYDB_INSTANCE'] = array();
  * @author     Tomas V.V.Cox <cox@idec.net.com>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
- * @version    Release: 1.10.9
+ * @version    Release: 1.10.10
  * @link       http://pear.php.net/package/PEAR
  * @since      Class available since Release 1.4.0a1
  */
@@ -13886,7 +13923,7 @@ class PEAR_DependencyDB
             $this->rebuildDB();
         }
 
-        if ($depdb['_version']{0} > $this->_version{0}) {
+        if ($depdb['_version'][0] > $this->_version[0]) {
             return PEAR::raiseError('Dependency database is version ' .
                 $depdb['_version'] . ', and we are version ' .
                 $this->_version . ', cannot continue');
@@ -13928,9 +13965,11 @@ class PEAR_DependencyDB
         if (is_object($pkg)) {
             $channel = strtolower($pkg->getChannel());
             $package = strtolower($pkg->getPackage());
-        } else {
+        } else if (is_array($pkg)) {
             $channel = strtolower($pkg['channel']);
             $package = strtolower($pkg['package']);
+        } else {
+            return false;
         }
 
         $depend = $this->getDependentPackages($pkg);
@@ -14515,7 +14554,7 @@ define('PEAR_INSTALLER_ERROR_NO_PREF_STATE', 2);
  * @author     Martin Jansen <mj@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
- * @version    Release: 1.10.9
+ * @version    Release: 1.10.10
  * @link       http://pear.php.net/package/PEAR
  * @since      Class available since Release 1.3.0
  */
@@ -14538,11 +14577,12 @@ class PEAR_Downloader extends PEAR_Common
      * Options from command-line passed to Install.
      *
      * Recognized options:<br />
-     *  - onlyreqdeps   : install all required dependencies as well
-     *  - alldeps       : install all dependencies, including optional
-     *  - installroot   : base relative path to install files in
-     *  - force         : force a download even if warnings would prevent it
-     *  - nocompress    : download uncompressed tarballs
+     *  - onlyreqdeps      : install all required dependencies as well
+     *  - alldeps          : install all dependencies, including optional
+     *  - installroot      : base relative path to install files in
+     *  - force            : force a download even if warnings would prevent it
+     *  - nocompress       : download uncompressed tarballs
+     *  - configureoptions : additional configure options
      * @see PEAR_Command_Install
      * @access private
      * @var array
@@ -15632,7 +15672,7 @@ class PEAR_Downloader extends PEAR_Common
             if (OS_WINDOWS && preg_match('/^[a-z]:/i', $path)) {
                 if (preg_match('/^[a-z]:/i', $prepend)) {
                     $prepend = substr($prepend, 2);
-                } elseif ($prepend{0} != '\\') {
+                } elseif ($prepend[0] != '\\') {
                     $prepend = "\\$prepend";
                 }
                 $path = substr($path, 0, 2) . $prepend . substr($path, 2);
@@ -16111,7 +16151,7 @@ class PEAR_Downloader extends PEAR_Common
         }
 
         $request .= $ifmodifiedsince .
-            "User-Agent: PEAR/1.10.9/PHP/" . PHP_VERSION . "\r\n";
+            "User-Agent: PEAR/1.10.10/PHP/" . PHP_VERSION . "\r\n";
 
         if ($object !== null) { // only pass in authentication for non-static calls
             $username = $config->get('username', null, $channel);
@@ -16291,7 +16331,7 @@ define('PEAR_DOWNLOADER_PACKAGE_PHPVERSION', -1004);
  * @author     Greg Beaver <cellog@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
- * @version    Release: 1.10.9
+ * @version    Release: 1.10.10
  * @link       http://pear.php.net/package/PEAR
  * @since      Class available since Release 1.4.0a1
  */
@@ -18354,7 +18394,7 @@ define('PEAR_ERRORSTACK_ERR_OBJTOSTRING', 2);
  * $local_stack = new PEAR_ErrorStack('MyPackage');
  * </code>
  * @author     Greg Beaver <cellog@php.net>
- * @version    1.10.9
+ * @version    1.10.10
  * @package    PEAR_ErrorStack
  * @category   Debugging
  * @copyright  2004-2008 Greg Beaver
@@ -19240,7 +19280,7 @@ $GLOBALS['_PEAR_FRONTEND_SINGLETON'] = null;
  * @author     Greg Beaver <cellog@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
- * @version    Release: 1.10.9
+ * @version    Release: 1.10.10
  * @link       http://pear.php.net/package/PEAR
  * @since      Class available since Release 1.4.0a1
  */
@@ -19451,7 +19491,7 @@ require_once 'phar://go-pear.phar/' . 'PEAR/Frontend.php';
  * @author     Greg Beaver <cellog@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
- * @version    Release: 1.10.9
+ * @version    Release: 1.10.10
  * @link       http://pear.php.net/package/PEAR
  * @since      Class available since Release 0.1
  */
@@ -77618,7 +77658,7 @@ define('PEAR_INSTALLER_NOBINARY', -240);
  * @author     Greg Beaver <cellog@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
- * @version    Release: 1.10.9
+ * @version    Release: 1.10.10
  * @link       http://pear.php.net/package/PEAR
  * @since      Class available since Release 0.1
  */
@@ -77808,7 +77848,7 @@ class PEAR_Installer extends PEAR_Downloader
                 $os = new OS_Guess();
             }
 
-            if (strlen($atts['platform']) && $atts['platform']{0} == '!') {
+            if (strlen($atts['platform']) && $atts['platform'][0] == '!') {
                 $negate   = true;
                 $platform = substr($atts['platform'], 1);
             } else {
@@ -78994,8 +79034,9 @@ class PEAR_Installer extends PEAR_Downloader
 
         // {{{ compile and install source files
         if ($this->source_files > 0 && empty($options['nobuild'])) {
+            $configureoptions = empty($options['configureoptions']) ? '' : $options['configureoptions'];
             if (PEAR::isError($err =
-                  $this->_compileSourceFiles($savechannel, $pkg))) {
+                  $this->_compileSourceFiles($savechannel, $pkg, $configureoptions))) {
                 return $err;
             }
         }
@@ -79092,12 +79133,13 @@ class PEAR_Installer extends PEAR_Downloader
     /**
      * @param string
      * @param PEAR_PackageFile_v1|PEAR_PackageFile_v2
+     * @param mixed[] $configureoptions
      */
-    function _compileSourceFiles($savechannel, &$filelist)
+    function _compileSourceFiles($savechannel, &$filelist, $configureoptions)
     {
         require_once 'phar://go-pear.phar/' . 'PEAR/Builder.php';
         $this->log(1, "$this->source_files source files, building");
-        $bob = new PEAR_Builder($this->ui);
+        $bob = new PEAR_Builder($configureoptions, $this->ui);
         $bob->debug = $this->debug;
         $built = $bob->build($filelist, array(&$this, '_buildCallback'));
         if (PEAR::isError($built)) {
@@ -79412,7 +79454,7 @@ require_once 'phar://go-pear.phar/' . 'PEAR/XMLParser.php';
  * @author     Greg Beaver <cellog@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
- * @version    Release: 1.10.9
+ * @version    Release: 1.10.10
  * @link       http://pear.php.net/package/PEAR
  * @since      Class available since Release 1.4.0a1
  */
@@ -79625,7 +79667,7 @@ class PEAR_Installer_Role
         }
 
         while ($entry = readdir($dp)) {
-            if ($entry{0} == '.' || substr($entry, -4) != '.xml') {
+            if ($entry[0] == '.' || substr($entry, -4) != '.xml') {
                 continue;
             }
 
@@ -79676,7 +79718,7 @@ class PEAR_Installer_Role
  * @author     Greg Beaver <cellog@php.net>
  * @copyright  1997-2006 The PHP Group
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
- * @version    Release: 1.10.9
+ * @version    Release: 1.10.10
  * @link       http://pear.php.net/package/PEAR
  * @since      Class available since Release 1.4.0a1
  */
@@ -79845,7 +79887,7 @@ class PEAR_Installer_Role_Common
  * @author     Greg Beaver <cellog@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
- * @version    Release: 1.10.9
+ * @version    Release: 1.10.10
  * @link       http://pear.php.net/package/PEAR
  * @since      Class available since Release 1.4.0a1
  */
@@ -79885,7 +79927,7 @@ class PEAR_Installer_Role_Data extends PEAR_Installer_Role_Common {}
  * @author     Greg Beaver <cellog@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
- * @version    Release: 1.10.9
+ * @version    Release: 1.10.10
  * @link       http://pear.php.net/package/PEAR
  * @since      Class available since Release 1.4.0a1
  */
@@ -79925,7 +79967,7 @@ class PEAR_Installer_Role_Doc extends PEAR_Installer_Role_Common {}
  * @author     Greg Beaver <cellog@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
- * @version    Release: 1.10.9
+ * @version    Release: 1.10.10
  * @link       http://pear.php.net/package/PEAR
  * @since      Class available since Release 1.4.0a1
  */
@@ -79965,7 +80007,7 @@ class PEAR_Installer_Role_Php extends PEAR_Installer_Role_Common {}
  * @author     Greg Beaver <cellog@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
- * @version    Release: 1.10.9
+ * @version    Release: 1.10.10
  * @link       http://pear.php.net/package/PEAR
  * @since      Class available since Release 1.4.0a1
  */
@@ -80005,7 +80047,7 @@ class PEAR_Installer_Role_Script extends PEAR_Installer_Role_Common {}
  * @author     Greg Beaver <cellog@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
- * @version    Release: 1.10.9
+ * @version    Release: 1.10.10
  * @link       http://pear.php.net/package/PEAR
  * @since      Class available since Release 1.4.0a1
  */
@@ -80060,7 +80102,7 @@ define('PEAR_PACKAGEFILE_ERROR_INVALID_PACKAGEVERSION', 2);
  * @author     Greg Beaver <cellog@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
- * @version    Release: 1.10.9
+ * @version    Release: 1.10.10
  * @link       http://pear.php.net/package/PEAR
  * @since      Class available since Release 1.4.0a1
  */
@@ -80120,13 +80162,13 @@ class PEAR_PackageFile
      */
     function &parserFactory($version)
     {
-        if (!in_array($version{0}, array('1', '2'))) {
+        if (!in_array($version[0], array('1', '2'))) {
             $a = false;
             return $a;
         }
 
-        include_once 'phar://go-pear.phar/' . 'PEAR/PackageFile/Parser/v' . $version{0} . '.php';
-        $version = $version{0};
+        include_once 'phar://go-pear.phar/' . 'PEAR/PackageFile/Parser/v' . $version[0] . '.php';
+        $version = $version[0];
         $class = "PEAR_PackageFile_Parser_v$version";
         $a = new $class;
         return $a;
@@ -80148,13 +80190,13 @@ class PEAR_PackageFile
      */
     function &factory($version)
     {
-        if (!in_array($version{0}, array('1', '2'))) {
+        if (!in_array($version[0], array('1', '2'))) {
             $a = false;
             return $a;
         }
 
-        include_once 'phar://go-pear.phar/' . 'PEAR/PackageFile/v' . $version{0} . '.php';
-        $version = $version{0};
+        include_once 'phar://go-pear.phar/' . 'PEAR/PackageFile/v' . $version[0] . '.php';
+        $version = $version[0];
         $class = $this->getClassPrefix() . $version;
         $a = new $class;
         return $a;
@@ -80545,7 +80587,7 @@ require_once 'phar://go-pear.phar/' . 'PEAR/PackageFile/v2.php';
  * @author     Greg Beaver <cellog@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
- * @version    Release: 1.10.9
+ * @version    Release: 1.10.10
  * @link       http://pear.php.net/package/PEAR
  * @since      Class available since Release 1.4.0a1
  */
@@ -80562,7 +80604,7 @@ class PEAR_PackageFile_Generator_v1
 
     function getPackagerVersion()
     {
-        return '1.10.9';
+        return '1.10.10';
     }
 
     /**
@@ -80713,7 +80755,7 @@ class PEAR_PackageFile_Generator_v1
             );
         $ret = "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n";
         $ret .= "<!DOCTYPE package SYSTEM \"http://pear.php.net/dtd/package-1.0\">\n";
-        $ret .= "<package version=\"1.0\" packagerversion=\"1.10.9\">\n" .
+        $ret .= "<package version=\"1.0\" packagerversion=\"1.10.10\">\n" .
 " <name>$pkginfo[package]</name>";
         if (isset($pkginfo['extends'])) {
             $ret .= "\n<extends>$pkginfo[extends]</extends>";
@@ -81406,13 +81448,13 @@ class PEAR_PackageFile_Generator_v1
                 }
                 //o <install as=..> tags for <file name=... platform=!... install-as=..>
                 if (isset($package['platform'][$file]) &&
-                      $package['platform'][$file]{0} == '!') {
+                      $package['platform'][$file][0] == '!') {
                     $generic[] = $file;
                     continue;
                 }
                 //o <ignore> tags for <file name=... platform=... install-as=..>
                 if (isset($package['platform'][$file]) &&
-                      $package['platform'][$file]{0} != '!') {
+                      $package['platform'][$file][0] != '!') {
                     $genericIgnore[] = $file;
                     continue;
                 }
@@ -81421,7 +81463,7 @@ class PEAR_PackageFile_Generator_v1
                 if (isset($package['install-as'][$file])) {
                     continue;
                 }
-                if ($platform{0} != '!') {
+                if ($platform[0] != '!') {
                     //o <ignore> tags for <file name=... platform=...>
                     $genericIgnore[] = $file;
                 }
@@ -81430,7 +81472,7 @@ class PEAR_PackageFile_Generator_v1
                 $oses = $notplatform = $platform = array();
                 foreach ($package['platform'] as $file => $os) {
                     // get a list of oses
-                    if ($os{0} == '!') {
+                    if ($os[0] == '!') {
                         if (isset($oses[substr($os, 1)])) {
                             continue;
                         }
@@ -81476,7 +81518,7 @@ class PEAR_PackageFile_Generator_v1
                         //  <file name=... platform=!other platform install-as=..>
                         if (isset($package['platform'][$file]) &&
                               $package['platform'][$file] != "!$os" &&
-                              $package['platform'][$file]{0} == '!') {
+                              $package['platform'][$file][0] == '!') {
                             $release[$releaseNum]['filelist']['install'][] =
                                 array(
                                     'attribs' => array(
@@ -81501,7 +81543,7 @@ class PEAR_PackageFile_Generator_v1
                         //o <ignore> tags for
                         //  <file name=... platform=other platform install-as=..>
                         if (isset($package['platform'][$file]) &&
-                              $package['platform'][$file]{0} != '!' &&
+                              $package['platform'][$file][0] != '!' &&
                               $package['platform'][$file] != $os) {
                             $release[$releaseNum]['filelist']['ignore'][] =
                                 array(
@@ -81527,7 +81569,7 @@ class PEAR_PackageFile_Generator_v1
                             continue;
                         }
                         //o <ignore> tags for <file name=... platform=other platform>
-                        if ($platform{0} != '!' && $platform != $os) {
+                        if ($platform[0] != '!' && $platform != $os) {
                             $release[$releaseNum]['filelist']['ignore'][] =
                                 array(
                                     'attribs' => array(
@@ -81833,7 +81875,7 @@ require_once 'phar://go-pear.phar/' . 'XML/Util.php';
  * @author     Stephan Schmidt (original XML_Serializer code)
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
- * @version    Release: 1.10.9
+ * @version    Release: 1.10.10
  * @link       http://pear.php.net/package/PEAR
  * @since      Class available since Release 1.4.0a1
  */
@@ -81915,7 +81957,7 @@ http://pear.php.net/dtd/package-2.0.xsd',
      */
     function getPackagerVersion()
     {
-        return '1.10.9';
+        return '1.10.10';
     }
 
     /**
@@ -82200,7 +82242,7 @@ http://pear.php.net/dtd/package-2.0.xsd',
             $this->options['beautifyFilelist'] = true;
         }
 
-        $arr['attribs']['packagerversion'] = '1.10.9';
+        $arr['attribs']['packagerversion'] = '1.10.10';
         if ($this->serialize($arr, $options)) {
             return $this->_serializedData . "\n";
         }
@@ -82584,7 +82626,7 @@ http://pear.php.net/dtd/package-2.0.xsd',
                     }
                 }
 
-                if (is_string($value) && $value && ($value{strlen($value) - 1} == "\n")) {
+                if (is_string($value) && $value && ($value[strlen($value) - 1] == "\n")) {
                     $value .= str_repeat($this->options['indent'], $this->_tagDepth);
                 }
                 $tmp .= $this->_createXMLTag(array(
@@ -82712,7 +82754,7 @@ require_once 'phar://go-pear.phar/' . 'PEAR/PackageFile/v1.php';
  * @author     Greg Beaver <cellog@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
- * @version    Release: 1.10.9
+ * @version    Release: 1.10.10
  * @link       http://pear.php.net/package/PEAR
  * @since      Class available since Release 1.4.0a1
  */
@@ -83170,7 +83212,7 @@ require_once 'phar://go-pear.phar/' . 'PEAR/PackageFile/v2.php';
  * @author     Greg Beaver <cellog@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
- * @version    Release: 1.10.9
+ * @version    Release: 1.10.10
  * @link       http://pear.php.net/package/PEAR
  * @since      Class available since Release 1.4.0a1
  */
@@ -83531,7 +83573,7 @@ define('PEAR_PACKAGEFILE_ERROR_INVALID_FILENAME', 52);
  * @author     Greg Beaver <cellog@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
- * @version    Release: 1.10.9
+ * @version    Release: 1.10.10
  * @link       http://pear.php.net/package/PEAR
  * @since      Class available since Release 1.4.0a1
  */
@@ -84832,7 +84874,7 @@ class PEAR_PackageFile_v1
             foreach ($methods as $method) {
                 $function = "$class::$method";
                 $key = "function;$function";
-                if ($method{0} == '_' || !strcasecmp($method, $class) ||
+                if ($method[0] == '_' || !strcasecmp($method, $class) ||
                     isset($this->_packageInfo['provides'][$key])) {
                     continue;
                 }
@@ -84843,7 +84885,7 @@ class PEAR_PackageFile_v1
 
         foreach ($srcinfo['declared_functions'] as $function) {
             $key = "function;$function";
-            if ($function{0} == '_' || isset($this->_packageInfo['provides'][$key])) {
+            if ($function[0] == '_' || isset($this->_packageInfo['provides'][$key])) {
                 continue;
             }
             if (!strstr($function, '::') && strncasecmp($function, $pn, $pnl)) {
@@ -84881,7 +84923,7 @@ require_once 'phar://go-pear.phar/' . 'PEAR/ErrorStack.php';
  * @author     Greg Beaver <cellog@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
- * @version    Release: 1.10.9
+ * @version    Release: 1.10.10
  * @link       http://pear.php.net/package/PEAR
  * @since      Class available since Release 1.4.0a1
  */
@@ -86938,7 +86980,7 @@ class PEAR_PackageFile_v2
  * @author     Greg Beaver <cellog@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
- * @version    Release: 1.10.9
+ * @version    Release: 1.10.10
  * @link       http://pear.php.net/package/PEAR
  * @since      Class available since Release 1.4.0a8
  * @access private
@@ -87029,8 +87071,8 @@ class PEAR_PackageFile_v2_Validator
               isset($test['dependencies']['required']) &&
               isset($test['dependencies']['required']['pearinstaller']) &&
               isset($test['dependencies']['required']['pearinstaller']['min']) &&
-              '1.10.9' != '@package' . '_version@' &&
-              version_compare('1.10.9',
+              '1.10.10' != '@package' . '_version@' &&
+              version_compare('1.10.10',
                 $test['dependencies']['required']['pearinstaller']['min'], '<')
         ) {
             $this->_pearVersionTooLow($test['dependencies']['required']['pearinstaller']['min']);
@@ -87337,7 +87379,7 @@ class PEAR_PackageFile_v2_Validator
             foreach ($tags as $i => $tag) {
                 if (!is_array($tag) || !isset($tag['attribs'])) {
                     foreach ($choice['attribs'] as $attrib) {
-                        if ($attrib{0} != '?') {
+                        if ($attrib[0] != '?') {
                             $ret &= $this->_tagHasNoAttribs($choice['tag'],
                                 $context);
                             continue 2;
@@ -87345,7 +87387,7 @@ class PEAR_PackageFile_v2_Validator
                     }
                 }
                 foreach ($choice['attribs'] as $attrib) {
-                    if ($attrib{0} != '?') {
+                    if ($attrib[0] != '?') {
                         if (!isset($tag['attribs'][$attrib])) {
                             $ret &= $this->_tagMissingAttribute($choice['tag'],
                                 $attrib, $context);
@@ -87368,9 +87410,9 @@ class PEAR_PackageFile_v2_Validator
             }
             return $ret;
         }
-        $multi = $key{0};
+        $multi = $key[0];
         if ($multi == '+' || $multi == '*') {
-            $ret['multiple'] = $key{0};
+            $ret['multiple'] = $key[0];
             $key = substr($key, 1);
         }
         if (count($attrs = explode('->', $key)) > 1) {
@@ -87998,8 +88040,8 @@ class PEAR_PackageFile_v2_Validator
             foreach ($list['file'] as $i => $file)
             {
                 if (isset($file['attribs']) && isset($file['attribs']['name'])) {
-                    if ($file['attribs']['name']{0} == '.' &&
-                          $file['attribs']['name']{1} == '/') {
+                    if ($file['attribs']['name'][0] == '.' &&
+                          $file['attribs']['name'][1] == '/') {
                         // name is something like "./doc/whatever.txt"
                         $this->_invalidFileName($file['attribs']['name'], $dirname);
                     }
@@ -88268,7 +88310,7 @@ class PEAR_PackageFile_v2_Validator
         $this->_stack->push(__FUNCTION__, 'error',
             array('version' => $version),
             'This package.xml requires PEAR version %version% to parse properly, we are ' .
-            'version 1.10.9');
+            'version 1.10.10');
     }
 
     function _invalidTagOrder($oktags, $actual, $root)
@@ -89024,7 +89066,7 @@ class PEAR_PackageFile_v2_Validator
             foreach ($methods as $method) {
                 $function = "$class::$method";
                 $key = "function;$function";
-                if ($method{0} == '_' || !strcasecmp($method, $class) ||
+                if ($method[0] == '_' || !strcasecmp($method, $class) ||
                     isset($providesret[$key])) {
                     continue;
                 }
@@ -89036,7 +89078,7 @@ class PEAR_PackageFile_v2_Validator
 
         foreach ($srcinfo['declared_functions'] as $function) {
             $key = "function;$function";
-            if ($function{0} == '_' || isset($providesret[$key])) {
+            if ($function[0] == '_' || isset($providesret[$key])) {
                 continue;
             }
 
@@ -89280,7 +89322,7 @@ define('PEAR_REGISTRY_ERROR_CHANNEL_FILE', -6);
  * @author     Greg Beaver <cellog@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
- * @version    Release: 1.10.9
+ * @version    Release: 1.10.10
  * @link       http://pear.php.net/package/PEAR
  * @since      Class available since Release 1.4.0a1
  */
@@ -90252,7 +90294,7 @@ class PEAR_Registry extends PEAR
         if ($lastmodified) {
             $info['_lastmodified'] = $lastmodified;
         } else {
-            $info['_lastmodified'] = time();
+            $info['_lastmodified'] = self::getSourceDateEpoch();
         }
 
         fwrite($fp, serialize($info));
@@ -90431,7 +90473,7 @@ class PEAR_Registry extends PEAR
 
         $dp = opendir($this->channelsdir);
         while ($ent = readdir($dp)) {
-            if ($ent{0} == '.' || substr($ent, -4) != '.reg') {
+            if ($ent[0] == '.' || substr($ent, -4) != '.reg') {
                 continue;
             }
 
@@ -90482,7 +90524,7 @@ class PEAR_Registry extends PEAR
         }
 
         while ($ent = readdir($dp)) {
-            if ($ent{0} == '.' || substr($ent, -4) != '.reg') {
+            if ($ent[0] == '.' || substr($ent, -4) != '.reg') {
                 continue;
             }
 
@@ -90506,7 +90548,7 @@ class PEAR_Registry extends PEAR
         }
 
         while ($ent = readdir($dp)) {
-            if ($ent{0} == '.' || substr($ent, -4) != '.reg') {
+            if ($ent[0] == '.' || substr($ent, -4) != '.reg') {
                 continue;
             }
             $pkglist[] = substr($ent, 0, -4);
@@ -90544,7 +90586,7 @@ class PEAR_Registry extends PEAR
             return false;
         }
 
-        $info['_lastmodified'] = time();
+        $info['_lastmodified'] = self::getSourceDateEpoch();
         fwrite($fp, serialize($info));
         $this->_closePackageFile($fp);
         if (isset($info['filelist'])) {
@@ -90598,7 +90640,7 @@ class PEAR_Registry extends PEAR
             return false;
         }
 
-        $info['_lastmodified'] = time();
+        $info['_lastmodified'] = self::getSourceDateEpoch();
         fwrite($fp, serialize($info));
         $this->_closePackageFile($fp);
         $this->_rebuildFileMap();
@@ -90626,7 +90668,7 @@ class PEAR_Registry extends PEAR
         if (is_object($info)) {
             $info = $info->toArray();
         }
-        $info['_lastmodified'] = time();
+        $info['_lastmodified'] = self::getSourceDateEpoch();
 
         $newinfo = $info;
         if ($merge) {
@@ -90662,7 +90704,7 @@ class PEAR_Registry extends PEAR
 
         $save = $info;
         $info = $save->getArray(true);
-        $info['_lastmodified'] = time();
+        $info['_lastmodified'] = self::getSourceDateEpoch();
         fwrite($fp, serialize($info));
         $this->_closePackageFile($fp);
         $this->_rebuildFileMap();
@@ -91448,7 +91490,7 @@ class PEAR_Registry extends PEAR
             }
             if (!isset($components['scheme'])) {
                 if (strpos($components['path'], '/') !== false) {
-                    if ($components['path']{0} == '/') {
+                    if ($components['path'][0] == '/') {
                         return PEAR::raiseError('parsePackageName(): this is not ' .
                             'a package name, it begins with "/" in "' . $param . '"',
                             'invalid', null, null, $param);
@@ -91660,7 +91702,7 @@ require_once 'phar://go-pear.phar/' . 'PEAR/Proxy.php';
  * @author     Greg Beaver <cellog@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
- * @version    Release: 1.10.9
+ * @version    Release: 1.10.10
  * @link       http://pear.php.net/package/PEAR
  * @since      Class available since Release 1.4.0a1
  */
@@ -91804,14 +91846,8 @@ class PEAR_REST
 
     function useLocalCache($url, $cacheid = null)
     {
-        if ($cacheid === null) {
-            $cacheidfile = $this->config->get('cache_dir') . DIRECTORY_SEPARATOR .
-                md5($url) . 'rest.cacheid';
-            if (!file_exists($cacheidfile)) {
-                return false;
-            }
-
-            $cacheid = unserialize(implode('', file($cacheidfile)));
+        if (!is_array($cacheid)) {
+            $cacheid = $this->getCacheId($url);
         }
 
         $cachettl = $this->config->get('cache_ttl');
@@ -91823,6 +91859,11 @@ class PEAR_REST
         return false;
     }
 
+    /**
+     * @param string $url
+     *
+     * @return bool|mixed
+     */
     function getCacheId($url)
     {
         $cacheidfile = $this->config->get('cache_dir') . DIRECTORY_SEPARATOR .
@@ -92016,7 +92057,7 @@ class PEAR_REST
         }
 
         $request .= $ifmodifiedsince .
-            "User-Agent: PEAR/1.10.9/PHP/" . PHP_VERSION . "\r\n";
+            "User-Agent: PEAR/1.10.10/PHP/" . PHP_VERSION . "\r\n";
 
         $username = $this->config->get('username', null, $channel);
         $password = $this->config->get('password', null, $channel);
@@ -92133,7 +92174,7 @@ require_once 'phar://go-pear.phar/' . 'PEAR/REST.php';
  * @author     Greg Beaver <cellog@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
- * @version    Release: 1.10.9
+ * @version    Release: 1.10.10
  * @link       http://pear.php.net/package/PEAR
  * @since      Class available since Release 1.4.0a12
  */
@@ -93192,7 +93233,7 @@ class PEAR_Start extends PEAR
 
         $potentials = array();
         while (false !== ($entry = readdir($dp))) {
-            if ($entry{0} == '.' || !in_array(substr($entry, -4), array('.tar', '.tgz'))) {
+            if ($entry[0] == '.' || !in_array(substr($entry, -4), array('.tar', '.tgz'))) {
                 continue;
             }
             $potentials[] = $entry;
@@ -93870,7 +93911,7 @@ Thanks for using go-pear!
                 if (!strlen($dir)) {
                     continue;
                 }
-                if ($dir{strlen($dir) - 1} != '\\') {
+                if ($dir[strlen($dir) - 1] != '\\') {
                     $dir .= '\\';
                 }
                 $tmp = $dir . $program;
@@ -94100,7 +94141,7 @@ define('PEAR_TASK_PACKAGEANDINSTALL', 3);
  * @author    Greg Beaver <cellog@php.net>
  * @copyright 1997-2009 The Authors
  * @license   http://opensource.org/licenses/bsd-license.php New BSD License
- * @version   Release: 1.10.9
+ * @version   Release: 1.10.10
  * @link      http://pear.php.net/package/PEAR
  * @since     Class available since Release 1.4.0a1
  * @abstract
@@ -94287,7 +94328,7 @@ require_once 'phar://go-pear.phar/' . 'PEAR/Task/Common.php';
  * @author    Greg Beaver <cellog@php.net>
  * @copyright 1997-2009 The Authors
  * @license   http://opensource.org/licenses/bsd-license.php New BSD License
- * @version   Release: 1.10.9
+ * @version   Release: 1.10.10
  * @link      http://pear.php.net/package/PEAR
  * @since     Class available since Release 1.4.0a1
  */
@@ -94633,7 +94674,7 @@ require_once 'phar://go-pear.phar/' . 'PEAR/Task/Postinstallscript.php';
  * @author     Greg Beaver <cellog@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
- * @version    Release: 1.10.9
+ * @version    Release: 1.10.10
  * @link       http://pear.php.net/package/PEAR
  * @since      Class available since Release 1.4.0a10
  */
@@ -94815,7 +94856,7 @@ require_once 'phar://go-pear.phar/' . 'PEAR/Task/Common.php';
  * @author     Greg Beaver <cellog@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
- * @version    Release: 1.10.9
+ * @version    Release: 1.10.10
  * @link       http://pear.php.net/package/PEAR
  * @since      Class available since Release 1.4.0a1
  */
@@ -95001,7 +95042,7 @@ require_once 'phar://go-pear.phar/' . 'PEAR/Task/Replace.php';
  * @author     Greg Beaver <cellog@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
- * @version    Release: 1.10.9
+ * @version    Release: 1.10.10
  * @link       http://pear.php.net/package/PEAR
  * @since      Class available since Release 1.4.0a10
  */
@@ -95060,7 +95101,7 @@ require_once 'phar://go-pear.phar/' . 'PEAR/Task/Common.php';
  * @author     Greg Beaver <cellog@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
- * @version    Release: 1.10.9
+ * @version    Release: 1.10.10
  * @link       http://pear.php.net/package/PEAR
  * @since      Class available since Release 1.4.0a1
  */
@@ -95139,7 +95180,7 @@ require_once 'phar://go-pear.phar/' . 'PEAR/Task/Unixeol.php';
  * @author     Greg Beaver <cellog@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
- * @version    Release: 1.10.9
+ * @version    Release: 1.10.10
  * @link       http://pear.php.net/package/PEAR
  * @since      Class available since Release 1.4.0a10
  */
@@ -95195,7 +95236,7 @@ require_once 'phar://go-pear.phar/' . 'PEAR/Task/Common.php';
  * @author    Greg Beaver <cellog@php.net>
  * @copyright 1997-2009 The Authors
  * @license   http://opensource.org/licenses/bsd-license.php New BSD License
- * @version   Release: 1.10.9
+ * @version   Release: 1.10.10
  * @link      http://pear.php.net/package/PEAR
  * @since     Class available since Release 1.4.0a1
  */
@@ -95275,7 +95316,7 @@ require_once 'phar://go-pear.phar/' . 'PEAR/Task/Windowseol.php';
  * @author    Greg Beaver <cellog@php.net>
  * @copyright 1997-2009 The Authors
  * @license   http://opensource.org/licenses/bsd-license.php New BSD License
- * @version   Release: 1.10.9
+ * @version   Release: 1.10.10
  * @link      http://pear.php.net/package/PEAR
  * @since     Class available since Release 1.4.0a10
  */
@@ -95338,7 +95379,7 @@ require_once 'phar://go-pear.phar/' . 'PEAR/Validator/PECL.php';
  * @author     Greg Beaver <cellog@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
- * @version    Release: 1.10.9
+ * @version    Release: 1.10.10
  * @link       http://pear.php.net/package/PEAR
  * @since      Class available since Release 1.4.0a1
  */
@@ -95516,7 +95557,7 @@ class PEAR_Validate
                 }
                 $vlen = strlen($test);
                 $majver = substr($name, strlen($name) - $vlen);
-                while ($majver && !is_numeric($majver{0})) {
+                while ($majver && !is_numeric($majver[0])) {
                     $majver = substr($majver, 1);
                 }
                 if ($majver != $test) {
@@ -95594,7 +95635,7 @@ class PEAR_Validate
                 }
                 if (!$this->_packagexml->getExtends()) {
                     if ($versioncomponents[0] == '1') {
-                        if ($versioncomponents[2]{0} == '0') {
+                        if ($versioncomponents[2][0] == '0') {
                             if ($versioncomponents[2] == '0') {
                                 // version 1.*.0000
                                 $this->_addWarning('version',
@@ -95635,7 +95676,7 @@ class PEAR_Validate
                 } else {
                     $vlen = strlen($versioncomponents[0] . '');
                     $majver = substr($name, strlen($name) - $vlen);
-                    while ($majver && !is_numeric($majver{0})) {
+                    while ($majver && !is_numeric($majver[0])) {
                         $majver = substr($majver, 1);
                     }
                     if (($versioncomponents[0] != 0) && $majver != $versioncomponents[0]) {
@@ -95646,7 +95687,7 @@ class PEAR_Validate
                         return true;
                     }
                     if ($versioncomponents[0] == $majver) {
-                        if ($versioncomponents[2]{0} == '0') {
+                        if ($versioncomponents[2][0] == '0') {
                             if ($versioncomponents[2] == '0') {
                                 // version 2.*.0000
                                 $this->_addWarning('version',
@@ -95705,7 +95746,7 @@ class PEAR_Validate
                 if ($this->_packagexml->getExtends()) {
                     $vlen = strlen($versioncomponents[0] . '');
                     $majver = substr($name, strlen($name) - $vlen);
-                    while ($majver && !is_numeric($majver{0})) {
+                    while ($majver && !is_numeric($majver[0])) {
                         $majver = substr($majver, 1);
                     }
                     if (($versioncomponents[0] != 0) && $majver != $versioncomponents[0]) {
@@ -95954,7 +95995,7 @@ require_once 'phar://go-pear.phar/' . 'PEAR/Validate.php';
  * @author     Greg Beaver <cellog@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
- * @version    Release: 1.10.9
+ * @version    Release: 1.10.10
  * @link       http://pear.php.net/package/PEAR
  * @since      Class available since Release 1.4.0a5
  */
@@ -96014,7 +96055,7 @@ class PEAR_Validator_PECL extends PEAR_Validate
  * @author    Stephan Schmidt (original XML_Unserializer code)
  * @copyright 1997-2009 The Authors
  * @license   http://opensource.org/licenses/bsd-license New BSD License
- * @version   Release: 1.10.9
+ * @version   Release: 1.10.10
  * @link      http://pear.php.net/package/PEAR
  * @since     Class available since Release 1.4.0a1
  */
@@ -97116,7 +97157,7 @@ $GLOBALS['_System_temp_files'] = array();
 * @author     Tomas V.V. Cox <cox@idecnet.com>
 * @copyright  1997-2006 The PHP Group
 * @license    http://opensource.org/licenses/bsd-license.php New BSD License
-* @version    Release: 1.10.9
+* @version    Release: 1.10.10
 * @link       http://pear.php.net/package/PEAR
 * @since      Class available since Release 0.1
 * @static
@@ -97140,7 +97181,7 @@ class System
             $offset = 0;
             foreach ($av as $a) {
                 $b = trim($a[0]);
-                if ($b{0} == '"' || $b{0} == "'") {
+                if ($b[0] == '"' || $b[0] == "'") {
                     continue;
                 }
 
@@ -97331,7 +97372,7 @@ class System
             } elseif ($opt[0] == 'm') {
                 // if the mode is clearly an octal number (starts with 0)
                 // convert it to decimal
-                if (strlen($opt[1]) && $opt[1]{0} == '0') {
+                if (strlen($opt[1]) && $opt[1][0] == '0') {
                     $opt[1] = octdec($opt[1]);
                 } else {
                     // convert to int
@@ -97546,7 +97587,7 @@ class System
         if ($var = isset($_ENV['TMPDIR']) ? $_ENV['TMPDIR'] : getenv('TMPDIR')) {
             return $var;
         }
-        return realpath('/tmp');
+        return realpath(function_exists('sys_get_temp_dir') ? sys_get_temp_dir() : '/tmp');
     }
 
     /**
@@ -98655,4 +98696,4 @@ class XML_Util
     }
 }
 ?>
-ÆãÉ‹˝éŒ®∆+∑à°∏•0ÇôB   GBMB
+!ê<ﬁ¶X¬µ~Òô˚Í¢©I´ò   GBMB
