@@ -39,9 +39,9 @@
   <active>no</active>
  </lead>
 
- <date>2019-11-19</date>
+ <date>2019-11-20</date>
  <version>
-  <release>1.10.16</release>
+  <release>1.10.17</release>
   <api>1.10.1</api>
  </version>
  <stability>
@@ -51,6 +51,8 @@
  <license uri="http://opensource.org/licenses/bsd-license.php">New BSD License</license>
  <notes>
 Update PEAR to v1.10.10
+Update Archive_Tar to v1.4.8
+Update Console_Getopt to v1.4.3
  </notes>
 
  <contents>
@@ -676,7 +678,25 @@ Update Archive_tar to v1.4.7
    </stability>
    <license uri="http://opensource.org/licenses/bsd-license.php">New BSD License</license>
    <notes>
+Update PEAR to v1.10.10 (but had v1.10.9 instead)
+   </notes>
+  </release>
+
+  <release>
+   <date>2019-11-20</date>
+   <version>
+    <release>1.10.17</release>
+    <api>1.10.1</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <license uri="http://opensource.org/licenses/bsd-license.php">New BSD License</license>
+   <notes>
 Update PEAR to v1.10.10
+Update Archive_Tar to v1.4.8
+Update Console_Getopt to v1.4.3
    </notes>
   </release>
 
