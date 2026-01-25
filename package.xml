@@ -39,9 +39,9 @@
   <active>no</active>
  </lead>
 
- <date>2025-12-14</date>
+ <date>2026-01-25</date>
  <version>
-  <release>1.10.25</release>
+  <release>1.10.26</release>
   <api>1.10.1</api>
  </version>
  <stability>
@@ -50,7 +50,7 @@
  </stability>
  <license uri="http://opensource.org/licenses/bsd-license.php">New BSD License</license>
  <notes>
-Update PEAR to v1.10.17
+Update PEAR to v1.10.18
  </notes>
 
  <contents>
@@ -823,6 +823,22 @@ Update PEAR to v1.10.16
    <license uri="http://opensource.org/licenses/bsd-license.php">New BSD License</license>
    <notes>
 Update PEAR to v1.10.17
+   </notes>
+  </release>
+
+  <release>
+   <date>2026-01-25</date>
+   <version>
+    <release>1.10.26</release>
+    <api>1.10.1</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <license uri="http://opensource.org/licenses/bsd-license.php">New BSD License</license>
+   <notes>
+Update PEAR to v1.10.18
    </notes>
   </release>
 
